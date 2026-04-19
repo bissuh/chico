@@ -4,6 +4,14 @@ Skills are repeatable workflows Chico can invoke by name. Each skill is a folder
 
 This folder starts empty on purpose. Skills are earned, not assumed. We add a skill when a workflow has shipped cleanly at least twice and is ready to be systematized.
 
+## Hard rules for every skill
+
+These apply to every skill, however it's invoked (scheduled by launchd, fired by a script, or run manually). Keeps automation from quietly rewriting the operating canon.
+
+1. **No auto-editing of operating canon.** A skill, however invoked, may not auto-edit `CLAUDE.md`, `SPEC.md`, `SOUL.md`, `IDENTITY.md`, `memory/permissions.md`, `memory/division-of-labor.md`, `memory/core.md`, or `memory/playbook.md`. All proposed changes go via `inbox/` as rule candidates for Bissuh's review. Interactive Chico and Bissuh sessions are governed by the normal Yellow/Red tier system; this rule is about skills, not interactive work.
+
+Adopted 2026-04-19 from the `consolidate-memory` v0.1 per-skill constraint. Source: `inbox/rule-candidates-2026-04-19.md` candidate 1.
+
 ## Starter skill queue (not built yet, in order of expected build)
 
 1. **draft-x-post** — produce a TBP-voice X post from a topic, outline, or newsletter edition
