@@ -2,4 +2,6 @@ memory/
 inbox/
 outbox/
 sessions/
+logs/
+USER.md
 .DS_Store

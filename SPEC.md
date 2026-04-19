@@ -52,11 +52,11 @@ Short version: AI co-founder. Co-work model (not zero-human, not tool-usage). Na
   SPEC.md                  [DONE] This file
   README.md                [DONE] Folder map
 
-  HEARTBEAT.md             [NEXT] Scheduler checklist (30min / daily / weekly)
-  BOOT.md                  [NEXT] Startup ritual on Claude Code boot
-  USER.md                  [NEXT] Who Bissuh is, timezone, safe facts
-  TOOLS.md                 [NEXT] Paths, env vars, tool IDs
-  SUBAGENT-POLICY.md       [NEXT] When to delegate vs handle directly
+  HEARTBEAT.md             [DONE] 30-min loop: git commit + state file
+  BOOT.md                  [DONE] Startup ritual on Claude Code boot
+  USER.md                  [DONE] Runtime facts about Bissuh (timezone, context)
+  TOOLS.md                 [DONE] Paths, env vars, tool IDs
+  SUBAGENT-POLICY.md       [DONE] When to delegate vs handle directly
 
   memory/
     core.md                [DONE] Mission, three scoreboards
@@ -64,8 +64,8 @@ Short version: AI co-founder. Co-work model (not zero-human, not tool-usage). Na
     division-of-labor.md   [DONE] Who owns what
     permissions.md         [DONE] Green/Yellow/Red tiers
     playbook.md            [DONE] Growth playbook v0.1
-    YYYY-MM-DD.md          [NEXT] Daily memory log, one per day
-    heartbeat-state.json   [NEXT] Tracks last-run timestamps
+    YYYY-MM-DD.md          [DONE] Daily memory log, written by consolidate-memory
+    heartbeat-state.json   [DONE] Tracks last-run timestamps
 
   knowledge-base/
     README.md              [DONE] Sources and ingestion format
@@ -73,20 +73,28 @@ Short version: AI co-founder. Co-work model (not zero-human, not tool-usage). Na
 
   skills/
     README.md              [DONE] Skills folder conventions
-    consolidate-memory/    [NEXT] Nightly self-improvement skill
+    consolidate-memory/    [DONE] Nightly consolidation, installed 2026-04-19
     draft-x-post/          [LATER] After pattern proven
     competitive-teardown/  [LATER]
+    weekly-review/         [LATER] Sunday rhythm
+
+  scripts/                 [DONE] Runtime shell scripts and launchd plists
+    README.md              [DONE] Install/uninstall/test docs
+    consolidate-memory.sh  [DONE] Nightly invocation
+    heartbeat.sh           [DONE] 30-min git checkpoint
+    launchd/               [DONE] Plist files for scheduled jobs
 
   sessions/
-    README.md              [DONE] Daily log format
-    YYYY-MM-DD-HH-MM-<topic>.md  [NEXT] Actual session files
+    README.md              [DONE] Session log format
+    YYYY-MM-DD-HH-MM-<topic>.md  [DONE] Format in use as of 2026-04-19
 
   inbox/                   [DONE scaffold]
   outbox/                  [DONE scaffold]
+  logs/                    [DONE] Script + launchd output (gitignored)
   reference/               [LATER] Archived history (keeps MEMORY small)
   canvas/                  [LATER] Live public dashboard HTML
 
-  .git/                    [NEXT] Private git repo for the workspace
+  .git/                    [DONE] Private local git repo; no remote yet
 ```
 
 ---
@@ -98,7 +106,7 @@ See [memory/permissions.md](./memory/permissions.md) for full detail.
 Quick reference:
 - **Green** (autonomous): research, drafts that stay internal, playbook updates, internal notes
 - **Yellow** (draft, Bissuh approves, then ship): social posts, emails except Saturday, landing pages, lead magnets, outreach, sequences
-- **Red** (ask before starting): money, Stripe, bank, products, partnerships, anything legal, anything touching Nomos/Ingresso
+- **Red** (ask before starting): money, Stripe, bank, products, partnerships, anything legal, anything touching Nomos/Ingresse
 
 Graduations from Yellow to Green are themselves content we publish.
 
@@ -109,7 +117,7 @@ Graduations from Yellow to Green are themselves content we publish.
 See [memory/division-of-labor.md](./memory/division-of-labor.md) for full detail.
 
 Quick reference:
-- **Bissuh owns 100%:** Saturday newsletter, brand positioning, relationships, Nomos/Ingresso boundary, money
+- **Bissuh owns 100%:** Saturday newsletter, brand positioning, relationships, Nomos/Ingresse boundary, money
 - **Chico drafts / Bissuh approves:** Social, mid-week content, lead magnets, email sequences, landing pages
 - **Chico handles autonomously:** Research, competitive teardowns, internal notes, playbook maintenance
 
@@ -206,15 +214,15 @@ Narrative arc for the launch: "I almost didn't start TBP. Then I met Chico. Here
 
 ## 12. Roadmap
 
-### Phase 0 — Foundation (in progress, 2026-04-18)
+### Phase 0 — Foundation (complete, 2026-04-19)
 - [x] SOUL, IDENTITY, CLAUDE, memory files, knowledge base scaffolding
 - [x] Research OpenClaw + Felix patterns
 - [x] SPEC.md
-- [ ] HEARTBEAT.md + BOOT.md + USER.md + TOOLS.md + SUBAGENT-POLICY.md
-- [ ] launchd plist for heartbeat
-- [ ] Git init for workspace
-- [ ] Nightly consolidation skill
-- [ ] First real Claude Code session
+- [x] HEARTBEAT.md + BOOT.md + USER.md + TOOLS.md + SUBAGENT-POLICY.md (2026-04-19)
+- [x] launchd plist for heartbeat (written; install pending Bissuh's switch)
+- [x] Git init for workspace (local only, no remote yet)
+- [x] Nightly consolidation skill (installed 2026-04-19, first run clean)
+- [x] First real Claude Code session (2026-04-19, this one)
 
 ### Phase 1 — First real output (weeks 1-2)
 - [ ] Chico produces 5 drafted X posts + 3 LinkedIn posts, Bissuh approves, ships
@@ -284,3 +292,4 @@ SPEC.md is not frozen. It updates.
 ## 15. Changelog
 
 - **2026-04-18** — Spec created. Foundation files (SOUL, IDENTITY, CLAUDE, memory/) in place. OpenClaw research done. Runtime locked to Claude Code. Phase 0 in progress.
+- **2026-04-19** — Phase 0 complete. Shipped: consolidate-memory skill + launchd plist (installed, firing nightly at 02:00), HEARTBEAT.md + BOOT.md + USER.md + TOOLS.md + SUBAGENT-POLICY.md, heartbeat.sh + its plist (written, install pending). Session filename convention locked to `YYYY-MM-DD-HH-MM-<topic>.md`. First real session + pressure test passed. Moving into Phase 1.
