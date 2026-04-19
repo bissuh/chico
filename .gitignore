@@ -1,0 +1,5 @@
+memory/
+inbox/
+outbox/
+sessions/
+.DS_Store
