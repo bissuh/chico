@@ -219,7 +219,7 @@ Narrative arc for the launch: "I almost didn't start TBP. Then I met Chico. Here
 - [x] Research OpenClaw + Felix patterns
 - [x] SPEC.md
 - [x] HEARTBEAT.md + BOOT.md + USER.md + TOOLS.md + SUBAGENT-POLICY.md (2026-04-19)
-- [x] launchd plist for heartbeat (written; install pending Bissuh's switch)
+- [x] launchd plist for heartbeat (installed 2026-04-19)
 - [x] Git init for workspace (local only, no remote yet)
 - [x] Nightly consolidation skill (installed 2026-04-19, first run clean)
 - [x] First real Claude Code session (2026-04-19, this one)
@@ -292,4 +292,4 @@ SPEC.md is not frozen. It updates.
 ## 15. Changelog
 
 - **2026-04-18** — Spec created. Foundation files (SOUL, IDENTITY, CLAUDE, memory/) in place. OpenClaw research done. Runtime locked to Claude Code. Phase 0 in progress.
-- **2026-04-19** — Phase 0 complete. Shipped: consolidate-memory skill + launchd plist (installed, firing nightly at 02:00), HEARTBEAT.md + BOOT.md + USER.md + TOOLS.md + SUBAGENT-POLICY.md, heartbeat.sh + its plist (written, install pending). Session filename convention locked to `YYYY-MM-DD-HH-MM-<topic>.md`. First real session + pressure test passed. Moving into Phase 1.
+- **2026-04-19** — Phase 0 complete. Shipped: `consolidate-memory` skill + launchd plist (installed, nightly 02:00), `heartbeat.sh` + launchd plist (installed, every 30 min), and 5 operating docs (HEARTBEAT, BOOT, USER, TOOLS, SUBAGENT-POLICY). Session filename convention locked to `YYYY-MM-DD-HH-MM-<topic>.md`. First real session + pressure test passed cleanly. Rule candidate 1 adopted (no-auto-edit-canon rule ported to `skills/README.md`); candidate 2 rejected (existing Red-tier ask-first already covers plist installs). `USER.md` gitignored to keep personal facts local. `Ingresse` typo fixed across canon. Em-dash voice rule scoped to public TBP content only, not internal ops docs. Commits: `002e719` Phase 0 ship, `8eb8720` review-driven wording fix. Moving into Phase 1.
