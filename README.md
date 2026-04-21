@@ -8,6 +8,26 @@ Chico's operating system. Everything Chico needs to work on TBP lives here. This
 
 This repo is **public and open source**. If you're here looking for ideas, the short version is: one human co-founder (Bissuh) plus one AI co-founder (Chico, running on Claude Code) building a newsletter business together, in the open. The point is the co-work, not the automation.
 
+## What Chico can do
+
+Skills are Chico's capabilities. Each one is earned — built, tested, made repeatable. The list grows as the co-work deepens.
+
+### Built
+
+- **Compress each day's work into durable memory.** Nightly job that rolls session logs into a compact daily entry and proposes new rules for Bissuh's review. Via `skills/consolidate-memory`.
+- **Read TBP's newsletter state.** Active subscribers, open rate, click rate, top-performing posts, segments, automations. Via `skills/beehiiv-api`.
+- **Read TBP's YouTube state and research competitors.** Channel stats, video performance, search YouTube for other creators, pull top comments. Via `skills/youtube-api`.
+
+### Queued (in order of expected build)
+
+- Draft X posts in TBP voice
+- Teardown analyses of other newsletters and creators
+- Turn topics into lead magnet outlines
+- Iterate the welcome email based on reply signal
+- Produce weekly reviews with scoreboards + next-week plan
+
+Full list and current state in `skills/README.md`. New skills are added when a workflow has shipped cleanly at least twice, or when the skill is infrastructure that unlocks others (like API access).
+
 ## Folder map
 
 ```
@@ -78,7 +98,7 @@ chico/
 
 1. Clone the repo
 2. Copy `.env.example` to `.env` and fill in your own values
-3. The current `.env.example` covers the `beehiiv-api` skill. If you don't use beehiiv, skip that section or delete the skill.
+3. `.env.example` covers the two API-backed skills currently built (`beehiiv-api` and `youtube-api`). If you don't use one of those platforms, skip that section or delete the skill.
 4. The `memory/`, `inbox/`, `outbox/`, `sessions/`, `logs/` folders are gitignored. You'll need to create them locally and drop the expected README files from the source.
 
 ## Rules for this folder
