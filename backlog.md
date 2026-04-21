@@ -26,6 +26,13 @@ Everything queued up. Updated as we add items.
   - `.env.example` checked in as template
 - Not included: write operations (POST/PATCH/DELETE). Intentional. Any write path needs a separate skill with its own approval flow.
 
+### B-003 — YouTube OAuth for private analytics
+- Priority: P2
+- Status: queued
+- Why: current `youtube-api` skill (B-001 sibling) only reads public data. OAuth unlocks private analytics: watch time retention curves, traffic sources, subscriber demographics, revenue.
+- Dependency: Bissuh generates OAuth client credentials in Google Cloud Console and runs a one-time browser auth flow to grant the skill scope
+- Not urgent: public data covers 80% of what we need for weekly reporting. Revisit when retention curves become the question.
+
 ### B-002 — Post-signup survey setup
 - Priority: P0
 - Status: blocked on C-002

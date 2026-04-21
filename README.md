@@ -35,8 +35,10 @@ chico/
     README.md            Hard rules, starter queue, what's built
     consolidate-memory/  Nightly memory compression + rule candidates
     beehiiv-api/         Read-only access to TBP's beehiiv publication
+    youtube-api/         Read-only access to YouTube Data API v3
   scripts/               Shell wrappers called by skills or schedulers
     beehiiv.sh           beehiiv API wrapper (see skills/beehiiv-api)
+    youtube.sh           YouTube Data API wrapper (see skills/youtube-api)
     heartbeat.sh         30-min heartbeat tick
     consolidate-memory.sh Invokes the consolidate-memory skill
     launchd/             macOS launchd plists for scheduled jobs

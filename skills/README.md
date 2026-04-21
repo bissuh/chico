@@ -18,6 +18,7 @@ Skills that exist and are usable today.
 
 1. **consolidate-memory** — nightly (02:00) job that compresses sessions into dated memory and proposes rule candidates. Manually invocable at end of heavy days.
 2. **beehiiv-api** — read-only access to TBP's beehiiv publication (subscribers, posts, stats, segments). Invoke when answering questions about current list state or before producing any health-of-the-business report. Write operations deliberately NOT included.
+3. **youtube-api** — read-only access to YouTube Data API v3. TBP channel state, video stats, competitor search, comment reads. Public data only (no private analytics — that needs OAuth, queued separately in backlog).
 
 ## Starter skill queue (not built yet, in order of expected build)
 
