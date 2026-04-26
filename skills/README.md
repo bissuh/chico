@@ -19,10 +19,11 @@ Skills that exist and are usable today.
 1. **consolidate-memory** — nightly (02:00) job that compresses sessions into dated memory and proposes rule candidates. Manually invocable at end of heavy days.
 2. **beehiiv-api** — read-only access to TBP's beehiiv publication (subscribers, posts, stats, segments). Invoke when answering questions about current list state or before producing any health-of-the-business report. Write operations deliberately NOT included.
 3. **youtube-api** — read-only access to YouTube Data API v3. TBP channel state, video stats, competitor search, comment reads. Public data only (no private analytics — that needs OAuth, queued separately in backlog).
+4. **story-craft** — create, rewrite, or review any TBP narrative through the 5-line framework (Mirror, Friction, Realization, Shift, Invitation). Three modes: CREATE from raw material, REWRITE a draft, REVIEW with a per-line scorecard. Symlinked into `.claude/skills/story-craft/SKILL.md` so the Claude Code harness auto-discovers it; canonical source stays here.
 
 ## Starter skill queue (not built yet, in order of expected build)
 
-1. **draft-x-post** — produce a TBP-voice X post from a topic, outline, or newsletter edition
+1. **draft-x-post** — produce a TBP-voice X post from a topic, outline, or newsletter edition (likely thin wrapper around `story-craft` for X-specific format)
 2. **competitive-teardown** — analyze a newsletter or creator's content using the teardown format in `knowledge-base/README.md`
 3. **lead-magnet-outline** — turn a topic into a lead magnet outline (PDF checklist, playbook, template)
 4. **welcome-email-iterate** — propose improvements to the welcome email based on reply signal

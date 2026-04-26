@@ -1,0 +1,1 @@
+../../../skills/story-craft/SKILL.md
