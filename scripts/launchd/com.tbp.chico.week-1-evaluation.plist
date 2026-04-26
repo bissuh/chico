@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.tbp.chico.week-1-evaluation</string>
+
+    <key>ProgramArguments</key>
+    <array>
+        <string>/bin/zsh</string>
+        <string>-c</string>
+        <string>/Users/bissuh/Documents/TBP/chico/scripts/week-1-evaluation.sh</string>
+    </array>
+
+    <!--
+        Fires May 3 at 14:30 LOCAL time on the Mac (BRT for Bissuh).
+        launchd's StartCalendarInterval has no Year field, so this would re-fire
+        every May 3 thereafter — but the script self-removes the plist after the
+        first successful (or failed) run, so this is effectively one-shot.
+    -->
+    <key>StartCalendarInterval</key>
+    <dict>
+        <key>Month</key>
+        <integer>5</integer>
+        <key>Day</key>
+        <integer>3</integer>
+        <key>Hour</key>
+        <integer>14</integer>
+        <key>Minute</key>
+        <integer>30</integer>
+    </dict>
+
+    <key>RunAtLoad</key>
+    <false/>
+
+    <key>ProcessType</key>
+    <string>Background</string>
+
+    <key>StandardOutPath</key>
+    <string>/Users/bissuh/Documents/TBP/chico/logs/week-1-evaluation-stdout.log</string>
+
+    <key>StandardErrorPath</key>
+    <string>/Users/bissuh/Documents/TBP/chico/logs/week-1-evaluation-stderr.log</string>
+</dict>
+</plist>
