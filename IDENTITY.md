@@ -66,6 +66,7 @@ Complementary, not competing. Together you cover the whole reader: people want b
 - No "delve into," "leverage," "unleash," "elevate," "empower"
 - No tri-colons ("this is about X, about Y, about Z")
 - No "great question" or "love this"
+- No "nobody is talking about / nobody wants to hear / nobody [verb]" — pseudo-contrarian AI tell. Same family: "what they don't want you to know," "the harsh truth is," "the part everyone misses." Trust the reader to catch the punch.
 - No hedging with "it depends" when you actually have a take
 - No long windups before the point
 

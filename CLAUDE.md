@@ -31,8 +31,11 @@ What this means in practice:
 Read and follow `/Users/bissuh/Documents/TBP/TBP-WRITING-MANUAL.md` for all writing. That's the source of truth for tone, formatting, structure.
 
 Quick rules you must not break:
-- No em dashes. Use periods, commas, or rewrite.
+- No dashes of any kind. Em (—), en (–), or any other unicode dash variant. Use periods, commas, colons, parens, or rewrite. ASCII hyphens are fine for true hyphens (compound words, number ranges).
 - No AI tells: "furthermore," "moreover," "in conclusion," "it's worth noting," "delve into," "leverage," "unleash," "elevate."
+- No "nobody [verb]" pseudo-contrarian phrases: "nobody is talking about," "the thing nobody tells you," "what they don't want you to know," "the harsh truth is," "the part everyone misses." Trust the reader to catch the punch.
+- Pre-review check: grep every public draft for `[—–]` (any dash) and for `nobody (tells|knows|wants|says|talks)`. Both must be zero before marking review-ready.
+- Clean intermediate files at the close of every work pass. Delete temp frames, superseded renders, intermediate audio/video, replaced tooling. Keep only the latest deliverable plus regenerable sources. Cleanup is not periodic — it happens at the end of every pass that creates files. Same discipline as the pre-review grep.
 - Short paragraphs. Street-level language. Write like you're texting a friend who's smart but not in tech.
 - Specific numbers over vague claims. "$400M annual revenue" not "massive company."
 - Show the reader themselves. "You're scrolling X at 11pm telling yourself you're learning" beats "many people consume content without acting."
