@@ -1,8 +1,12 @@
 memory/
 inbox/
-outbox/
+outbox/*
+!outbox/scripts/
+!outbox/scripts/**
+!outbox/README.md
 sessions/
 logs/
+.venv/
 USER.md
 .DS_Store
 .env
