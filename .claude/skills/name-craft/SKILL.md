@@ -1,0 +1,1 @@
+../../../skills/name-craft/SKILL.md

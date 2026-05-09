@@ -20,6 +20,7 @@ Skills that exist and are usable today.
 2. **beehiiv-api** — read-only access to TBP's beehiiv publication (subscribers, posts, stats, segments). Invoke when answering questions about current list state or before producing any health-of-the-business report. Write operations deliberately NOT included.
 3. **youtube-api** — read-only access to YouTube Data API v3. TBP channel state, video stats, competitor search, comment reads. Public data only (no private analytics — that needs OAuth, queued separately in backlog).
 4. **story-craft** — create, rewrite, or review any TBP narrative through the 5-line framework (Mirror, Friction, Realization, Shift, Invitation). Three modes: CREATE from raw material, REWRITE a draft, REVIEW with a per-line scorecard. Symlinked into `.claude/skills/story-craft/SKILL.md` so the Claude Code harness auto-discovers it; canonical source stays here.
+5. **name-craft** — create, evaluate, or replace a name using David Placek's Lexicon Branding method (original / processing fluent / unexpected). Three modes: CREATE (four framing questions → three divergent baskets → scored finalists with proof-of-concept), EVALUATE (3-filter scorecard on a candidate), RENAME (kill-or-keep audit + replacement). Auto-validates domain availability via `dotchk` when a domain is needed. Symlinked into `.claude/skills/name-craft/SKILL.md`.
 
 ## Starter skill queue (not built yet, in order of expected build)
 
