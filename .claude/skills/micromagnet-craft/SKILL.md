@@ -1,0 +1,1 @@
+../../../skills/micromagnet-craft/SKILL.md
