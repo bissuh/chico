@@ -1,0 +1,1 @@
+{"layout": "prompt", "kicker": "2 · Validate", "title": "Check it before you build", "promptLabel": "Paste into Claude", "prompt": "I want to sell [idea]. Find 3 existing paid versions, their prices, their worst reviews, and the one angle none of them nail. Then tell me if it’s worth building.", "theme": "green", "slideNo": 3, "slideTotal": 9, "handle": "@thebillionperson"}

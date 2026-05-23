@@ -1,0 +1,1 @@
+{"layout": "prompt", "kicker": "6 · Price", "title": "Make the price an easy yes", "promptLabel": "Paste into Claude", "prompt": "I sell [offer] at [price]. Write the offer copy that makes it an obvious yes, and add a higher-priced option to anchor against so the main one feels fair.", "theme": "green", "slideNo": 7, "slideTotal": 9, "handle": "@thebillionperson"}

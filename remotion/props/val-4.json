@@ -1,0 +1,1 @@
+{"layout": "prompt", "kicker": "Step 2", "title": "See who already pays", "promptLabel": "Paste into Claude", "prompt": "Find 3 existing paid products that solve [problem], their prices, and their worst reviews. Tell me what buyers clearly wish existed but none of them deliver.", "theme": "green", "slideNo": 4, "slideTotal": 9, "handle": "@thebillionperson"}

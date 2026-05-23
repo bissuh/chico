@@ -12,21 +12,22 @@ This repo is **public and open source**. If you're here looking for ideas, the s
 
 Skills are Chico's capabilities. Each one is earned — built, tested, made repeatable. The list grows as the co-work deepens.
 
-### Built
+### Skills you can clone and use
 
-- **Compress each day's work into durable memory.** Nightly job that rolls session logs into a compact daily entry and proposes new rules for Bissuh's review. Via `skills/consolidate-memory`.
-- **Read TBP's newsletter state.** Active subscribers, open rate, click rate, top-performing posts, segments, automations. Via `skills/beehiiv-api`.
-- **Read TBP's YouTube state and research competitors.** Channel stats, video performance, search YouTube for other creators, pull top comments. Via `skills/youtube-api`.
+Every skill is a self-contained workflow built and tested on TBP before it ships here. Drop a folder into your own Claude Code `skills/` directory and invoke it by name. Everything's in one place on purpose, so you can grab the whole toolkit at once.
 
-### Queued (in order of expected build)
+- **`ghostshelf`** — build and run a faceless (no-face) content page that sells a small digital product, end to end: pick the niche, make the product, batch the slides, wire the funnel, run the weekly loop. Honest odds baked in.
+- **`micromagnet-craft`** — design, score, or extract a micromagnet: a 2-minute tool that solves one tiny problem and trades for a newsletter opt-in.
+- **`story-craft`** — write or fix any persuasive piece with the 5-line framework (Mirror, Friction, Realization, Shift, Invitation).
+- **`name-craft`** — name a company, product, feature, or lead magnet using David Placek's Lexicon method, with domain availability checks.
+- **`anti-ai-linguo`** — voice-check a draft and strip the AI tells (long-form, short-form, and video modes).
+- **`beehiiv-api`** — read a beehiiv publication's state: subscribers, opens, clicks, top posts, segments, automations.
+- **`youtube-api`** — read a YouTube channel's state and research competitors via the YouTube Data API.
+- **`consolidate-memory`** — roll session logs into durable daily memory and propose new rules.
 
-- Draft X posts in TBP voice
-- Teardown analyses of other newsletters and creators
-- Turn topics into lead magnet outlines
-- Iterate the welcome email based on reply signal
-- Produce weekly reviews with scoreboards + next-week plan
+The build tooling behind our own faceless launch is here too: the Remotion slide + reel renderer in `remotion/`, the operating playbook in `playbooks/faceless-gallery-engine.md`, and the run-it-yourself command in `.claude/commands/produce-week.md`.
 
-Full list and current state in `skills/README.md`. New skills are added when a workflow has shipped cleanly at least twice, or when the skill is infrastructure that unlocks others (like API access).
+Hard rules + how skills get added: `skills/README.md`. New skills land when a workflow has shipped cleanly at least twice, or when it's infrastructure that unlocks others.
 
 ## Folder map
 
@@ -53,9 +54,19 @@ chico/
     matt-mcgarry/        Newsletter growth frameworks (MAGIC, WEAC, ADAPT, ...)
   skills/                Repeatable workflows Chico can invoke
     README.md            Hard rules, starter queue, what's built
-    consolidate-memory/  Nightly memory compression + rule candidates
-    beehiiv-api/         Read-only access to TBP's beehiiv publication
+    ghostshelf/          Build + run a faceless page that sells a digital product
+    micromagnet-craft/   Design/extract a 2-minute opt-in tool
+    story-craft/         5-line persuasion framework
+    name-craft/          Naming via Placek's Lexicon method + domain checks
+    anti-ai-linguo/      Voice-check + strip AI tells
+    beehiiv-api/         Read-only access to a beehiiv publication
     youtube-api/         Read-only access to YouTube Data API v3
+    consolidate-memory/  Nightly memory compression + rule candidates
+  playbooks/             Replicable growth playbooks
+    youtube-shorts-cta-machine.md   Faceless YouTube Shorts growth pipeline
+    faceless-gallery-engine.md      TBP's no-face IG/TikTok content engine
+  remotion/              Slide + reel renderer (React/Remotion) for the gallery engine
+  .claude/commands/      Slash commands, incl. produce-week (run the weekly content machine)
   scripts/               Shell wrappers called by skills or schedulers
     beehiiv.sh           beehiiv API wrapper (see skills/beehiiv-api)
     youtube.sh           YouTube Data API wrapper (see skills/youtube-api)
