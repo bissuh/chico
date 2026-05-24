@@ -10,11 +10,19 @@ You are producing AND scheduling ONE WEEK of The Billion Person faceless content
 - Memory: `project_tbp_faceless_gallery_engine`, `feedback_carousels_go_deep`.
 - Voice: no em or en dashes, no "nobody [verb]" phrases, follow the TBP Writing Manual.
 
+## 0. Interview the user first (do NOT autopilot)
+Before researching or writing, interview the user about the week, the same way we build a newsletter edition. Ask 3-5 sharp questions and WAIT for the answers:
+- What's the theme or angle for this week? Or should I pull from a recent newsletter edition or the editorial content bank?
+- Any must-include topic, tool, product, or real builder to feature?
+- Anything to avoid, or a specific niche or audience slant this week?
+- Same green look and 7-day lineup as usual, or a change?
+Shape the research and the lineup from the answers. If they say "you decide," proceed with the default lineup. Keep it to a one-minute alignment, not a survey. The best editions come from a quick interview, then execution, never blind autopilot.
+
 ## 1. Research (WEB-FIRST, fresh every week)
 Pull current, hot content. Do not recycle the newsletter as the main source. Rotate the lineup types across the 7 days: Top [X] (tools/skills/niches/trends), Steal This Prompt, Built With AI (a real, verified solo-or-tiny-team AI builder with citable numbers), Tutorial (one concrete how-to), Real Niches or Mistakes, Hot Take reel, This vs That reel. ~5 deep carousels + 2 reels. Verify every number; frame anything unverified as "reported".
 
 ## 2. Write deep content
-Each carousel = 9 to 15 slides. Use CleanSlide layouts: `cover`, `detail` (real paragraphs), `prompt` (real copy-paste prompts), `list`, `statement`; `tip`/`tipLabel` for an inline callout.
+Each carousel = **8 to 10 slides. HARD CAP 10**: Instagram's publishing API rejects carousels over 10 images (TikTok allows 35, but build one =<10 version that posts to both). A 12-slide carousel will ERROR on IG. Use CleanSlide layouts: `cover`, `detail` (real paragraphs), `prompt` (real copy-paste prompts), `list`, `statement`; `tip`/`tipLabel` for an inline callout.
 - One real idea per slide: a tool, a number, a prompt, a step. Cut anything a stranger can't act on.
 - Name actual tools. Teach the AI-native stack (Claude Code + Remotion + Postiz), not Canva.
 - Standalone titles: tension + payoff, no insider references. Slide 1 must stop the scroll.
@@ -30,7 +38,7 @@ Write into a generator script `remotion/gen_weekN.py` (theme `green`, handle `@t
 
 ## 5. Schedule (postiz CLI — the MCP is unreliable)
 `set -a && source .env && set +a` first (loads POSTIZ_API_KEY). `postiz upload <file>` per asset returns a hosted URL. Then one `postiz posts:create -c "<caption>" -m "<comma-sep urls>" -i <integrationId> -s "<ISO8601 UTC>" -t schedule --settings '<json>'` PER PLATFORM. Daily slot: 7pm ET = 23:00 UTC.
-- IG `cmpisrqck03e2qm0yc8qzt72e` settings `{"post_type":"post"}`
+- IG `cmpisrqck03e2qm0yc8qzt72e` settings `{"post_type":"post"}` — **assert the carousel has 10 images or fewer before scheduling; IG rejects more than 10 and the post errors silently.**
 - TikTok `cmpiuhmut03mcqm0ykb99rjow` settings `{"privacy_level":"PUBLIC_TO_EVERYONE","duet":false,"stitch":false,"comment":true,"autoAddMusic":"yes","brand_content_toggle":false,"brand_organic_toggle":false,"content_posting_method":"DIRECT_POST","title":"<=90 chars"}`
 - YouTube (reels only) `cmoyuys5108jxl70yk63ihmco` settings `{"title":"<=100>","type":"public","selfDeclaredMadeForKids":"no"}`
 Each post: keyword-first caption + 3-5 relevant hashtags + save/comment CTA. Mirror `remotion/schedule_week2.py` (copy it to `schedule_weekN.py`, edit content + dates).
