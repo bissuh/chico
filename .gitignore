@@ -1,8 +1,6 @@
 memory/
 inbox/
 outbox/*
-!outbox/scripts/
-!outbox/scripts/**
 !outbox/README.md
 sessions/
 logs/
@@ -13,3 +11,11 @@ USER.md
 .env.*
 !.env.example
 .claude/settings.local.json
+
+# private: tactics, research, local-path notes, channel automation code
+# (folders stay on GitHub as signposts with a README; the working files do not)
+TOOLS.md
+playbooks/*
+!playbooks/README.md
+knowledge-base/*
+!knowledge-base/README.md

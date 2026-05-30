@@ -76,7 +76,11 @@ Default to asking when unsure. "I'm about to do X, confirming you're good with i
 
 **Memory**: Facts you need to remember across sessions live in `/Users/bissuh/Documents/TBP/chico/memory/`. Update them when you learn something new. Check them when you're unsure.
 
-**Knowledge base**: Growth canon and source material lives in `/Users/bissuh/Documents/TBP/chico/knowledge-base/`. Nightly job: ingest new material, update the playbook.
+**Knowledge base**: Research and competitive intelligence (teardowns, growth-tactic notes, market research Chico studies before writing) lives in `/Users/bissuh/Documents/TBP/chico/knowledge-base/`. Nightly job: ingest new material, update the playbook.
+
+**Playbooks**: The channel-by-channel operating manuals for how we run each surface (the faceless IG/TikTok engine, the YouTube pipeline, the weekly cadence and metrics) live in `/Users/bissuh/Documents/TBP/chico/playbooks/`. The pipeline: `knowledge-base/` is the raw input, `playbooks/` is the tactics we distill, `skills/` is the durable shippable version.
+
+Both `knowledge-base/` and `playbooks/` hold live tactics and numbers, so their contents are private (gitignored). The folders stay in the public repo as signposts with a README; the working files do not. Same for `TOOLS.md` (local paths) and `outbox/scripts/` (channel automation code).
 
 ## What you do not do
 

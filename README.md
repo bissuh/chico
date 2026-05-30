@@ -25,7 +25,7 @@ Every skill is a self-contained workflow built and tested on TBP before it ships
 - **`youtube-api`** — read a YouTube channel's state and research competitors via the YouTube Data API.
 - **`consolidate-memory`** — roll session logs into durable daily memory and propose new rules.
 
-The build tooling behind our own faceless launch is here too: the Remotion slide + reel renderer in `remotion/`, the operating playbook in `playbooks/faceless-gallery-engine.md`, and the run-it-yourself command in `.claude/commands/produce-week.md`.
+The build tooling behind our own faceless launch is here too: the Remotion slide + reel renderer in `remotion/` and the run-it-yourself command in `.claude/commands/produce-week.md`. Our channel playbooks live in `playbooks/` and our research in `knowledge-base/`, both kept private (see each folder's README for what it holds).
 
 Hard rules + how skills get added: `skills/README.md`. New skills land when a workflow has shipped cleanly at least twice, or when it's infrastructure that unlocks others.
 
@@ -40,7 +40,7 @@ chico/
   backlog.md             Build / create / automate / experiment queue.
   HEARTBEAT.md           How the scheduled heartbeat works.
   SUBAGENT-POLICY.md     Rules for spawning subagents.
-  TOOLS.md               Tool inventory and usage conventions.
+  TOOLS.md               Tool inventory + local paths (private, gitignored).
   README.md              This file.
   .env.example           Template for local secrets. Copy to .env (gitignored).
   memory/                Persistent memory across sessions (gitignored)
@@ -49,9 +49,8 @@ chico/
     division-of-labor.md Who owns what
     permissions.md       Green / Yellow / Red tier system
     playbook.md          Growth playbook (living doc)
-  knowledge-base/        Sources Chico studies (teardowns, tactics)
-    README.md            How to use it, priority sources
-    matt-mcgarry/        Newsletter growth frameworks (MAGIC, WEAC, ADAPT, ...)
+  knowledge-base/        Research + competitive intelligence (contents private)
+    README.md            What this folder is for
   skills/                Repeatable workflows Chico can invoke
     README.md            Hard rules, starter queue, what's built
     ghostshelf/          Build + run a faceless page that sells a digital product
@@ -62,9 +61,8 @@ chico/
     beehiiv-api/         Read-only access to a beehiiv publication
     youtube-api/         Read-only access to YouTube Data API v3
     consolidate-memory/  Nightly memory compression + rule candidates
-  playbooks/             Replicable growth playbooks
-    youtube-shorts-cta-machine.md   Faceless YouTube Shorts growth pipeline
-    faceless-gallery-engine.md      TBP's no-face IG/TikTok content engine
+  playbooks/             Channel growth playbooks (contents private)
+    README.md            What this folder is for
   remotion/              Slide + reel renderer (React/Remotion) for the gallery engine
   .claude/commands/      Slash commands, incl. produce-week (run the weekly content machine)
   scripts/               Shell wrappers called by skills or schedulers
@@ -82,7 +80,7 @@ chico/
   logs/                  Runtime logs (gitignored)
 ```
 
-**What's private** (gitignored): `memory/`, `inbox/`, `outbox/`, `sessions/`, `logs/`, `USER.md`, `.env`, `.env.*` (except `.env.example`). These hold work logs, drafts in progress, secrets, and personal notes. If you're forking, the README files inside each of these directories explain what's expected to live there.
+**What's private** (gitignored): `memory/`, `inbox/`, `outbox/`, `sessions/`, `logs/`, `USER.md`, `TOOLS.md`, `.env`, `.env.*` (except `.env.example`), and the contents of `playbooks/` and `knowledge-base/` (the folders stay as signposts, their working files don't). These hold work logs, drafts in progress, secrets, local paths, personal notes, and our live tactics + research. If you're forking, the README files inside each directory explain what's expected to live there.
 
 ## Getting started (for Chico, at the start of a session)
 
@@ -123,6 +121,4 @@ chico/
 
 ## Related
 
-- TBP Writing Manual: `/Users/bissuh/Documents/TBP/TBP-WRITING-MANUAL.md`
-- Newsletter format guide: `/Users/bissuh/Documents/TBP/newsletter-format-guide.md`
-- Existing TBP content: `/Users/bissuh/Documents/TBP/Articles/`
+- The TBP Writing Manual, newsletter format guide, and existing article archive live in the private TBP workspace, outside this repo.
