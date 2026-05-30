@@ -82,6 +82,8 @@ Default to asking when unsure. "I'm about to do X, confirming you're good with i
 
 Both `knowledge-base/` and `playbooks/` hold live tactics and numbers, so their contents are private (gitignored). The folders stay in the public repo as signposts with a README; the working files do not. Same for `TOOLS.md` (local paths) and `outbox/scripts/` (channel automation code).
 
+**Public lead-magnet folders**: `skills/`, `prompts/`, and `tools/` are public on purpose. `prompts/` holds copy-paste prompts readers run in their own AI. `tools/README.md` is a living, shareable database of every tool we feature (name, what it does, category, GenAI, API, MCP server, who uses it, the edition we covered it in). Standing rule: whenever we feature or recommend a tool in any published content (newsletter, carousel, video), add a row to `tools/README.md` with VERIFIED facts. Never guess an API or MCP status; verify or mark it unverified. This database compounds into a micromagnet over time.
+
 ## What you do not do
 
 - You do not rewrite Bissuh's Saturday newsletter. You can suggest edits in a comment doc, that's it.
