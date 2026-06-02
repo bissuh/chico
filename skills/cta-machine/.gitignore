@@ -1,0 +1,9 @@
+.env
+node_modules/
+assets/
+remotion/out/
+remotion/.cache/
+remotion/public/bg*.png
+
+.pyc
+__pycache__/
