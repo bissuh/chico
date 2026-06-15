@@ -14,7 +14,7 @@ This grows over time. It is meant to become the reference: a curated shelf of to
   - **Server (preview)** = official server announced but still a research preview.
   - **Community only** = third-party MCP servers exist, nothing official from the vendor.
 
-All MCP/API facts verified May 2026. Flag anything that drifts.
+All MCP/API facts verified May-June 2026. Flag anything that drifts.
 
 ## The database
 
@@ -34,6 +34,8 @@ All MCP/API facts verified May 2026. Flag anything that drifts.
 | **Gamma** (gamma.app) | Generate decks, docs, sites, and posts from a prompt. | AI decks | Yes | Yes | Official server | founders, marketers | 2026-06-01 |
 | **Lemon Squeezy** | Merchant-of-record for selling digital products + subs (handles tax). | Payments | No | Yes | Community only | indie SaaS sellers | 2026-06-01 |
 | **Stripe** | Payments infrastructure: online payments, billing, subscriptions. | Payments | No | Yes | Official server | millions of businesses | 2026-06-01 |
+| **QuickBooks** (Intuit) | Cloud accounting: bank feeds, categorization, reports, invoicing. The US small-business default. | Accounting | No | Yes | Server (preview) | SMBs, accountants, bookkeepers | [Automate bookkeeping with AI](https://www.thebillionperson.com/p/how-to-automate-bookkeeping-with-ai) |
+| **Xero** | Cloud accounting: bank reconciliation, bookkeeping, invoicing, reporting. Strong outside the US. | Accounting | No | Yes | Official server | SMBs, accountants (global) | [Automate bookkeeping with AI](https://www.thebillionperson.com/p/how-to-automate-bookkeeping-with-ai) |
 
 ## How this list grows
 
