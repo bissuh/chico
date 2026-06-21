@@ -123,6 +123,14 @@ Everything queued up. Updated as we add items.
 - Build notes: confession hook + reframe via story-craft; verified numbers only (top 1% = 90% of Spotify streams, Thiel 2,200x, Fed wealth split); TBP barbell as the worked example; Doré + teal hero; diagrams represent not restate (Remotion); micromagnet-craft EXTRACT pass for the opt-in; anti-ai-linguo final pass.
 - Distinctive: turns a viral trading-bro essay into the TBP thesis stated in one line.
 
+### B-005 First-party data schema + Apollo enrichment (the Morning Brew model)
+- Priority: P1 for the data-capture fields (do now); P2 for enrichment + ad-sales (scale-stage)
+- Status: queued
+- Why: Morning Brew's B2B engine is first-party data (job title, industry, company, engagement), then segment, then sell advertisers premium access at $50 to $150+ CPM vs ~$15 broad consumer. The data must be captured from day one or the asset never exists. Source: Austin Rief's list + therebooting.com/p/morning-brews-b2b-strategy.
+- Now (P1): make the signup survey (C-002 / B-002) collect job title, industry/vertical, company size, and a "what are you building" field. Low friction, compounds forever.
+- Later (P2): enrich subscriber profiles with Apollo (Chico has Apollo MCP access) once the list is large and engaged enough to sell segmented sponsorships. Pair with full-funnel sponsor offers, not raw CPM slots.
+- Guardrail: do not build the ad machine before there is an engaged list worth segmenting. Capture data now, monetize later.
+
 ### B-004 — LinkedIn auto-post machine (claude-in-chrome + launchd)
 - Priority: P0
 - Status: queued (blocks C-010 going autonomous)
