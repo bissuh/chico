@@ -1,0 +1,9 @@
+[
+  {"layout":"cover","kicker":"Built With AI","title":"$15K a month. Built in 12 hours.","subtitle":"He can't really code. Here's exactly what he did.","slideNo":1,"slideTotal":7},
+  {"layout":"statement","kicker":"The app","title":"It does one boring thing.","subtitle":"You talk, it listens, and AI turns your rambling into clean writing. He called it AudioPen.","slideNo":2,"slideTotal":7},
+  {"layout":"detail","kicker":"The build","title":"12 hours. No code.","body":"He built it in a half-day hackathon on Bubble, a no-code tool, wired to OpenAI for the smart part. Running cost: about $30 a month.","tipLabel":"What it took","tip":"No degree, no team, no funding. A weekend project with a payment button.","slideNo":3,"slideTotal":7},
+  {"layout":"detail","kicker":"The result","title":"It worked on day one.","body":"100 paying customers in the first 48 hours. $73,000 in two months. Zero spent on ads.","tipLabel":"The real reason","tip":"He launched to an audience he had built in public on X for months. Launch day was a warm crowd, not silence.","slideNo":4,"slideTotal":7},
+  {"layout":"statement","kicker":"The lesson","title":"The AI was the cheap part.","subtitle":"The model is a commodity. What made the money: a problem he understood and an audience that trusted him. Both were free.","slideNo":5,"slideTotal":7},
+  {"layout":"detail","kicker":"Copy the shape","title":"Four moves, in order.","body":"1. Find a boring task people pay to do badly. 2. Start posting in public today. 3. Wrap it in a weekend with no-code plus AI. 4. Charge before it's finished.","slideNo":6,"slideTotal":7},
+  {"layout":"statement","kicker":"Your turn","title":"What's your AudioPen?","subtitle":"The most boring task at your job is probably the one worth wrapping. Save this, then go look.","footnote":"Save + follow @thebillionperson","slideNo":7,"slideTotal":7}
+]

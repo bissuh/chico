@@ -4,10 +4,64 @@ import {PreCtaGoogle, PRE_CTA_DURATION} from './PreCtaGoogle';
 import {CarouselSlide} from './CarouselSlide';
 import {CleanSlide} from './CleanSlide';
 import {GreenReel, reelDuration} from './GreenReel';
+import {TriangleScorecard} from './TriangleScorecard';
+import {MoatsDiagram} from './MoatsDiagram';
+import {BackOfficeMachine} from './BackOfficeMachine';
+import {WrapperDiagram} from './WrapperDiagram';
+import {ProofStrip} from './ProofStrip';
+import {ValidationChart} from './ValidationChart';
 
 export const RemotionRoot: React.FC = () => {
   return (
     <>
+      <Composition
+        id="TriangleScorecard"
+        component={TriangleScorecard}
+        durationInFrames={1}
+        fps={30}
+        width={1920}
+        height={1080}
+      />
+      <Composition
+        id="MoatsDiagram"
+        component={MoatsDiagram}
+        durationInFrames={1}
+        fps={30}
+        width={1920}
+        height={1080}
+      />
+      <Composition
+        id="BackOfficeMachine"
+        component={BackOfficeMachine}
+        durationInFrames={1}
+        fps={30}
+        width={1920}
+        height={1080}
+      />
+      <Composition
+        id="WrapperDiagram"
+        component={WrapperDiagram}
+        durationInFrames={1}
+        fps={30}
+        width={1920}
+        height={1080}
+      />
+      <Composition
+        id="ProofStrip"
+        component={ProofStrip}
+        durationInFrames={1}
+        fps={30}
+        width={1920}
+        height={1080}
+      />
+      <Composition
+        id="ValidationChart"
+        component={ValidationChart}
+        durationInFrames={1}
+        fps={30}
+        width={1920}
+        height={1080}
+      />
       <Composition
         id="CleanSlide"
         component={CleanSlide}

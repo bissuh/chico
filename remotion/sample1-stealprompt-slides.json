@@ -1,0 +1,78 @@
+[
+  {
+    "layout": "cover",
+    "kicker": "Steal This Prompt",
+    "title": "1 idea. 7 posts.",
+    "subtitle": "One prompt turns a single thought into a week of content.",
+    "slideNo": 1,
+    "slideTotal": 9
+  },
+  {
+    "layout": "statement",
+    "kicker": "The problem",
+    "title": "You rewrite the same idea five times.",
+    "subtitle": "Blog, newsletter, Reel, thread, caption. Same thought, five times the work. That is why most people post twice and quit.",
+    "slideNo": 2,
+    "slideTotal": 9
+  },
+  {
+    "layout": "statement",
+    "kicker": "The fix",
+    "title": "Write it once. Let AI spin the formats.",
+    "subtitle": "Hand it your raw idea and your platforms. Get back a week of posts, each one shaped for where it lives.",
+    "slideNo": 3,
+    "slideTotal": 9
+  },
+  {
+    "layout": "prompt",
+    "kicker": "Steal this",
+    "title": "The repurposing prompt",
+    "promptLabel": "Paste into Claude or ChatGPT",
+    "prompt": "You are my content repurposing engine. Here is one raw idea: [PASTE]. Turn it into 7 posts: (1) a LinkedIn post, (2) a 6-tweet X thread, (3) a 5-slide Instagram carousel, (4) a 30-second Reel script, (5) a YouTube Shorts script, (6) a 300-word newsletter section, (7) one scroll-stopping hook line to reuse anywhere. Match my voice: [2 lines on how you sound]. No hashtags, no emoji, no corporate filler. Each one has to work on its own.",
+    "slideNo": 4,
+    "slideTotal": 9
+  },
+  {
+    "layout": "detail",
+    "kicker": "How to use it",
+    "title": "Three inputs, that is it.",
+    "body": "Drop in your raw idea (a messy paragraph is fine), the platforms you actually post on, and two lines describing your voice. The more specific the voice, the less it reads like AI.",
+    "tipLabel": "Pro move",
+    "tip": "Paste a past post you are proud of and add: match this voice exactly.",
+    "slideNo": 5,
+    "slideTotal": 9
+  },
+  {
+    "layout": "detail",
+    "kicker": "What comes back",
+    "title": "A week of content in one pass.",
+    "body": "Seven posts from one idea: a LinkedIn post, an X thread, an IG carousel, a Reel script, a Shorts script, a newsletter section, and a reusable hook. Ten minutes of edits, schedule, done.",
+    "slideNo": 6,
+    "slideTotal": 9
+  },
+  {
+    "layout": "detail",
+    "kicker": "The catch",
+    "title": "Do not post it raw.",
+    "body": "AI gives you the draft, not the final. Cut the throat-clearing, fix one line so it sounds like you, and delete anything generic. Five minutes of editing is the gap between AI slop and this person gets it.",
+    "slideNo": 7,
+    "slideTotal": 9
+  },
+  {
+    "layout": "statement",
+    "kicker": "Why it works",
+    "title": "You don't need more ideas.",
+    "subtitle": "You need your good ones in more places. This is how one person shows up everywhere without burning out.",
+    "slideNo": 8,
+    "slideTotal": 9
+  },
+  {
+    "layout": "statement",
+    "kicker": "Your turn",
+    "title": "Save it. Run it on your last idea.",
+    "subtitle": "Paste the prompt, drop in one idea you already had, and watch a week of content fall out. Then follow for next week's.",
+    "footnote": "Save + follow @thebillionperson",
+    "slideNo": 9,
+    "slideTotal": 9
+  }
+]

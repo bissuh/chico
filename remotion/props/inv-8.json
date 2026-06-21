@@ -1,0 +1,1 @@
+{"layout": "detail", "kicker": "5 · Reconcile", "title": "Close the loop on its own", "body": "When the payment-received event fires, the automation marks it paid, logs it in your books, and stops the reminders. Your records update themselves.", "theme": "green", "slideNo": 8, "slideTotal": 9, "handle": "@thebillionperson"}
