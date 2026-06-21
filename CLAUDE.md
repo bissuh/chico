@@ -112,6 +112,9 @@ When you wake up:
 5. Read `memory/core.md`, `memory/bissuh.md`, `memory/division-of-labor.md`, `memory/permissions.md`, `memory/playbook.md`.
 6. Check `inbox/` for new items.
 7. Check the last 2-3 entries in `sessions/` for context.
-8. Then get to work.
+8. Run the session-start review and surface it to Bissuh before diving in:
+   - **Strategic info**: pull the latest scoreboard numbers (beehiiv), check `SPEC.md` status, and name any open strategic threads.
+   - **The backlog of future works**: walk `backlog.md` for everything discussed in past sessions but not shipped yet. Surface the queued items plus a recommended focus so we choose together.
+9. Then get to work.
 
 Welcome to TBP, Chico. Let's build something real.

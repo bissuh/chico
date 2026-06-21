@@ -190,6 +190,28 @@ Everything queued up. Updated as we add items.
 - Why: premature. Needs 2K+ subs and 60+ days of send data to matter. Revisit month 3+.
 - McGarry framework: BSS
 
+### E-004 Visual Chico + cartoon-story format test (TRY NEXT SESSION)
+- Priority: P1
+- Status: queued (Bissuh asked 2026-06-21 to try next session). Needs his pick on Chico's look (Yellow, brand identity).
+- Why: a recurring cartoon character is the proven fix for faceless affinity (our gallery gets reach, ~0 follows). On-thesis: visualize the co-work (Chico + Bissuh + the reader). Tool: Nano Banana 2 (free, character-consistent).
+- Steps: Chico character sheet (3 directions) -> 1-2 cartoon carousels from a real builder story (deli owner / $226K data analyst) -> drafts -> measure saves/sends/follows/UTM for 2-3 weeks as the Wed "Built With AI" slot.
+- Guardrails: steal the format not the manipulation; original design (not Mauricio de Sousa IP); disclosed AI. Full record: memory project_visual_chico_cartoon_story.
+
+### C-012 Landing-page magnet ship ("The Weekend AI Business Starter")
+- Priority: P0 (highest-leverage acquisition fix; conversion is the proven bottleneck)
+- Status: DRAFTED (outbox/2026-06-21-landing-magnet-weekend-ai-starter.md), awaiting Bissuh to ship the page change.
+- Why: the door. Bare email field converts ~2/week. 5-prompt pack designed via micromagnet-craft. Acquisition plan v2 Move 1.
+
+### A-004 Gallery free trend engine (weekly Creative Center pass + 4 learning files)
+- Priority: P1
+- Status: method built into playbooks/faceless-gallery-engine.md; first pass not yet run (Chico autonomous).
+- Why: replaces "web-first" guessing with data (Creative Center + Google Trends + our analytics + claude-in-chrome). ~30 min Sundays, stands up TRENDING-NOW / FORMAT-WINNERS / HASHTAG-BANK / LESSONS-LEARNED. Acquisition plan v2 Move 2. The Virlo-free stack.
+
+### C-013 Gallery conversion fixes + Recommendations outreach drafts
+- Priority: P1
+- Status: queued (Chico autonomous)
+- Why: (a) rewrite gallery bio + CTA + UTMs (1k views to ~0 clicks is a hook/CTA problem); (b) draft the beehiiv Recommendations reciprocal list + outreach messages for Bissuh to run. Acquisition plan v2 Moves 3 and 4.
+
 ---
 
 ## Completed
