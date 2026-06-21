@@ -115,6 +115,14 @@ Everything queued up. Updated as we add items.
 - Risk: LinkedIn's Real Names policy. Persona accounts exist (Sr. Raposo proves) but flagging risk is real. Tolerable given upside.
 - TBP Page deferred to P2 — only set up if/when we want LinkedIn Ads or a careers slot.
 
+### C-011 Newsletter edition: "The price of a lottery ticket dropped to zero"
+- Priority: P1
+- Status: draft (Yellow, needs Bissuh sign-off before ship)
+- Why: the power-law reframe is a genuine "oh shit" angle. The power law beat regular people only because each ticket (post, video, product) used to be expensive. AI drops the cost per ticket toward zero, so the distribution now works FOR the little guy. The deli owner is the proof, not the exception.
+- Source: `knowledge-base/power-law-teardown.md` + `skills/power-law/SKILL.md` (source-checked numbers, soft ones flagged)
+- Build notes: confession hook + reframe via story-craft; verified numbers only (top 1% = 90% of Spotify streams, Thiel 2,200x, Fed wealth split); TBP barbell as the worked example; Doré + teal hero; diagrams represent not restate (Remotion); micromagnet-craft EXTRACT pass for the opt-in; anti-ai-linguo final pass.
+- Distinctive: turns a viral trading-bro essay into the TBP thesis stated in one line.
+
 ### B-004 — LinkedIn auto-post machine (claude-in-chrome + launchd)
 - Priority: P0
 - Status: queued (blocks C-010 going autonomous)
