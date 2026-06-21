@@ -1,0 +1,15 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "echo \"=== SESSION-START REVIEW (CLAUDE.md step 8) ===\"; echo \"1) Pull beehiiv scoreboard: active subs, 4wk new/churn/net, click + reply rate.\"; echo \"2) Check SPEC.md status; name open strategic threads (acquisition v2, Forja wedge, visual Chico).\"; echo \"3) Walk backlog.md open items; surface what is queued + a recommended focus to Bissuh FIRST.\"; echo \"Open the session with a short here-is-where-we-are-and-what-is-queued brief.\"",
+            "statusMessage": "Session-start review"
+          }
+        ]
+      }
+    ]
+  }
+}
