@@ -23,8 +23,10 @@ All MCP/API facts verified May-June 2026. Flag anything that drifts.
 | **Claude** (Anthropic) | LLM for chat, coding, agents. The thinking + writing layer. Reads least like AI. | LLM | Yes | Yes | Client (host) | broad dev + enterprise | [Claude wrote his blog](https://www.thebillionperson.com/p/claude-wrote-his-blog-28-days-later-3-paying-clients) |
 | **ChatGPT / OpenAI** | LLM chat + developer API (Responses, Agents SDK). | LLM | Yes | Yes | Client (host) | broad | 2026-06-01 |
 | **Cursor** (Anysphere) | AI-native code editor for when you want to see the code. | AI coding | Yes | Limited | Client | pro engineers, startups | 2026-06-01 |
-| **Lovable** | Describe an app, get a real full-stack build. Non-coder pick. ~$200M ARR (2025). | Prompt-to-app | Yes | Limited | Server (preview) | solo / non-technical founders | 2026-06-01 |
+| **Lovable** | Describe an app, get a real full-stack build. Non-coder pick. ~$200M ARR (2025). | Prompt-to-app | Yes | Limited | Server (preview) | solo / non-technical founders | 2026-06-01, 2026-06-22 |
 | **Bolt** (bolt.new) | Browser prompt-to-app, instant deploy. Fast same-day MVP. | Prompt-to-app | Yes | No | Client | solo builders, hackathons | 2026-06-01 |
+| **Bubble** (bubble.io) | Visual no-code app builder. AI drafts an MVP from a prompt (login, DB, search) in minutes, then you customize. Full-build non-coder pick. | Prompt-to-app | Yes | Yes | Community only | solo / non-technical founders | 2026-06-22 |
+| **Carrd** (carrd.co) | One-page sites in minutes. The fastest way to pre-sell and validate before you build. | Landing pages | No | Limited | None | indie makers, validators | 2026-06-22 |
 | **Replit** (Agent) | Cloud IDE + agent that builds, runs, and deploys from a prompt. | Prompt-to-app | Yes | Limited | Client | education, solo devs | core stack |
 | **n8n** | Open-source automation with native AI agent nodes. Self-host = free. | Automation | No | Yes | Official server | technical / ops teams | 2026-06-01 |
 | **Make** (make.com) | Visual no-code automation, friendlier UI, bills per operation. | Automation | No | Yes | Official server | SMBs, marketers, ops | 2026-06-01 |
@@ -36,6 +38,8 @@ All MCP/API facts verified May-June 2026. Flag anything that drifts.
 | **Stripe** | Payments infrastructure: online payments, billing, subscriptions. | Payments | No | Yes | Official server | millions of businesses | 2026-06-01 |
 | **QuickBooks** (Intuit) | Cloud accounting: bank feeds, categorization, reports, invoicing. The US small-business default. | Accounting | No | Yes | Server (preview) | SMBs, accountants, bookkeepers | [Automate bookkeeping with AI](https://www.thebillionperson.com/p/how-to-automate-bookkeeping-with-ai) |
 | **Xero** | Cloud accounting: bank reconciliation, bookkeeping, invoicing, reporting. Strong outside the US. | Accounting | No | Yes | Official server | SMBs, accountants (global) | [Automate bookkeeping with AI](https://www.thebillionperson.com/p/how-to-automate-bookkeeping-with-ai) |
+| **echodesigns** (echodesigns.space) | Device mockups + App Store / Play Store screenshots: live preview, customization, high-res export. Make an app listing look pro without a designer. | App screenshots | No | No | None | indie app makers, mobile devs | added 2026-06-21 |
+| **MotionSites** (motionsites.ai) | Library of premium hero-section and animated landing-page prompts. Copy one, paste into an AI builder (Lovable, Cursor) to render the section. $99 lifetime. | Landing pages | No | No | None | indie builders, non-designers | added 2026-06-21 |
 
 ## How this list grows
 
