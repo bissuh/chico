@@ -31,7 +31,7 @@ For each element, name what it did and whether it is transferable or a one-off.
 
 1. **The hook (first 3 seconds).** What stops the scroll? A concrete number, a pattern interrupt, a bold or contrarian claim, a self-deprecating confession, a curiosity gap. Quote the actual opening line.
 2. **The open loop.** What unfinished business makes you keep reading or watching, and when does it pay off?
-3. **The emotional driver.** What feeling does it trigger? Status anxiety, aspiration, relief or validation ("I'm not crazy"), outrage, awe, FOMO. Virality rides emotion. Name the specific one.
+3. **The emotional driver.** What feeling does it trigger? Name it precisely with the `turma:emotion-craft` palette: identity validation, status signaling, tribal belonging, productive discomfort, curiosity gap, aspiration (plus raw ones like outrage, awe, FOMO). Virality rides emotion. Name the primary and any secondary.
 4. **The proof.** The specificity that earns belief: real numbers, named people or companies, concrete examples, a visible calculation. Vague claims do not travel.
 5. **The reframe (the shareable atom).** The one counter-intuitive line that reorganizes how the reader sees something. Usually the single most screenshotted, most quoted unit. Find it and quote it.
 6. **Format and friction.** Length, structure, scannability, native-to-the-platform shape, visuals. Why is it easy to consume and easy to pass on?
@@ -99,6 +99,7 @@ Every teardown ends with a tagged entry for turma's write-back (`turma/templates
 
 - `turma:power-law`: DOUBLE-DOWN mode calls this on your own hit to name what carried it.
 - `turma:story-craft`: builds the new piece once the teardown hands you the pattern.
+- `turma:emotion-craft`: the taxonomy for the emotional driver you name in the anatomy.
 - `turma:optimize-post` and `turma:story-craft` REVIEW: for your own unpublished draft (a different job).
 - `turma/templates/learnings.template.md`: where every teardown's pattern lands.
 - The project's `brand.md`: voice and conversion for the "steal this" step.

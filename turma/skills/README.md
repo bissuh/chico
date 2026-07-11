@@ -8,11 +8,13 @@ The specialists. Each is a `SKILL.md` (frameworks + methods) invoked as `turma:<
 - `micromagnet-craft`: 2-minute opt-in tools
 - `anti-ai-linguo`: the final voice pass, strips AI tells and dashes (runs last)
 - `power-law`: treat content and growth as a power law, run the barbell
+- `emotion-craft`: engineer the emotional response with the 6 viral triggers, honestly
 
 **Tasks (the jobs you ask for):**
 - `carousels`: generate deep social carousels from a topic or a source piece
 - `optimize-post`: score and rewrite a post/page/email for quality and engagement
 - `viral-teardown`: reverse-engineer why a piece went viral and extract the transferable pattern
+- `social-posts`: write channel-native LinkedIn / X / IG posts in the project's voice
 - `ghostshelf`: build and run a faceless page that sells a digital product
 - `cta-machine`: an AI-assisted YouTube Shorts growth machine
 

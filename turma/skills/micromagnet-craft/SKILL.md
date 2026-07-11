@@ -146,6 +146,17 @@ Three rules:
 - The CTA reuses the title's language. If the magnet is "the 5-minute newsletter edit," the CTA says "send 5-minute" not "subscribe."
 - No AI tells, no dashes, no "nobody [verb]" pseudo-contrarian. Run the same banned-phrase filter as every other public draft (`brand.md` house style, then `turma:anti-ai-linguo`).
 
+## Amplify the handraiser (from emotion-craft)
+
+The Leo Burnett skeleton is the floor. To make the post actually pull, layer the triggers from `turma:emotion-craft`, all of them true or none of them used:
+
+- **Investment signaling.** Prove the effort. "The 43-page playbook I built over 18 months with 32 companies" beats "my free guide," because visible effort triggers reciprocity. Only if the effort is real.
+- **Real social proof.** "I've sent this to 800+ founders this month" creates demand, but only if the number is real.
+- **Genuine exclusivity.** "I normally only share this with clients" works if it is true, never as a manufactured line.
+- **The emotional stack for the post:** curiosity gap (hook), then identity validation (name the reader's struggle and shift the blame off them), then tribal belonging (the sophisticated group vs the naive one, honestly), then investment signaling (the effort), then aspiration (an achievable outcome), then the low-friction ask ("comment WORD").
+
+Hard line, and it is the same as this skill's existing rule: never invent proof, a number, scarcity, or urgency. Fake FOMO is the fastest way to burn trust. Real proof amplifies, fake proof detonates.
+
 ## Couple the magnet to the content (the EXTRACT play)
 
 This is where most content leaves conversions on the table. You write a great piece, then staple a generic "subscribe" on the bottom.
@@ -279,4 +290,5 @@ A micromagnet that earns its keep:
 - `turma:story-craft`. Run narrative content through here BEFORE micromagnet-craft. Story opens the loop; the magnet rides it.
 - `turma:name-craft`. Name the magnet itself. Magnet titles are product names.
 - `turma:anti-ai-linguo`. The final voice pass on the magnet and the handraiser post.
+- `turma:emotion-craft`. The 6 emotional triggers the handraiser and lead-magnet posts run on.
 - `turma:power-law`. Which magnets to reuse (the converters) and which to retire.
