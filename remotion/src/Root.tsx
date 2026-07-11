@@ -94,7 +94,7 @@ export const RemotionRoot: React.FC = () => {
             'Audience is what you build after the first sale, not before.',
             'Stop posting into the void. Solve one person’s problem for money.',
           ],
-          cta: 'Free playbook in bio',
+          cta: '5 free prompts in bio',
           handle: '@thebillionperson',
         }}
         calculateMetadata={({props}) => ({
@@ -127,8 +127,8 @@ export const RemotionRoot: React.FC = () => {
         defaultProps={{
           headline1: 'STOP SCROLLING.',
           headline2: 'START BUILDING.',
-          subhead: 'Start a business with AI. Join 4,000 people.',
-          url: 'thebillionperson.com',
+          subhead: 'Get the 5 free prompts. Link in bio.',
+          url: 'join.thebillionperson.com',
           bg1: 'bg1.png',
           bg2: 'bg2.png',
           bg3: 'bg3.png',

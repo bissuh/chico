@@ -1,53 +1,7 @@
-# Skills
+# skills (Chico's own operator skills)
 
-Skills are repeatable workflows Chico can invoke by name. Each skill is a folder with a `SKILL.md` file describing when to use it and how.
+This folder holds Chico's own operator skills. The growth craft (story-craft, name-craft, power-law, and the rest) lives in the `turma` plugin now, not here.
 
-Skills are earned, not assumed. We add a skill when a workflow has shipped cleanly at least twice and is ready to be systematized, OR when the skill is plumbing that unlocks other skills (like API access).
+- `consolidate-memory`: nightly job (via launchd) that rolls session logs into dated memory and proposes rule candidates.
 
-## Hard rules for every skill
-
-These apply to every skill, however it's invoked (scheduled by launchd, fired by a script, or run manually). Keeps automation from quietly rewriting the operating canon.
-
-1. **No auto-editing of operating canon.** A skill, however invoked, may not auto-edit `CLAUDE.md`, `SPEC.md`, `SOUL.md`, `IDENTITY.md`, `memory/permissions.md`, `memory/division-of-labor.md`, `memory/core.md`, or `memory/playbook.md`. All proposed changes go via `inbox/` as rule candidates for Bissuh's review. Interactive Chico and Bissuh sessions are governed by the normal Yellow/Red tier system; this rule is about skills, not interactive work.
-
-Adopted 2026-04-19 from the `consolidate-memory` v0.1 per-skill constraint. Source: `inbox/rule-candidates-2026-04-19.md` candidate 1.
-
-## Built
-
-Skills that exist and are usable today.
-
-1. **consolidate-memory** — nightly (02:00) job that compresses sessions into dated memory and proposes rule candidates. Manually invocable at end of heavy days.
-2. **beehiiv-api** — read-only access to TBP's beehiiv publication (subscribers, posts, stats, segments). Invoke when answering questions about current list state or before producing any health-of-the-business report. Write operations deliberately NOT included.
-3. **youtube-api** — read-only access to YouTube Data API v3. TBP channel state, video stats, competitor search, comment reads. Public data only (no private analytics — that needs OAuth, queued separately in backlog).
-4. **story-craft** — create, rewrite, or review any TBP narrative through the 5-line framework (Mirror, Friction, Realization, Shift, Invitation). Three modes: CREATE from raw material, REWRITE a draft, REVIEW with a per-line scorecard. Symlinked into `.claude/skills/story-craft/SKILL.md` so the Claude Code harness auto-discovers it; canonical source stays here.
-5. **name-craft** — create, evaluate, or replace a name using David Placek's Lexicon Branding method (original / processing fluent / unexpected). Three modes: CREATE (four framing questions → three divergent baskets → scored finalists with proof-of-concept), EVALUATE (3-filter scorecard on a candidate), RENAME (kill-or-keep audit + replacement). Auto-validates domain availability via `dotchk` when a domain is needed. Symlinked into `.claude/skills/name-craft/SKILL.md`.
-6. **micromagnet-craft** — create, extract, or review a micromagnet (2-minute splinter-removing tool that trades for a newsletter opt-in) using Tony Allen's MicroMagnet Playbook. Three modes: CREATE (build from a known splinter), EXTRACT (find the magnet hiding inside a draft), REVIEW (5-step scorecard). Default delivery vehicles: installable Claude skill, Doré cheatsheet PDF, prompt pack, Notion template, custom GPT. Auto-checked when drafting any TBP public content. Symlinked into `.claude/skills/micromagnet-craft/SKILL.md`.
-7. **cta-machine**: build and run an AI-assisted YouTube Shorts growth machine end to end (Remotion CTA + scrape viral hooks + stitch + Postiz schedule). Public, clonable lead magnet. Method open, TBP's own numbers stay in the newsletter teardown. The public twin of the private `playbooks/youtube-shorts-cta-machine.md` + `outbox/scripts/`. Includes its own `README.md` and `.env.example` so a follower can clone and run on their own channel.
-
-## Starter skill queue (not built yet, in order of expected build)
-
-1. **draft-x-post** — produce a TBP-voice X post from a topic, outline, or newsletter edition (likely thin wrapper around `story-craft` for X-specific format)
-2. **competitive-teardown** — analyze a newsletter or creator's content using the teardown format in `knowledge-base/README.md`
-3. **lead-magnet-outline** — turn a topic into a lead magnet outline (PDF checklist, playbook, template)
-4. **welcome-email-iterate** — propose improvements to the welcome email based on reply signal
-5. **weekly-review** — scoreboards + experiment results + next week's plan (depends on `beehiiv-api`)
-
-## Skill file structure
-
-```
-skills/
-  draft-x-post/
-    SKILL.md            (when to use, inputs, outputs, constraints)
-    examples/           (good examples, bad examples, with Bissuh's edits visible)
-    template.md         (starting scaffold, optional)
-```
-
-## When to build a new skill
-
-A workflow becomes a skill when:
-- Chico has produced it at least twice, successfully (Bissuh approved with minimal edits), OR
-- The skill is plumbing that unlocks other skills (API wrappers, data access). These exceptions should be rare and named in the justification.
-- The inputs and outputs are stable enough to document
-- The downside of a bad output is small or recoverable
-
-Until then, just do the work directly. Don't premature-systematize.
+Everything a project's growth needs is in `turma/skills/`, invoked as `turma:<skill>`.

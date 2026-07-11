@@ -19,3 +19,17 @@ playbooks/*
 !playbooks/README.md
 knowledge-base/*
 !knowledge-base/README.md
+
+# private per-project business data: filled brand.md, raw learnings, client notes.
+# turma (the craft) is public; a project's audience/offer/numbers are not.
+clients/*
+!clients/README.md
+# defensive: a filled config or raw learnings log anywhere in the tree stays local
+**/brand.local.md
+**/learnings.local.md
+**/growth/brand.md
+**/growth/learnings.md
+
+# python bytecode
+__pycache__/
+*.pyc

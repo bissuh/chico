@@ -1,124 +1,79 @@
 # Chico
 
-AI co-founder of The Billion Person.
+A portable, open-source growth specialist. The marketing, distribution, and sales brain you install into any project.
 
-## What this folder is
+## What this is
 
-Chico's operating system. Everything Chico needs to work on TBP lives here. This folder is the source of truth for Chico's identity, memory, permissions, and output.
+Two layers:
 
-This repo is **public and open source**. If you're here looking for ideas, the short version is: one human co-founder (Bissuh) plus one AI co-founder (Chico, running on Claude Code) building a newsletter business together, in the open. The point is the co-work, not the automation.
+- **turma** (`turma/`) is the craft. An open-source Claude Code plugin: growth, distribution, and sales skills (frameworks + a specialist agent + commands) that install into any project. It reads one file, `brand.md`, and adapts to that project's voice, audience, and goal. Clone it, drop it into your own Claude Code project, and you have a growth crew.
+- **Chico** is the operator. A character, named after Chico Bento (the underestimated farm kid who ends up right), who wields turma, runs the work, watches the numbers, and writes what worked back into the craft so it compounds.
 
-## What Chico can do
+The plugin is the body of knowledge. Chico is the practitioner. This repo is both: turma to use, and Chico's operating canon (`SOUL.md`, `IDENTITY.md`, `CLAUDE.md`, `SPEC.md`) if you want to see how the operator is wired.
 
-Skills are Chico's capabilities. Each one is earned — built, tested, made repeatable. The list grows as the co-work deepens.
+## Use turma in your project
 
-### Skills you can clone and use
+Development mode, no install:
+```
+claude --plugin-dir /path/to/chico/turma
+```
+Or install via the local marketplace:
+```
+/plugin marketplace add /path/to/chico
+/plugin install turma@chico-marketplace
+```
+Then either:
+- **Summon the operator:** `/turma:chico` reads your project's `brand.md` and starts working its growth in character.
+- **Call a single specialist:** `turma:story-craft`, `turma:name-craft`, `turma:power-law`, and the rest.
 
-Every skill is a self-contained workflow built and tested on TBP before it ships here. Drop a folder into your own Claude Code `skills/` directory and invoke it by name. Everything's in one place on purpose, so you can grab the whole toolkit at once.
+First step in any project: copy `turma/templates/brand.template.md` to `growth/brand.md` and fill it in. Every skill reads it.
 
-- **`ghostshelf`** — build and run a faceless (no-face) content page that sells a small digital product, end to end: pick the niche, make the product, batch the slides, wire the funnel, run the weekly loop. Honest odds baked in.
-- **`micromagnet-craft`** — design, score, or extract a micromagnet: a 2-minute tool that solves one tiny problem and trades for a newsletter opt-in.
-- **`story-craft`** — write or fix any persuasive piece with the 5-line framework (Mirror, Friction, Realization, Shift, Invitation).
-- **`name-craft`** — name a company, product, feature, or lead magnet using David Placek's Lexicon method, with domain availability checks.
-- **`anti-ai-linguo`** — voice-check a draft and strip the AI tells (long-form, short-form, and video modes).
-- **`beehiiv-api`** — read a beehiiv publication's state: subscribers, opens, clicks, top posts, segments, automations.
-- **`youtube-api`** — read a YouTube channel's state and research competitors via the YouTube Data API.
-- **`consolidate-memory`** — roll session logs into durable daily memory and propose new rules.
+## What turma ships
 
-The build tooling behind our own faceless launch is here too: the Remotion slide + reel renderer in `remotion/` and the run-it-yourself command in `.claude/commands/produce-week.md`. Our channel playbooks live in `playbooks/` and our research in `knowledge-base/`, both kept private (see each folder's README for what it holds).
+**Skills** (`turma/skills/`, invoked as `turma:<name>`):
+- `story-craft`: persuasion via the 5-line framework
+- `name-craft`: naming via Placek's Lexicon method, with domain checks
+- `micromagnet-craft`: 2-minute opt-in tools
+- `anti-ai-linguo`: the final voice pass, strips AI tells and dashes
+- `power-law`: treat content and growth as a power law, run the barbell
+- `ghostshelf`: build and run a faceless page that sells a digital product
+- `cta-machine`: an AI-assisted YouTube Shorts growth machine
+- `beehiiv-connector`, `youtube-connector`: read-only data pulls
 
-Hard rules + how skills get added: `skills/README.md`. New skills land when a workflow has shipped cleanly at least twice, or when it's infrastructure that unlocks others.
+**Operator + entry points:**
+- `agents/chico`: the portable Chico persona
+- `/turma:chico`: summon him into a project
 
 ## Folder map
 
 ```
 chico/
-  SOUL.md                The reason. Read first.
-  IDENTITY.md            Who Chico is as a character. Read second.
-  CLAUDE.md              Operating rules. Read third.
-  SPEC.md                Project blueprint + roadmap + current status.
-  backlog.md             Build / create / automate / experiment queue.
-  HEARTBEAT.md           How the scheduled heartbeat works.
-  SUBAGENT-POLICY.md     Rules for spawning subagents.
-  TOOLS.md               Tool inventory + local paths (private, gitignored).
-  README.md              This file.
-  .env.example           Template for local secrets. Copy to .env (gitignored).
-  memory/                Persistent memory across sessions (gitignored)
-    core.md              Mission, vision, three scoreboards
-    bissuh.md            Who Bissuh is, how he works, his voice
-    division-of-labor.md Who owns what
-    permissions.md       Green / Yellow / Red tier system
-    playbook.md          Growth playbook (living doc)
-  knowledge-base/        Research + competitive intelligence (contents private)
-    README.md            What this folder is for
-  skills/                Repeatable workflows Chico can invoke
-    README.md            Hard rules, starter queue, what's built
-    ghostshelf/          Build + run a faceless page that sells a digital product
-    micromagnet-craft/   Design/extract a 2-minute opt-in tool
-    story-craft/         5-line persuasion framework
-    name-craft/          Naming via Placek's Lexicon method + domain checks
-    anti-ai-linguo/      Voice-check + strip AI tells
-    beehiiv-api/         Read-only access to a beehiiv publication
-    youtube-api/         Read-only access to YouTube Data API v3
-    consolidate-memory/  Nightly memory compression + rule candidates
-  playbooks/             Channel growth playbooks (contents private)
-    README.md            What this folder is for
-  remotion/              Slide + reel renderer (React/Remotion) for the gallery engine
-  .claude/commands/      Slash commands, incl. produce-week (run the weekly content machine)
-  scripts/               Shell wrappers called by skills or schedulers
-    beehiiv.sh           beehiiv API wrapper (see skills/beehiiv-api)
-    youtube.sh           YouTube Data API wrapper (see skills/youtube-api)
-    heartbeat.sh         30-min heartbeat tick
-    consolidate-memory.sh Invokes the consolidate-memory skill
-    launchd/             macOS launchd plists for scheduled jobs
-  sessions/              Daily work logs (gitignored)
-    README.md
-  inbox/                 Bissuh drops tasks/ideas here (gitignored)
-    README.md
-  outbox/                Finished drafts waiting for review (gitignored)
-    README.md
-  logs/                  Runtime logs (gitignored)
+  SOUL.md              The reason. Chico's mission.
+  IDENTITY.md          Who Chico is (the character).
+  CLAUDE.md            How Chico operates.
+  SPEC.md              The blueprint, roadmap, and status.
+  README.md            This file.
+  turma/               THE CRAFT (the open-source plugin)
+    .claude-plugin/plugin.json
+    skills/            the growth specialists
+    agents/chico.md    the portable operator
+    commands/          entry points (/turma:chico, ...)
+    templates/         the brand.md + learnings.md contracts
+    examples/          a filled (fictional) brand.md
+  .claude-plugin/marketplace.json   makes turma installable
+  skills/              Chico's own operator skills (consolidate-memory)
+  scripts/             Chico's ops scripts (heartbeat, consolidate)
+  memory/              private: mission, permissions, roster   (gitignored)
+  clients/             private: per-project brand.md + learnings (gitignored)
+  inbox/ outbox/ sessions/   private working dirs              (gitignored)
 ```
 
-**What's private** (gitignored): `memory/`, `inbox/`, `outbox/`, `sessions/`, `logs/`, `USER.md`, `TOOLS.md`, `.env`, `.env.*` (except `.env.example`), and the contents of `playbooks/` and `knowledge-base/` (the folders stay as signposts, their working files don't). These hold work logs, drafts in progress, secrets, local paths, personal notes, and our live tactics + research. If you're forking, the README files inside each directory explain what's expected to live there.
+## Public vs private
 
-## Getting started (for Chico, at the start of a session)
+The craft is public on purpose. Business data never is. A filled `brand.md`, real `learnings.md`, API keys, and client names stay gitignored (`clients/`, `**/growth/brand.md`, `**/*.local.md`, `memory/`, `.env*`). The public canon and turma name no project. Only a generalized, sanitized technique ever crosses from a client's work back into turma.
 
-1. Read `SOUL.md` (the reason)
-2. Read `IDENTITY.md` (who you are)
-3. Read `CLAUDE.md` (the method)
-4. Read `SPEC.md` (the blueprint, roadmap, current status)
-5. Read `backlog.md` (what's queued, what's in-progress, what's blocked)
-6. Read all `memory/*.md` files
-7. Check `inbox/` for new items
-8. Check the last few `sessions/` entries for context
-9. Start a new session file for today: `sessions/YYYY-MM-DD-HH-MM-<topic>.md`
-10. Work
+## Getting started
 
-## Getting started (for Bissuh, dropping work)
+**If you're Chico, at the start of a session:** read `SOUL.md`, `IDENTITY.md`, `CLAUDE.md`, `SPEC.md`, then `memory/*`. Know which project you're growing, read its `brand.md`, then work.
 
-- Drop tasks / ideas / links into `inbox/inbox.md` (or separate files, either works)
-- Review drafts in `outbox/` — flip `status:` to `approved` when good
-- Read `sessions/` any time you want to see what Chico's been doing
-- Update `memory/*.md` directly if something has changed (division of labor, permissions, etc.)
-- Add items to `backlog.md` if you want them on the queue
-
-## Local setup (for anyone forking this repo)
-
-1. Clone the repo
-2. Copy `.env.example` to `.env` and fill in your own values
-3. `.env.example` covers the two API-backed skills currently built (`beehiiv-api` and `youtube-api`). If you don't use one of those platforms, skip that section or delete the skill.
-4. The `memory/`, `inbox/`, `outbox/`, `sessions/`, `logs/` folders are gitignored. You'll need to create them locally and drop the expected README files from the source.
-
-## Rules for this folder
-
-- Do not delete session files. They are the audit trail.
-- Do not let memory files drift. Update them when facts change.
-- Do not add skills before they're earned. See `skills/README.md`.
-- Do not let outbox drafts pile up. Ship, archive, or drop.
-- Secrets live in `.env` (gitignored). Never commit real keys. `.env.example` is the template.
-- Anything Yellow or Red per `memory/permissions.md` stays drafts-in-outbox until Bissuh approves.
-
-## Related
-
-- The TBP Writing Manual, newsletter format guide, and existing article archive live in the private TBP workspace, outside this repo.
+**If you're a builder cloning turma:** point Claude Code at `turma/` with `--plugin-dir`, drop a filled `brand.md` in your project, and run `/turma:chico`.

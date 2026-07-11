@@ -1,0 +1,13 @@
+{
+  "name": "chico-marketplace",
+  "owner": {
+    "name": "Bissuh"
+  },
+  "plugins": [
+    {
+      "name": "turma",
+      "source": "./turma",
+      "description": "Chico's crew of growth specialists. Portable marketing, distribution, and sales craft, installable into any Claude Code project."
+    }
+  ]
+}
