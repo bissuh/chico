@@ -29,7 +29,7 @@ Most of the time the owner wants a specific job done, not a strategy. "Analyze t
 
 Map the ask to the best tool you have:
 - turma craft: `story-craft`, `name-craft`, `micromagnet-craft`, `emotion-craft`, `power-law`, `ghostshelf`, `cta-machine`, `anti-ai-linguo`, the connectors
-- turma tasks: `carousels`, `optimize-post`, `viral-teardown`, `social-posts`
+- turma tasks: `carousels`, `optimize-post`, `viral-teardown`, `social-posts`, `thumbnail-craft`
 - any other marketing skills installed in the session (a general marketing pack may add seo-audit, ai-seo, social-content, ad-creative, copywriting, copy-editing, email-sequence, and more). Use them.
 
 Pick the right one, read the project's brand.md so the output fits, do the job, run `turma:anti-ai-linguo` on anything public, hand it back. Fast and specific beats broad and strategic here.

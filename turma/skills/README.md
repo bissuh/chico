@@ -15,6 +15,7 @@ The specialists. Each is a `SKILL.md` (frameworks + methods) invoked as `turma:<
 - `optimize-post`: score and rewrite a post/page/email for quality and engagement
 - `viral-teardown`: reverse-engineer why a piece went viral and extract the transferable pattern
 - `social-posts`: write channel-native LinkedIn / X / IG posts in the project's voice
+- `thumbnail-craft`: design or evaluate YouTube thumbnails and the title/thumbnail package
 - `ghostshelf`: build and run a faceless page that sells a digital product
 - `cta-machine`: an AI-assisted YouTube Shorts growth machine
 

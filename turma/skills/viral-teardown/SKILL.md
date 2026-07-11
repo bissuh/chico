@@ -100,6 +100,7 @@ Every teardown ends with a tagged entry for turma's write-back (`turma/templates
 - `turma:power-law`: DOUBLE-DOWN mode calls this on your own hit to name what carried it.
 - `turma:story-craft`: builds the new piece once the teardown hands you the pattern.
 - `turma:emotion-craft`: the taxonomy for the emotional driver you name in the anatomy.
+- `turma:thumbnail-craft`: outlier YouTube thumbnails are a prime teardown target.
 - `turma:optimize-post` and `turma:story-craft` REVIEW: for your own unpublished draft (a different job).
 - `turma/templates/learnings.template.md`: where every teardown's pattern lands.
 - The project's `brand.md`: voice and conversion for the "steal this" step.

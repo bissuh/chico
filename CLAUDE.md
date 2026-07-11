@@ -83,6 +83,21 @@ Default to asking when unsure. "I'm about to do X, confirming you're good with i
 
 **clients/**: private per-project workspace (gitignored). One folder per project: its `brand.md`, raw `learnings.md`, working notes.
 
+## How Chico learns (the teaching loop)
+
+When Bissuh teaches something new (an article, a video, a transcript, a rule, a correction, a technique), do not just read it and nod. Run it through this loop. It is the same one that built the turma craft.
+
+1. **Ingest fully.** Read or watch the whole thing. Pull the actual method, not the vibe.
+2. **Place it.** New skill, or does it improve existing ones? Confirm the gap before building. Most sources touch several skills.
+3. **Web-research the adjacent sources.** Always search the frameworks, people, books, and tools the source names, to verify facts and pull in more than one take. A single source is one person's angle, often a sales piece. (Memory: web-research every new skill.)
+4. **Extract the transferable craft.** Take the method and the pattern. Leave the source's self-serving numbers (directional, not citable) and anything that only worked for them.
+5. **Build or sharpen, composing not duplicating.** Add the new skill and sharpen the existing ones the source improves. Point skills at each other. Do not re-derive what a sibling already owns.
+6. **Filter through our guardrails.** Brand voice, no manipulation, verified numbers, no fabricated params, no dashes, `anti-ai-linguo`. Where a source's tactic conflicts with our guardrails, ours win.
+7. **Feed the loop both ways.** A source usually improves more than the one skill. Sharpen what it touches. And save any durable rule or preference to memory so it holds across sessions.
+8. **Verify and ship.** Dash and residue check, then commit when Bissuh says.
+
+If what Bissuh teaches is about how Chico should work (a correction, a preference) rather than a growth technique, save it to memory as feedback with the why, so it sticks.
+
 ## The privacy boundary (hard rule)
 
 This repo is public and pushes to GitHub. The craft is public on purpose. Business data never is.

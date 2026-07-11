@@ -23,7 +23,7 @@ Every piece that spreads pulls at least one hard. The strongest pull two or thre
 2. **Status signaling.** People share what makes *them* look good. Content is a social object for the sharer's self-presentation. Ask not "is this valuable" but "what does sharing this say about the person who shares it." Insider knowledge (looks connected), a contrarian take before it is mainstream (looks ahead of the curve), a sharp breakdown (looks competent and generous). Give people a way to say something about themselves they could not say directly.
 3. **Tribal belonging.** Draw the line between who this is for and who it is not. "There are two types of founders..." creates an in-group the reader wants to join and an out-group they do not want to be in. Use this one sparingly and honestly (see the guardrails), because it is the trigger most easily abused into cheap us-vs-them.
 4. **Productive discomfort.** Cognitive dissonance with a path forward. Expose the gap between the reader's self-image (smart, competent) and their actual result, then imply the gap is closeable. Not criticism, not negativity. Discomfort that motivates, because you also show the way out.
-5. **The curiosity gap.** The tension of knowing information exists that you do not have. Intensity beats novelty: "the post that booked me 47 calls in 72 hours" beats "how to get more engagement." Specific numbers, implied insider knowledge, a gap the reader needs closed. This is the foundation of almost every hook.
+5. **The curiosity gap.** The tension of knowing information exists that you do not have. Intensity beats novelty: "the post that booked me 47 calls in 72 hours" beats "how to get more engagement." Specific numbers, implied insider knowledge, a gap the reader needs closed. The sharpest version is a mystery nobody knew they needed to know: take something the reader assumes they understand and subvert it ("here's a thing you know, but little did you know X is the truth"), so they are uncomfortable until they resolve it. This is the foundation of almost every hook, and of every thumbnail (`turma:thumbnail-craft`).
 6. **Aspiration.** Future-self identification. Show a result the reader wants and make them believe it is achievable *for them*. Achievable beats impressive: "0 to $42k in 90 days using only LinkedIn" lands where "$10M in year one" triggers only skepticism. Aspiration without believability is just fantasy.
 
 ## The method
@@ -83,4 +83,5 @@ Distilled from Paolo Trivellato's "the psychology behind viral LinkedIn content"
 - `turma:social-posts`: writes the post once emotion-craft picks the lever.
 - `turma:micromagnet-craft`: the handraiser and lead-magnet posts run on these triggers.
 - `turma:viral-teardown`: uses these six as the taxonomy for the emotional driver it looks for.
+- `turma:thumbnail-craft`: the curiosity gap applied to a YouTube thumbnail (a visual hook).
 - The project's `brand.md`: the audience feeling the trigger has to name.
