@@ -67,5 +67,6 @@ Feed the live data into the SEO read: the `seo-audit` / `ai-seo` skills if they'
 ## Related
 
 - The project's `brand.md`: the site, audience, target keywords.
+- `turma:seo-strategy`: the SEO brain this connector feeds. It decides what to fix and in what order.
 - `seo-audit` / `ai-seo` (installed marketing skills): the analysis, once this connector supplies the data.
 - `beehiiv-connector`, `youtube-connector`: sibling read connectors, same `.env` pattern.

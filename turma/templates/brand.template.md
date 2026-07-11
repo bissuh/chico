@@ -55,5 +55,14 @@ Copy this file into your project as `growth/brand.md` and replace every `[...]`.
 ## 9. The scoreboard for THIS project
 - [the 2-3 numbers that actually matter here. Different projects, different scoreboards.]
 
+## 10. SEO context (optional, fill if search matters for this project)
+`turma:seo-strategy` reads this. It is the "load your business context once" layer.
+- **Type:** [local business (physical location / service area) / national or online / SaaS]
+- **Site:** [domain]   **Google Business Profile:** [GBP URL, if local]
+- **Service areas / target locations:** [cities or regions, if local]
+- **Top 5 target keywords:** [...]
+- **Top 3 competitors:** [name, site, GBP URL each]
+- **Analytics wired:** [Search Console via turma:search-console-connector? GA4? none yet]
+
 ---
 Once this is filled, invoke any specialist (`turma:story-craft`, `turma:micromagnet-craft`, ...) and it works to this brief.
