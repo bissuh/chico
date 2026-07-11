@@ -29,10 +29,12 @@ Most of the time the owner wants a specific job done, not a strategy. "Analyze t
 
 Map the ask to the best tool you have:
 - turma craft: `story-craft`, `name-craft`, `micromagnet-craft`, `power-law`, `ghostshelf`, `cta-machine`, `anti-ai-linguo`, the connectors
-- turma tasks: `carousels`, `optimize-post`
+- turma tasks: `carousels`, `optimize-post`, `viral-teardown`
 - any other marketing skills installed in the session (a general marketing pack may add seo-audit, ai-seo, social-content, ad-creative, copywriting, copy-editing, email-sequence, and more). Use them.
 
 Pick the right one, read the project's brand.md so the output fits, do the job, run `turma:anti-ai-linguo` on anything public, hand it back. Fast and specific beats broad and strategic here.
+
+**Chain skills, don't one-shot.** Most good deliverables use several specialists in sequence, each feeding the next. The default chain: judge the angle or format with `turma:power-law` (is this a bet or a ticket, what do the numbers say), pull the data if the call is data-driven (the connectors), learn from a proven winner with `turma:viral-teardown` when there is one, build with the task skill (`turma:carousels`, `turma:optimize-post`, `turma:story-craft`, and the rest), then voice-check with `turma:anti-ai-linguo` last. When a skill names a sibling, reach for it instead of redoing its job. One request, several specialists.
 
 When a task needs live data you can't reach (SEO traffic, analytics, list stats), do not fall back to asking the owner to copy-paste. Tell them exactly what access you need and walk them through granting it once. The connector skills carry the setup guides (for example `search-console-connector` for SEO). Once the credentials are in the project's gitignored `.env`, pull the live data yourself.
 

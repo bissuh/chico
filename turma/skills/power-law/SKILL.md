@@ -72,9 +72,9 @@ The exact split is whatever `brand.md` lists as primary channels. The mistake is
 
 ## The four moves
 
-1. **Produce at volume on the cheap surfaces.** Each post is a ticket. If P(hit) is ~0.5% per post, ten posts give you a ~5% chance of at least one hit, a hundred give ~39%, five hundred give ~92%. You cannot pick the winner in advance, so you buy enough tickets to make a winner statistically inevitable.
+1. **Produce at volume on the cheap surfaces.** Each post is a ticket. The odds of at least one hit after N posts are `1 - (1-p)^N`, where p is your own hit rate. Estimate p from your analytics (how often a post actually breaks out), do not assume it. At p=0.5%: ten posts give ~5%, a hundred ~39%, five hundred ~92%. You cannot pick the winner in advance, so you buy enough tickets to make a winner statistically inevitable. Caveat: p is not truly constant (craft and learning move it), so treat this as back-of-envelope sizing, not a promise.
 2. **Invest disproportionately in the bets.** 80% of output is good-enough, posted fast, minimal editing. 20% gets all the creative energy: research, a real reframe, original visuals, the math shown. Those are the swings.
-3. **When one hits, double down before the signal cools.** A viral piece is the most valuable market signal you will ever get. It tells you exactly what readers want right now. Do not move on to the next random thing. Milk it: follow-up, thread, a series, a micromagnet or skill built around it, an edition of the flagship, eventually a product. The pattern to copy: an entire product line that grew out of a single viral hit the creator refused to let go cold.
+3. **When one hits, double down before the signal cools.** A viral piece is the most valuable market signal you will ever get. It tells you exactly what readers want right now. Run `turma:viral-teardown` on it first to name exactly which element carried it, then compound that element, not just the topic. Do not move on to the next random thing. Milk it: follow-up, thread, a series, a micromagnet or skill built around it, an edition of the flagship, eventually a product. The pattern to copy: an entire product line that grew out of a single viral hit the creator refused to let go cold.
 4. **Survive the 99%.** Most efforts produce near-zero direct results. Runway is what lets the outlier arrive. In practice that means keeping the volume engines fueled through the flat stretch: do not let the short-form queue or the gallery queue run dry. A queue that runs dry is the most common way the engine dies before the outlier arrives.
 
 ## The machine the source did not give you
@@ -136,6 +136,7 @@ A piece just popped. Inputs: the hit, the signal (what specifically resonated), 
 
 - The project's `brand.md`: channels and scoreboard that shape the barbell. Source of truth for specifics.
 - `turma:story-craft`: line-level craft for the 20% bets. Runs first; power-law picks which pieces earn it.
+- `turma:viral-teardown`: run it on any hit (yours or someone else's) to extract exactly why it worked.
 - `turma:micromagnet-craft`: turns a hit into a coupled opt-in in DOUBLE-DOWN mode.
 - `turma:cta-machine` and `turma:ghostshelf`: the volume engines this doctrine fuels.
 - `turma:anti-ai-linguo`: the final voice pass.
