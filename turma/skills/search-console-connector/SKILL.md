@@ -53,9 +53,23 @@ python3 scripts/search_console.py 2026-06-01 2026-06-30 date       # traffic ove
 
 It returns clicks, impressions, CTR, and average position per row. Under the hood it POSTs to `https://www.googleapis.com/webmasters/v3/sites/{siteUrl}/searchAnalytics/query` with the service-account token.
 
+## Rank the opportunities by money
+
+Raw GSC rows are a data dump. To turn them into a ranked action list, pipe the query export through the opportunity scorer in this folder:
+
+```
+python3 scripts/search_console.py 2026-06-01 2026-06-30 query | python3 scripts/opportunity_score.py [target_position]
+```
+
+It surfaces two money-ranked lists from free GSC data alone:
+- **Quick wins** (position 11-20): expected additional clicks per month if the keyword reaches page 1.
+- **Underperformers** (position 1-10 but CTR well below the curve): clicks recoverable with a title/meta rewrite and no ranking change. The fastest win most audits miss.
+
+`target_position` (default 5) is the rank you assume a quick win reaches; the projection is stated as "if it reaches position N", never as a promise. The CTR curve is directional (public studies) and AI Overviews now compress it, so treat every number as a ceiling. The scorer ranks by traffic; the strategy re-ranks by intent and money. That judgment call lives in `turma:seo-strategy`.
+
 ## Then do the analysis
 
-Feed the live data into the SEO read: the `seo-audit` / `ai-seo` skills if they're installed in the session, or your own analysis, framed by `brand.md` (the audience and the target keywords). Report the highest-leverage moves, not a data dump. Honest numbers, ranked actions.
+Feed the live data and the ranked opportunities into the SEO read: the `seo-audit` / `ai-seo` skills if they're installed in the session, or your own analysis, framed by `brand.md` (the audience and the target keywords). Report the highest-leverage moves, not a data dump. Honest numbers, ranked actions.
 
 ## Hard rules
 
@@ -67,6 +81,7 @@ Feed the live data into the SEO read: the `seo-audit` / `ai-seo` skills if they'
 ## Related
 
 - The project's `brand.md`: the site, audience, target keywords.
-- `turma:seo-strategy`: the SEO brain this connector feeds. It decides what to fix and in what order.
+- `turma:seo-strategy`: the SEO brain this connector feeds. It decides what to fix and in what order, and it re-ranks the scorer's output by intent and money.
+- `scripts/opportunity_score.py`: ranks page-2 quick wins and low-CTR underperformers by projected clicks, GSC-only. Method adapted from Craig Hewitt's SEO Machine (MIT).
 - `seo-audit` / `ai-seo` (installed marketing skills): the analysis, once this connector supplies the data.
 - `beehiiv-connector`, `youtube-connector`: sibling read connectors, same `.env` pattern.
