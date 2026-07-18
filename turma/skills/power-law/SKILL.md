@@ -23,7 +23,7 @@ The power law did not change. The price of a ticket did. That is the whole refra
 
 ## Source material
 
-Distilled from the viral X essay "The Algorithm Behind Every Viral Post, Hit Song, and Billion-Dollar Startup" by darkzodchi (1.8M views, Mar 2026), cross-checked against the real canon: Michael Mauboussin's Babe Ruth Effect paper, Chris Dixon / a16z on power laws in venture, US Federal Reserve wealth data, and Music Business Worldwide on streaming. The essay's frameworks are sound. Its small numbers are loose (it admits as much). The verified figures and the soft ones are split below, under The law. Never repeat the soft numbers as fact. The frameworks are theirs. The price-of-a-ticket reframe is ours. The dead-channels list ("Where not to buy tickets") comes from Dan Kulkov's FounderPal / MakerBox field notes; it is directional caution, not measured law.
+Distilled from the viral X essay "The Algorithm Behind Every Viral Post, Hit Song, and Billion-Dollar Startup" by darkzodchi (1.8M views, Mar 2026), cross-checked against the real canon: Michael Mauboussin's Babe Ruth Effect paper, Chris Dixon / a16z on power laws in venture, US Federal Reserve wealth data, and Music Business Worldwide on streaming. The essay's frameworks are sound. Its small numbers are loose (it admits as much). The verified figures and the soft ones are split below, under The law. Never repeat the soft numbers as fact. The frameworks are theirs. The price-of-a-ticket reframe is ours. The dead-channels list ("Where not to buy tickets"), the channel-patience rule, and the think-in-systems operating model come from Dan Kulkov's FounderPal / MakerBox field notes ("How to do Marketing" and "20 marketing changes to get unstuck"); directional caution and practice, not measured law.
 
 ## When to invoke
 
@@ -91,6 +91,16 @@ An outlier is relative, not absolute: a piece that beat your own channel's avera
 
 4. **Survive the 99%.** Most efforts produce near-zero direct results. Runway is what lets the outlier arrive. In practice that means keeping the volume engines fueled through the flat stretch: do not let the short-form queue or the gallery queue run dry. A queue that runs dry is the most common way the engine dies before the outlier arrives.
 
+## Two time horizons: the piece and the channel
+
+The double-down move runs on a fast clock. Judging a whole channel runs on a slow one. Keep them separate or you will kill a good channel for a bad fortnight.
+
+**Channel patience (the slow horizon).** A new channel deserves at least three months and many iterations before you rule it in or out. Two reasons. Your own hit rate p on that surface only reveals itself across real volume, and the channel's native format is a skill that takes reps to learn. Your first hundred posts on a new channel probably will not hit. That is not the channel failing, it is you climbing the curve. Kill a channel for a measured reason (three months of honest volume against the `brand.md` scoreboard), never for a slow two weeks.
+
+**Think in systems, not moods.** Random posting yields a random number of customers. Turn each channel you commit to into a repeatable weekly system with four parts: (1) the angle that actually works on this surface (p-SEO pages, infographics, vlogs, stitched hooks); (2) a concrete weekly quota (find 20 keywords, publish 20 posts, cut 5 videos); (3) the experiments that scale it (build more free tools, collaborate with other creators, run challenges); (4) stick to the plan even when it is boring. One user-acquisition system run all the way beats ten started on a whim. This is the operating layer under "survive the 99%": it is what keeps the `turma:cta-machine` and `turma:ghostshelf` queues fueled on a cadence instead of by mood.
+
+**Organic first, then paid to accelerate.** Do not cap the project at "100% organic," but sequence it. Prove a channel converts on organic or cheap traffic first, which is the conversion-before-traffic gate `turma:conversion-craft` owns. Then use paid to pour fuel on what already works. That is how the dead-channels caution above and "experiment with paid" coexist without contradiction: paid amplifies a funnel that already converts, it never hunts for one. Keep every paid test small until the funnel has earned the scale.
+
 ## The machine the source did not give you
 
 The essay gives the strategy and stops. It never says how to actually run volume, how to pick the 20%, or how to mechanically double down. That gap is the value-add, and the turma crew fills it:
@@ -130,6 +140,7 @@ A piece just popped. Inputs: the hit, the signal (what specifically resonated), 
 - `turma:story-craft` runs first on any craft bet: the architecture is the skeleton, story-craft is the muscle.
 - `turma:micromagnet-craft` runs after a hit to turn the signal into an opt-in.
 - `turma:cta-machine` and `turma:ghostshelf` are the volume engines this doctrine fuels, on whatever cadence keeps the queues from going dry.
+- `turma:conversion-craft` runs before this doctrine spends a cent on paid traffic: prove the funnel converts, then power-law decides where to buy the tickets that accelerate it.
 - `turma:anti-ai-linguo` is the final pass on anything public, same as always.
 
 ## What NOT to copy from the source
@@ -153,4 +164,5 @@ A piece just popped. Inputs: the hit, the signal (what specifically resonated), 
 - `turma:viral-teardown`: run it on any hit (yours or someone else's) to extract exactly why it worked.
 - `turma:micromagnet-craft`: turns a hit into a coupled opt-in in DOUBLE-DOWN mode.
 - `turma:cta-machine` and `turma:ghostshelf`: the volume engines this doctrine fuels.
+- `turma:conversion-craft`: the gate a channel clears before paid traffic accelerates it.
 - `turma:anti-ai-linguo`: the final voice pass.

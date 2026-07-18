@@ -39,10 +39,14 @@ A painkiller removes a pain the reader is already feeling. A vitamin is good for
 
 The reader buys a painkiller because *not* buying hurts. Read the offer against every row. If it lands mostly in the right column, the honest report is: distribution will be an uphill grind, and the move with the most upside is to sharpen the offer toward a real pain, not to add another channel. Say that out loud. It is the most valuable thing this skill produces, and the one most likely to be unwelcome.
 
+**The top-3 test.** A faster way to run the same diagnostic in one question: is this in the audience's top-3 problems, the handful they think about most of their working hours and already spend money on? A business logo is ignorable for a founder (whose top-3 is customers, shipping, hiring) and top-3 for a brand marketer. Same product, opposite verdict, and only one of them buys without being convinced. If the problem isn't in the segment's top-3, you either change the problem or change the audience until it is. It is the same move as narrowing the audience below, stated as a test you can actually apply on the spot.
+
 Three ways a vitamin becomes a painkiller without rebuilding the product:
 - **Narrow the audience** to the slice that *does* feel the pain acutely. "Note-taking app" is a vitamin for everyone; it's a painkiller for a consultant who bills by the reconstructed meeting.
 - **Reframe the job** to the painful outcome, not the pleasant feature. Not "organize your thoughts" but "stop losing the client detail that costs you the renewal."
 - **Re-anchor the moment** to when the pain is sharpest, so the offer shows up mid-wince, not mid-calm.
+
+**The free-status-quo trap.** Separate from painkiller-vs-vitamin, and just as decisive: even a real painkiller is hard to charge for if the audience is used to solving the problem for free. People expect to pay a marketing agency or a developer tool. They do not expect to pay for notes (Apple Notes is the default) or a product directory (Product Hunt is the default). Building a paid product against an entrenched free default is an uphill grind no channel fixes. When the current go-to (Q3 below) is a beloved free tool, the finding is stark: either a sharply different promised result the free option cannot match, or a different niche. Name it early, before any distribution plan, because it caps what the offer can charge, which is where `turma:conversion-craft` picks it up.
 
 ## Diagnostic 2: the seven strategy questions
 
@@ -94,6 +98,7 @@ Never make the owner touch the file to remove friction from a Yellow call. Do th
 ## How it composes with other skills
 
 - Runs **before** every distribution skill. A sharp painkiller and a named segment are what `turma:micromagnet-craft`, `turma:seo-strategy`, `turma:social-posts`, and `turma:power-law` all assume but none establish.
+- Hands directly to `turma:conversion-craft`, the immediate next step. positioning decides what you sell and to whom; conversion-craft decides whether the offer and the page turn that audience into customers, before a cent goes to traffic.
 - Feeds `brand.md` sections 1-4 directly. The audience splinter this skill names is the same splinter `micromagnet-craft` builds around.
 - `turma:name-craft` names the offer *after* positioning fixes what it is. Naming a vitamin doesn't help.
 - `turma:story-craft` dramatizes the pain this skill identifies; positioning finds the pain, story-craft makes the reader feel it.
@@ -117,6 +122,7 @@ The painkiller-vs-vitamin metaphor is long-standing startup vocabulary. The spec
 ## Related
 
 - The project's `brand.md`: sections 1-4 are what this skill fills and stress-tests. Source of truth for specifics.
+- `turma:conversion-craft`: the immediate downstream skill; makes the offer and page convert before any traffic is bought.
 - `turma:micromagnet-craft`: builds on the splinter this skill names; run positioning first.
 - `turma:seo-strategy`, `turma:social-posts`, `turma:power-law`: the distribution skills that assume sharp positioning.
 - `turma:name-craft`: names the offer after positioning fixes what it is.
