@@ -23,7 +23,7 @@ The power law did not change. The price of a ticket did. That is the whole refra
 
 ## Source material
 
-Distilled from the viral X essay "The Algorithm Behind Every Viral Post, Hit Song, and Billion-Dollar Startup" by darkzodchi (1.8M views, Mar 2026), cross-checked against the real canon: Michael Mauboussin's Babe Ruth Effect paper, Chris Dixon / a16z on power laws in venture, US Federal Reserve wealth data, and Music Business Worldwide on streaming. The essay's frameworks are sound. Its small numbers are loose (it admits as much). The verified figures and the soft ones are split below, under The law. Never repeat the soft numbers as fact. The frameworks are theirs. The price-of-a-ticket reframe is ours.
+Distilled from the viral X essay "The Algorithm Behind Every Viral Post, Hit Song, and Billion-Dollar Startup" by darkzodchi (1.8M views, Mar 2026), cross-checked against the real canon: Michael Mauboussin's Babe Ruth Effect paper, Chris Dixon / a16z on power laws in venture, US Federal Reserve wealth data, and Music Business Worldwide on streaming. The essay's frameworks are sound. Its small numbers are loose (it admits as much). The verified figures and the soft ones are split below, under The law. Never repeat the soft numbers as fact. The frameworks are theirs. The price-of-a-ticket reframe is ours. The dead-channels list ("Where not to buy tickets") comes from Dan Kulkov's FounderPal / MakerBox field notes; it is directional caution, not measured law.
 
 ## When to invoke
 
@@ -69,6 +69,18 @@ Do not spread effort evenly. Split it to the extremes. Read the channels in `bra
 - Daily posts on X and LinkedIn.
 
 The exact split is whatever `brand.md` lists as primary channels. The mistake is judging a ticket by a craft-bet standard, or pouring craft-bet effort into a ticket. A short that took four minutes is a ticket. Treat it like one. Nine of ten doing nothing is the distribution working, not the engine failing.
+
+## Where not to buy tickets (dead channels)
+
+A barbell is only as good as the surfaces you print tickets on. Some channels look like cheap ticket-printers and are actually money furnaces or ban traps. Dan Kulkov's field-tested list of what wastes an early solo project's budget and effort, treated as directional caution, not law (verify against your own `brand.md` scoreboard before ruling any of these in or out):
+
+- **Paid ads for cold acquisition (Google, Twitter/X).** Costly clicks, weak targeting for a small unknown brand. Retargeting warm traffic can work; cold prospecting usually burns cash before positioning is proven.
+- **Newsletter sponsorships.** Expensive and prone to bot clicks. Hard to attribute, easy to overpay.
+- **Referral programs, early.** Hard to execute well before you have a base that already loves the product. Premature referral mechanics stay empty.
+- **Reddit audience-building.** High ban rate for anything that reads promotional. Great for listening, punishing for broadcasting.
+- **Dead or outdated product directories.** Low-traffic listings that soak up submission time for near-zero return.
+
+The point is not "never touch these." It is that the cheap-ticket engines that actually compound for a small project are the ones under the barbell above (short-form, gallery, owned SEO tools, an email list you own), not rented audiences you pay per click. Spend the tickets where you keep the asset.
 
 ## The four moves
 

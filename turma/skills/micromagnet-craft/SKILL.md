@@ -9,7 +9,7 @@ Lead magnets are dead. PDFs that go unopened, free strategy sessions that are ob
 
 Every micromagnet earns one thing: the project's primary conversion, whatever `brand.md` names it. That might be an email opt-in, an app signup, a first purchase, a booking, or an install. The scoreboard runs through this skill.
 
-Source material: Tony Allen's MicroMagnet method (the Playbook and the teardown), reduced to operating instructions below. The frameworks are his. The coupling to your project is yours.
+Source material: Tony Allen's MicroMagnet method (the Playbook and the teardown), reduced to operating instructions below, plus Dan Kulkov's free-tool engine (FounderPal, MakerBox), which contributed the ungated ranking-tool motion and the tool-shape taxonomy below. The frameworks are theirs. The coupling to your project is yours.
 
 **Before you start:** read the project's `brand.md`. The audience splinter, the voice, and the primary conversion goal all come from there. micromagnet-craft supplies the method. `brand.md` supplies the specifics.
 
@@ -92,11 +92,27 @@ This is the backbone. Skip a step and the magnet either doesn't get clicked or d
 3. **Pick the delivery vehicle.** Match the splinter to the fastest possible tool. Menu in the next section.
    - Test: does the format itself signal "this is a tool, not homework"?
 
-4. **Lead them home.** A funnel is a series of easy yeses. The micromagnet is yes #1. What's yes #2? Almost always the primary conversion from `brand.md`. If that's an email opt-in, the magnet inbox-delivers and the welcome sequence does the rest. If it's a signup, a booking, or an install, the magnet hands the reader straight into that first step. Sometimes yes #2 is "reply with a word" or "go watch this video."
+4. **Lead them home.** A funnel is a series of easy yeses. The micromagnet is yes #1. What's yes #2? Almost always the primary conversion from `brand.md`. If that's an email opt-in, the magnet inbox-delivers and the welcome sequence does the rest. If it's a signup, a booking, or an install, the magnet hands the reader straight into that first step. Sometimes yes #2 is "reply with a word" or "go watch this video." In the pull motion, yes #2 lives *inside* the tool's result as an organic upsell, not in a separate DM (see "Two ways a magnet travels").
    - Test: when the reader finishes the 2-minute use, what's the obvious next click?
 
 5. **Generate demand with a handraiser post.** The post that gets the reader to ask for the magnet. Leo Burnett's 60-year-old formula: here's what I got, here's what it'll do for you, here's how to get it. Used in text posts, threads, carousels, video scripts. Doesn't matter the channel. Same formula.
    - Test: does the post name a splinter the reader felt this week?
+
+## Two ways a magnet travels: handraiser (push) and ranking tool (pull)
+
+Step 5 assumes one motion: you post a handraiser, the reader raises a hand, you deliver. That is the **push** motion. It runs on social surfaces and it is the default for content-led growth.
+
+There is a second motion, and it compounds harder. Dan Kulkov built FounderPal past $200k almost entirely on it: the magnet is an **ungated tool that ranks on a long-tail search and sells the paid thing after it has already helped.** That is the **pull** motion. No handraiser, no "comment WORD." Google (and increasingly the AI-answer layer) does the acquisition, forever, for free.
+
+Three things separate the pull motion from the push motion, and they invert some defaults:
+
+- **Ungated beats gated.** FounderPal's tools say "100% Free, No Email Required" on the page. The friction of an email wall costs more ranking traffic and word-of-mouth than the captured emails are worth. The tool earns trust by working *before* it asks for anything. Email capture becomes a **secondary, optional compounding layer**, not the toll gate on the tool. This flips the reflex "gate the magnet to capture the email." Gate only when the email genuinely is the conversion the scoreboard names and the tool cannot upsell on its own.
+- **Search intent replaces the handraiser.** Instead of writing a post to *create* demand, you target demand that already exists. The tool page is built to rank for one specific long-tail keyword the reader is already typing: `[job] generator`, `[thing] calculator`, `[input] checker`, `[artifact] template`. Pick the keyword first, shape the tool to own it. Hand the keyword-sourcing and page-ranking work to `turma:seo-strategy` (the free-tool ranking-page lever).
+- **The upsell is organic and lives in the result.** "Lead them home" (step 4) happens *inside or right after* the tool's output, not in a separate DM. The reader gets the free result, and the next easy yes (the primary conversion from `brand.md`) sits right there, framed as the obvious continuation of what they just did.
+
+Which motion to use is a `brand.md` question. If the primary channel is social and the conversion is an email opt-in, the push motion (handraiser) usually wins. If the project can own search real estate and the conversion is a signup, purchase, or install, the pull motion (ranking tool) compounds far longer. Most mature projects run both: ranking tools as the always-on pull engine, handraiser posts as the push spikes when a piece of content is in flight.
+
+Dan's own three-line formula for the pull motion, worth keeping on the wall: **build something useful, let them get quick value for free, promote the paid offer in an organic way.**
 
 ## Delivery vehicles (the menu)
 
@@ -107,6 +123,15 @@ Listed in rough order of fit for AI-native, content-led projects. Reorder for yo
 3. **Prompt pack.** A `.txt` or `.md` file of copy-paste prompts. Trivial to ship, unambiguous value, strong fit for AI-native audiences. Best for: sequences ("3 prompts to roast your landing page"), libraries ("12 starter prompts for your reader").
 4. **Notion or Google Doc template.** Reader duplicates and uses. Best for: trackers, planners, swipe files, scripts.
 5. **Custom GPT.** Higher build cost, but high credibility. Best for problems where the reader needs a few questions answered to get a tailored result. Reserve for splinters genuinely worth a GPT.
+
+**For the pull motion, add the ungated web-tool shapes.** These are built to rank on a long-tail keyword and run in the browser with no email wall. Pick the shape that matches the reader's job:
+
+- **Generator:** turns a short input into a finished artifact (persona, value prop, slogan, cold email). Owns `[thing] generator` searches.
+- **Calculator:** runs a number the reader wants (ROI, pricing, runway, break-even). Owns `[thing] calculator` searches.
+- **Analyzer / checker:** grades or inspects something the reader pastes in (a landing page, a headline, a profile). Owns `[thing] checker` / `[thing] analyzer` searches.
+- **Template / boilerplate:** a fill-in artifact the reader copies (a brief, a contract, a plan). Owns `[thing] template` searches.
+
+Each one is a page that ranks itself. One tool, one long-tail keyword. `turma:seo-strategy` sources the keyword and ranks the page; this skill shapes the tool and the organic upsell.
 
 If none of those fit, the splinter is probably wrong. Reshape the splinter, not the vehicle.
 
@@ -292,3 +317,4 @@ A micromagnet that earns its keep:
 - `turma:anti-ai-linguo`. The final voice pass on the magnet and the handraiser post.
 - `turma:emotion-craft`. The 6 emotional triggers the handraiser and lead-magnet posts run on.
 - `turma:power-law`. Which magnets to reuse (the converters) and which to retire.
+- `turma:seo-strategy`. Sources the long-tail keyword and ranks the page for the pull motion (ungated ranking tools).

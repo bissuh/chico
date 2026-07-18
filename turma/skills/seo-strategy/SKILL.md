@@ -42,6 +42,7 @@ Run this on every lever below. The competitor set comes from `brand.md`. Use `tu
 - **The page-2 goldmine (the highest-ROI move in all of SEO).** Pull Search Console via `turma:search-console-connector` and find every keyword ranking in positions 11-20 with real impressions. A jump from 15 to 5 is worth more than ten new pages. For each, check whether the keyword is in the title, H1, and first 100 words, then fix exactly that. This is the first thing to run on any site with history.
 - **Keyword-gap and content-gap.** Find the keywords and content competitors rank for that the project lacks (paid tools like SEMrush/Ahrefs make this fast, but the free stack plus the installed `seo-audit` gets far). Filter to the local-intent sweet spot (roughly 100-2,000 volume, low difficulty, buyer-intent words).
 - **On-page + schema.** Title, H1, first-100-words, meta, internal links, and structured data. Hand the deep schema work to the installed `schema-markup` skill.
+- **Free-tool ranking pages (the FounderPal play).** One of the strongest national/SaaS levers there is: build a small, genuinely useful, ungated web tool (a generator, calculator, analyzer/checker, or template) and give it its own page targeting one long-tail keyword the buyer already types (`[job] generator`, `[thing] calculator`, `[input] checker`). Dan Kulkov ran FounderPal past $200k almost entirely on this. Why it wins: the page ranks itself and compounds forever, it earns organic shoutouts and AI-answer citations because it does real work, and the paid product upsells organically inside the tool's result. Source the keyword the same way you source any content-gap (buyer-intent, low-difficulty long-tail; the tool niches sit in the 100-2,000 volume sweet spot and there are databases of them). Do not gate the tool behind an email; the ranking traffic and word-of-mouth are worth more than the captured addresses (email is a secondary layer, not the toll gate). Shape the tool and the organic upsell with `turma:micromagnet-craft` (the pull motion); rank the page here; build many such pages at scale with the installed `programmatic-seo` skill.
 
 ## Search intent, mapped to the buyer journey
 
@@ -72,7 +73,7 @@ State the mode at the top.
 
 ## Source
 
-The tactics are distilled from Sarvesh Shrivastava's "Top 20 Claude Prompts for SEO" (9.2M views), a strong local-SEO prompt system, and a sales piece for his agency. His revenue claims are his marketing, not cited. The strategic framework (Relevance / Distance / Prominence), the factor weights ([Whitespark 2026](https://whitespark.ca/local-search-ranking-factors/)), and the 2026 AI-answer layer the article omitted were added from research. Blog and survey stats are directional, not law.
+The tactics are distilled from Sarvesh Shrivastava's "Top 20 Claude Prompts for SEO" (9.2M views), a strong local-SEO prompt system, and a sales piece for his agency. His revenue claims are his marketing, not cited. The strategic framework (Relevance / Distance / Prominence), the factor weights ([Whitespark 2026](https://whitespark.ca/local-search-ranking-factors/)), and the 2026 AI-answer layer the article omitted were added from research. The free-tool ranking-page lever comes from Dan Kulkov's field-tested FounderPal / MakerBox engine; his revenue figures are his marketing, directional and not citable. Blog and survey stats are directional, not law.
 
 ## Hard rules
 
@@ -91,3 +92,4 @@ The tactics are distilled from Sarvesh Shrivastava's "Top 20 Claude Prompts for 
 - `turma:optimize-post`: on-page copy and title/meta/H1 fixes.
 - `turma:emotion-craft`: turn mined review language into website and GBP copy.
 - `turma:viral-teardown` and `turma:power-law`: competitor teardown and quick-win prioritization.
+- `turma:micromagnet-craft`: shapes the ungated ranking tool and its organic upsell (the pull motion) that the free-tool ranking-page lever ranks.

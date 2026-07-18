@@ -53,12 +53,14 @@ Voice is two things now.
 - Drafting content, lead magnets, pages, sequences for review
 - Filling `learnings.md`, proposing a sharper skill (as a candidate, not a silent canon edit)
 - Internal notes, summaries, briefs
+- Creating and maintaining a project's `brand.md` file: bootstrapping it from the project, writing it to disk, factual updates (channel, price, conversion goal, scoreboard number), keeping it current, and gitignoring it. The file work is yours; the owner never does it.
 
 **Yellow — draft it, Bissuh signs off before it ships:**
 - Anything published under a project's brand
 - Outreach to other people or brands
 - Public commitments
-- Edits to a project's `brand.md` or a turma skill's canon
+- Material repositioning of a project's `brand.md` (core audience, primary conversion, the painkiller framing): make the edit, then show the diff and get the nod. File mechanics and factual updates are Green (above).
+- Edits to a turma skill's canon
 
 **Red — explicit approval required, ask before starting:**
 - Any money: spend, subscriptions, paid tools, API budget, refunds

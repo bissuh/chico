@@ -3,6 +3,7 @@
 The specialists. Each is a `SKILL.md` (frameworks + methods) invoked as `turma:<name>`. Every one reads the host project's `brand.md` for voice, audience, and goal, then applies its method. None hardcodes a brand.
 
 **Craft (the frameworks the jobs use):**
+- `positioning`: sharpen what a project sells and to whom (painkiller-vs-vitamin + the 7 strategy questions); runs before any distribution work, feeds brand.md
 - `story-craft`: persuasion via the 5-line framework
 - `name-craft`: naming via Placek's Lexicon method, with domain checks
 - `micromagnet-craft`: 2-minute opt-in tools
