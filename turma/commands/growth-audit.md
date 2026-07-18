@@ -1,5 +1,5 @@
 ---
-description: Audit a project's growth. Reads its brand.md (and any reachable analytics), then returns the 2-3 highest-leverage moves and the single first action to ship.
+description: Audit a project's growth. Reads its brand.md (and any reachable analytics), then returns the 2-3 highest-impact moves and the single first action to ship.
 ---
 
 Run a growth audit for the current project.
@@ -9,7 +9,7 @@ Run a growth audit for the current project.
 3. Assess the funnel against the primary conversion goal in brand.md: where attention comes from, where it converts, where it leaks. Route the leak: if it's the offer or the landing page (traffic arrives but doesn't buy), that's `turma:conversion-craft`; if it's upstream in what's being sold or to whom, that's `turma:positioning`; if it's a shortage of attention, that's the distribution skills.
 4. Return:
    - **The state:** one honest paragraph. What's working, what's leaking, what's missing.
-   - **The 2-3 highest-leverage moves,** ranked by impact over effort, each tied to a turma skill (positioning, conversion-craft, story-craft, micromagnet-craft, power-law, ghostshelf, cta-machine, name-craft).
+   - **The 2-3 moves with the most upside,** ranked by impact over effort, each tied to a turma skill (positioning, conversion-craft, story-craft, micromagnet-craft, power-law, ghostshelf, cta-machine, name-craft).
    - **The first action:** the single thing to ship this week. Concrete, with which skill runs it.
 5. Offer to run the first action now.
 
