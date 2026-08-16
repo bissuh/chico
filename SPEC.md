@@ -74,6 +74,7 @@ Agnostic by design. The specific projects Chico works are recorded privately in 
 **Phase 3 — Layer 2 runtime.**
 - [ ] Agent SDK loop on a capped API key
 - [ ] Autonomous run + write-back, spot-checked
+- Design constraints (adopted 2026-08-16, from the Precht/Nitski mining into `turma:pauta`): approvals bind to the exact artifact (text + asset + destination + publish time) and any change voids them; a global kill switch; ambiguous errors go to a review queue, never blind retries; every post-approval step is idempotent and holds no editorial authority. Nothing autonomous decides what publishes.
 
 ## 9. Open questions
 
@@ -84,4 +85,5 @@ Agnostic by design. The specific projects Chico works are recorded privately in 
 
 ## 10. Changelog
 
+- **2026-08-16**: Ops layer added to turma (`turma:pauta`, plugin 0.6.0): delegate execution, keep judgment. Five contracts (reference bank, grounding packet, owner interview, approval binding, engagement boundary); production skills now ground and gate opinion-led work. Layer 2 approval-layer constraints adopted (Phase 3 above). Source: Bernardo Precht's content-agent architecture; principle from Osvald Nitski (Mercor) on 20VC.
 - **2026-07-11** — Pivot. TBP retired as a project. Chico re-missioned to portable, project-agnostic growth specialist. turma plugin (open source) + local marketplace + brand.md / learnings.md contracts built. Privacy boundary set: public craft, gitignored business data. SOUL / IDENTITY / SPEC promoted to canon. Runtime decided: Max now, Agent SDK on capped API for Layer 2. Bissuh chose to keep the repo open source so others can use and learn from turma.

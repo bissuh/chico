@@ -18,17 +18,18 @@ The plugin is the body of knowledge. Chico is the practitioner.
 ```
 turma/
   .claude-plugin/plugin.json   the plugin manifest
-  skills/                      the specialists (frameworks + methods)      [porting in progress]
-  agents/                      specialist subagents that wield the skills  [next]
-  commands/                    entry points (/turma:growth-audit, etc.)    [next]
+  skills/                      the specialists (frameworks + methods)
+  agents/                      the chico agent (the operator, summonable into any project)
+  commands/                    entry points (/turma:produce-week, /turma:growth-audit, etc.)
   templates/
     brand.template.md          the per-project config contract (the agnostic mechanism)
     learnings.template.md      the write-back format (how the craft learns)
+    references.template.md     the reference bank (where ideas land before they become content)
   examples/
     brand.example.md           a filled reference config (fictional)
 ```
 
-The skills land here in the next pass. They're being decoupled from their first project so they read `brand.md` instead of hardcoding one brand.
+The skills read `brand.md` instead of hardcoding a brand. `turma:pauta` is the operating layer around them: it keeps the judgment (angles, opinions, approvals) with the project owner and the execution with the agent.
 
 ## The agnostic contract: brand.md
 
@@ -74,4 +75,4 @@ The boundary: **raw project data never leaves the project.** Only the distilled,
 
 ## Status
 
-v0.1.0, skeleton. Manifest, contracts, and install path in place. Skills porting next. The runtime (Chico as an autonomous agent wielding turma) is Layer 2, designed later.
+v0.6.0. Twenty skills, the chico agent, four commands, three template contracts. The runtime (Chico as an autonomous agent wielding turma) is Layer 2, designed later.

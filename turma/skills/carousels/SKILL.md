@@ -29,11 +29,12 @@ Thin, generic carousels get reach and zero saves. Depth is what gets saved and s
 ## Procedure
 
 1. **Read brand.md.** Voice, audience, splinter, primary conversion, channels.
-2. **Find the angles.** From a topic, break it into N distinct standalone carousel angles (each a different useful cut). From a source piece, mine it for the N strongest ideas. Apply `turma:power-law`: some are craft bets, treat them that way.
-3. **Build each arc** with `turma:story-craft`: a hook title, a build (each slide one beat with real substance), a payoff, a coupled CTA.
-4. **Write every slide in full.** Title slide (the hook), content slides (the actual substance, tools, examples, numbers), CTA slide. In the project's voice.
-5. **Voice pass.** Run `turma:anti-ai-linguo`. No dashes, no AI tells, brand voice.
-6. **Deliver** the N carousels to `outbox/` with `status: review-needed` (Yellow). For each: the slide-by-slide text, a one-line note on the hook, and which one you'd bet on.
+2. **Ground it** (`turma:pauta`). Check the reference bank and what the project already published on this topic; mine the bank for angles before inventing new ones. For opinion-led carousels, gate the angle with the owner first.
+3. **Find the angles.** From a topic, break it into N distinct standalone carousel angles (each a different useful cut). From a source piece, mine it for the N strongest ideas. Apply `turma:power-law`: some are craft bets, treat them that way.
+4. **Build each arc** with `turma:story-craft`: a hook title, a build (each slide one beat with real substance), a payoff, a coupled CTA.
+5. **Write every slide in full.** Title slide (the hook), content slides (the actual substance, tools, examples, numbers), CTA slide. In the project's voice.
+6. **Voice pass.** Run `turma:anti-ai-linguo`. No dashes, no AI tells, brand voice.
+7. **Deliver** the N carousels to `outbox/` with `status: review-needed` (Yellow). For each: the slide-by-slide text, a one-line note on the hook, and which one you'd bet on.
 
 ## Output (per carousel)
 
@@ -61,6 +62,7 @@ Thin, generic carousels get reach and zero saves. Depth is what gets saved and s
 
 ## Related
 
+- `turma:pauta`: the operating layer. Angles come from the reference bank; opinion-led angles pass the gate first.
 - `turma:story-craft`: the arc inside each carousel.
 - `turma:power-law`: which carousels are bets vs tickets.
 - `turma:ghostshelf`: the faceless-page engine carousels often feed.

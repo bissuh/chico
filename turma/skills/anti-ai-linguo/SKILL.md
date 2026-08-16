@@ -345,6 +345,8 @@ After the rewrite, before marking review-ready, read the draft fresh and answer 
 1. **"What here still reads as obviously AI-written?"** Not "does it" but "what does". Something always survives the first pass: a leftover triad, a too-neat closer, a paragraph of uniform mid-length sentences. Fix what you name.
 2. **"Does the draft state any fact, number, name, date, or quote that isn't in the source material or the project's data?"** If yes, that's a fabrication even if it sounds better than the vague original. Cut it or ask the owner for the real one.
 
+If what the audit reveals is a missing point of view rather than bad language (no owner opinion anywhere, gaps padded with plausible generalities), the fix is upstream: send the piece back through the `turma:pauta` owner interview. A language pass can't fix an unearned opinion.
+
 Then, and only then, run the final greps.
 
 ## The single test (all modes)
@@ -376,6 +378,7 @@ The tell catalogs in this skill draw on, and were audited against:
 ## Related
 
 - The project's `brand.md`. Section 5 (voice) and section 6 (house style / banned) supply the brand-specific layer that stacks on top of the universal rules. Section 7 (channels) says which surfaces this project ships.
+- `turma:pauta`. The input-side twin. pauta stops unearned opinions from entering a draft; this skill stops AI language from leaving one. A draft that fails the audit for missing point of view goes back through pauta's interview, not through another rewrite.
 - `turma:story-craft`. Runs BEFORE this skill, on persuasive narrative content. anti-ai-linguo is the voice pass after the structural work is done.
 - `turma:micromagnet-craft`. Runs alongside this skill on public content. Different question (is there a magnet hiding inside?), same final-pass discipline.
 - `turma:name-craft`. Separate use case (naming things). No overlap.

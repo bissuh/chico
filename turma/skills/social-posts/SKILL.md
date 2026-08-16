@@ -18,12 +18,13 @@ Write posts that stop the scroll and earn a comment, in the project's voice, nat
 ## The method (chain the crew)
 
 1. **Read brand.md.** Voice, audience, primary conversion, channels.
-2. **Pick the emotional lever** with `turma:emotion-craft`: a primary and a secondary trigger. A post that only informs will flat-line. Decide what the reader should *feel*.
-3. **Structure it.** For a story-shaped post, run `turma:story-craft` (the 5 lines, compressed). For a punchy single post, use hook plus two to four short beats plus a close. The hook does the emotional work in the first line.
-4. **Write it native to the channel** (see channel notes). Same idea, different shape per platform.
-5. **Close with action.** A question that invites a comment, or a handraiser toward the primary conversion (`turma:micromagnet-craft` if a magnet fits).
-6. **Voice pass.** `turma:anti-ai-linguo`. No dashes, no AI tells, no manufactured controversy or fake FOMO. Emotional truth only.
-7. **Deliver** to `outbox/` with `status: review-needed` (Yellow).
+2. **Ground and gate it** with `turma:pauta`. Pull the project's reference bank and its past posts on this topic so the post extends instead of repeats. When the post carries an opinion, run the owner interview first (light gate: the angle and the evidence). The agent proposes angles; the owner owns the angle.
+3. **Pick the emotional lever** with `turma:emotion-craft`: a primary and a secondary trigger. A post that only informs will flat-line. Decide what the reader should *feel*.
+4. **Structure it.** For a story-shaped post, run `turma:story-craft` (the 5 lines, compressed). For a punchy single post, use hook plus two to four short beats plus a close. The hook does the emotional work in the first line.
+5. **Write it native to the channel** (see channel notes). Same idea, different shape per platform.
+6. **Close with action.** A question that invites a comment, or a handraiser toward the primary conversion (`turma:micromagnet-craft` if a magnet fits).
+7. **Voice pass.** `turma:anti-ai-linguo`. No dashes, no AI tells, no manufactured controversy or fake FOMO. Emotional truth only.
+8. **Deliver** to `outbox/` with `status: review-needed` (Yellow). Approval binds to the exact text; edits after the owner's yes reopen review.
 
 ## Channel notes
 
@@ -77,6 +78,7 @@ One idea rarely justifies one post. From a source piece, pull the strongest angl
 
 ## Related
 
+- `turma:pauta`: the operating layer. Reference bank in, judgment gate on opinion-led posts, approval binding out.
 - `turma:emotion-craft`: picks the lever the post pulls. Run first.
 - `turma:story-craft`: structures a story-shaped post.
 - `turma:carousels`: when the idea is better as slides than a caption.
