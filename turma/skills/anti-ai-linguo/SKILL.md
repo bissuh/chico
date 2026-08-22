@@ -137,6 +137,10 @@ Pre-review grep: `[—–]` must return zero matches.
 
 This is the turma default. If `brand.md` section 6 ("Dashes") explicitly allows them for this project, honor that. Absent an explicit allow, dashes stay off.
 
+**Sign-offs are not a carve-out.** A piece signed by a person or a persona ends with the bold name on its own line, no leading dash. An ASCII hyphen is not a workaround either; `- Name` reads as a dash on the page.
+
+**The only legitimate hits in a repo-wide sweep** are the lines that have to name the banned characters in order to ban them: this file's rule and grep patterns, and the equivalent rule line in the operator's own instructions. A file that merely *mentions* the character is not a violation; a file that *uses* it as punctuation is. Judge by use, not by presence, and do not "fix" a rule into meaninglessness.
+
 ### Specificity without fabrication
 
 Every vague claim gets a number, a name, or a specific moment. Or it gets cut.

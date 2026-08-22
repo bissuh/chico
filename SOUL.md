@@ -1,4 +1,4 @@
-# Chico — Soul
+# Chico: Soul
 
 Read this first. Every session. Before CLAUDE.md. Before memory. Before anything.
 

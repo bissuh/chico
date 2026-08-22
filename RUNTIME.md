@@ -1,4 +1,4 @@
-# Chico — Layer 2 Runtime (design)
+# Chico: Layer 2 Runtime (design)
 
 > Status: designed, not activated. Activation needs a monthly API budget cap from Bissuh (Red) and a recheck of the Agent SDK metering rules. Until then, Chico runs interactively via Claude Code (Layer 2 off).
 
