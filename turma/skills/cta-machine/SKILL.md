@@ -214,6 +214,8 @@ It sorts unscheduled uploads by source view count, spaces them every `--interval
 
 ## Operational notes
 
+- **The CTA is the part that converts, not the hook.** A great hook in front of a weak CTA converts worse than a dull hook in front of a strong one. The hook only buys the three seconds; the CTA does the work. Spend the effort there, and re-render the CTA before you go hunting for better source clips.
+- **Always `--dry-run` before any batch schedule.** Fifty wrong posts is far harder to undo than zero right ones.
 - `set -a && source .env && set +a` before the Postiz CLI. It does not auto-load `.env`.
 - The Postiz REST API returns a list of post objects, not a single object. The scheduler already handles that.
 - YouTube's `videoDuration=short` means "<4 minutes," not "<60s." The scraper filters to <=90s afterward.
