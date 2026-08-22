@@ -1,0 +1,29 @@
+{
+  "_comment": "One week of a faceless gallery. Copy to batch.json in your project, fill it, render, then schedule. The approval the owner gives is for this exact file (turma:pauta contract 4).",
+  "start": "2026-09-01T13:00:00Z",
+  "cadence_days": 1,
+  "platforms": ["instagram", "tiktok"],
+  "shorts_tags": ["Shorts", "YourNiche", "HowTo"],
+  "posts": [
+    {
+      "slug": "mon-top-tools",
+      "type": "carousel",
+      "props": "props/mon-top-tools",
+      "caption": "Keyword-first opening line that says what the reader gets.\n\nOne line of tension, then the swipe instruction.\n\nThe offer, in bio.\n\n#tag1 #tag2 #tag3 #tag4 #tag5"
+    },
+    {
+      "slug": "wed-steal-this-prompt",
+      "type": "carousel",
+      "props": "props/wed-steal-this-prompt",
+      "caption": "Steal this prompt: the outcome it produces.\n\nWhy the usual way wastes an hour. Swipe for the exact prompt.\n\nThe offer, in bio.\n\n#tag1 #tag2 #tag3 #tag4 #tag5"
+    },
+    {
+      "slug": "fri-hot-take",
+      "type": "reel",
+      "props": "props/fri-hot-take.json",
+      "platforms": ["instagram", "tiktok", "youtube"],
+      "shorts_title": "The one-line hook, under 100 characters #shorts",
+      "caption": "The hook as the first line.\n\nThe offer, in bio.\n\n#tag1 #tag2 #tag3 #tag4 #tag5"
+    }
+  ]
+}

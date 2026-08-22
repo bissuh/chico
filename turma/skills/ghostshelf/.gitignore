@@ -1,0 +1,12 @@
+.env
+node_modules/
+out/
+remotion/out/
+remotion/.cache/
+
+# the project's own brand assets, not turma's
+remotion/public/*
+!remotion/public/README.md
+
+*.pyc
+__pycache__/

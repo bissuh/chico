@@ -22,7 +22,7 @@ Say this to the user before anything else. Do not skip it.
 
 If the user still wants in after hearing that, proceed. Honest expectation setting is the first deliverable.
 
-## The operation, in seven steps
+## The operation, in eight steps
 
 Work the user through these in order. Do one step per working session if needed. Never let them skip Step 1.
 
@@ -71,6 +71,14 @@ Open one Instagram and one TikTok account for the page. With no face, visual con
 
 Vary the format week to week. Keep the look identical (that is the brand), change the structure (that is the format).
 
+**Give each slot a name (the habit engine).** A weekly lineup where every day owns a named recurring segment beats a random feed, because the follower learns to expect it. Name the slots after what they deliver, then hold the schedule: a picks list, a steal-this-prompt card, a built-with-AI case study, a do-this-today tutorial, a contrarian take, an X-vs-Y decision, a week recap. Seven named slots, one a day, is a full week and a reason to come back.
+
+Order them by the signal each format earns:
+- **Save formats** (carousels: lists, prompts, case studies, tutorials) sit early in the week. They convert and get referenced later.
+- **Send formats** (short video: contrarian takes, X vs Y, tier lists) sit late in the week. They travel to people who do not follow you yet.
+- **One habit anchor** closes the week: the recap that loops back to the primary conversion.
+
+
 **Discovery note:** carousels win saves but mostly reach people who already follow you. Short video (Reels, TikTok video) is the cold-discovery engine. To grow from zero, run video alongside the carousels; do not rely on carousels alone. The stitched-hook short-video engine lives in `turma:cta-machine`.
 
 Then fill this skeleton (works inside any format):
@@ -87,22 +95,42 @@ S10 CTA      ask for the save + the send + the bio click
 
 Hook types that work: Mistake, Contrarian, Numbers, Story (start mid-scene), How-To (outcome + timeframe). The number one failure is an informational headline with no tension. Write the hooks and captions as stories, not labels; `turma:story-craft` is the tool for that.
 
-Batching workflow (a month in one afternoon):
+Batching workflow (a month in one afternoon). Two paths, same output. Pick by whether the operator writes code.
+
+**Path A, code (the one this skill ships tooling for).** Copy in the renderer and the two scripts (see Tooling below), set the theme once, then write each slide as a small JSON file and render the whole week in one command. This is the path that scales: the look is locked in code, so no batch ever drifts, and re-rendering a fixed typo costs one command.
+
+**Path B, no code.**
 1. Take one long piece (an essay, a guide, or the product itself). Atomize: one idea -> one carousel. Aim for 3-5 carousels per source.
 2. Draft all the copy as a spreadsheet: one row = one carousel, one column = one slide field (`S1_title`, `S1_body`, `S2_title`...).
 3. In Canva: design ONE on-brand template per slide type, then use Bulk Create / Connect Data to map the spreadsheet columns and generate every carousel at once.
 4. Generate the art wrapper (backgrounds only) in your image tool. Do not bake text into AI images; AI cannot reliably render legible type or an exact hex. Set the type and the exact brand color in Canva.
 5. Resize to 1080x1920 for TikTok, trim text further, add a strong cover frame and mood audio.
 
+Either path: **hard cap of 10 slides on Instagram.** Its carousel API rejects a post with more than 10 images, and it errors rather than truncating. TikTok allows 35. Write to 10 when the piece is cross-posted. Depth rules live in `turma:carousels`, including the self-complete test every carousel has to pass.
+
 Posting mix for a new account: lean on Reels / Carousel-Reels for discovery (small accounts get more reach there), use static carousels for saves and depth. 3-5 posts a week, consistency over volume.
 
-### Step 6. Wire the funnel (own the audience)
+### Step 6. Source it from what is spiking, not from your own archive
+
+The fastest way to run a gallery into the ground is to keep re-cutting the project's own back catalogue. It feels productive and it decays: the same ideas, thinner each pass. Most of a week should come from fresh outside research, and only a minority from distilling the project's own work.
+
+Free research stack, no subscription:
+- **TikTok Creative Center** (`ads.tiktok.com/business/creativecenter`, free, official). Trend Discovery for hashtags, songs, creators, and videos, plus Keyword Insights and Top Ads. Filter by region, industry, and the last 7 or 30 days. The best free read on what is spiking right now. TikTok trends turn over in about two weeks, so pull weekly and never reuse last week's list.
+- **Google Trends** (free). Rising and breakout queries in the niche, and whether the interest is real or one platform's bubble.
+- **The account's own analytics** (free). Native IG and TikTok insights plus whatever the funnel destination reports. The only data that says what converts for this project rather than for the platform average.
+- **A browser the agent can drive.** Someone has to actually read the Creative Center and write the analysis. That reading is the whole product a paid trend tool sells.
+
+Paid trend dashboards exist and mostly repackage the above with alerting and outlier scoring. Start free, prove the engine, and only then price a tool against the hours it saves. Any subscription is the owner's call.
+
+Whatever the source, the post is original editorial the project compiles. Never a repost, never a screen recording of someone else's post; both platforms throttle that (see Guardrails).
+
+### Step 7. Wire the funnel (own the audience)
 
 - Link in bio goes to the project's primary conversion goal first (from `brand.md`), the product second if they differ. When that goal is an email or newsletter opt-in, prioritize it: an owned list is the only asset the platform cannot take away. If the primary conversion IS the purchase, point the link there and capture emails at checkout.
 - Front-load the keyword in the first sentence of every caption (both platforms are search engines now). 3-5 relevant hashtags, not 30. Add alt text on Instagram.
 - Last slide asks for the save and the send ("send this to the friend who keeps saying they can't..."). Sends and saves drive reach more than likes in 2026.
 
-### Step 7. The weekly loop and reading the numbers
+### Step 8. The weekly loop and reading the numbers
 
 Each week: post the batch, reply to every comment and DM, and read three numbers only:
 - **Saves + sends per post** (is the content worth keeping/sharing).
@@ -110,6 +138,24 @@ Each week: post the batch, reply to every comment and DM, and read three numbers
 - **Conversions + sales** (is it converting): the primary conversion from `brand.md`, plus revenue.
 
 Then act: keep the post styles that earn saves/sends, cut the ones that do not, and every few weeks ship another small product (multi-product sellers earn far more than single-product ones). This is the power-law barbell: double down on the styles and products that hit, retire the ones that do not. See `turma:power-law`.
+
+## Tooling (render and schedule)
+
+This skill ships the code path end to end. Nothing here is required: Path B in Step 5 gets the same posts out with Canva and manual scheduling. Use this when the volume justifies it.
+
+```
+remotion/            slide + reel renderer, agnostic. Edit src/theme.ts once.
+scripts/render_batch.py     manifest -> PNGs and MP4s in out/
+scripts/schedule_batch.py   out/ -> Instagram, TikTok, YouTube Shorts via Postiz
+batch.example.json          the manifest both scripts read
+.env.example                Postiz key + integration ids
+```
+
+Install and run: see `scripts/README.md`. The short version is copy the four things into the project, run `npm install` inside `remotion/`, set `src/theme.ts` from the project's `brand.md`, write one JSON per slide, render, eyeball, then schedule with `--dry-run` before the live run.
+
+`src/theme.ts` is the only bridge between the renderer and the brand: handle, logo, wordmark, and three palettes. Fill it from `brand.md`. If `brand.md` has no visual section yet, write one there first so the next batch and the next channel agree.
+
+**Scheduling is gated.** `schedule_batch.py` publishes under the project's name, which is Yellow. The owner approves the manifest as it stands: caption, media, destination, and publish time as one unit. Change any of them afterward and the approval is void. See `turma:pauta`, contract 4.
 
 ## Honest expectations and when to pivot
 
@@ -143,6 +189,8 @@ Then act: keep the post styles that earn saves/sends, cut the ones that do not, 
 - The project's `brand.md`: niche, audience, splinter, voice, and the funnel destination (primary conversion). Source of truth for specifics.
 - `turma:cta-machine`: the short-video / Shorts discovery engine. Run it alongside the carousels: carousels save, video discovers.
 - `turma:story-craft`: write the hooks and captions as stories, not headlines. An informational headline with no tension is the number one failure.
-- `turma:power-law`: content is a power law. Double down on the post styles and products that hit; retire the ones that don't. Governs Step 7 and the ship-more-products call.
+- `turma:power-law`: content is a power law. Double down on the post styles and products that hit; retire the ones that don't. Governs Step 8 and the ship-more-products call.
 - `turma:micromagnet-craft`: turn the Swipe File preview into a coupled opt-in, the strongest bridge from a carousel to the funnel.
+- `turma:carousels`: the depth standard and the self-complete test every carousel has to pass before it renders. Write the slides there, render them here.
+- `turma:pauta`: the ops layer. Grounding before drafting, the owner interview for anything opinion-led, and the approval binding that governs `schedule_batch.py`.
 - `turma:anti-ai-linguo`: the final voice pass on any public copy.

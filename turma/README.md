@@ -31,6 +31,15 @@ turma/
 
 The skills read `brand.md` instead of hardcoding a brand. `turma:pauta` is the operating layer around them: it keeps the judgment (angles, opinions, approvals) with the project owner and the execution with the agent.
 
+Most skills are method only. Four ship runnable tooling next to the method, and none of it is required to use the skill:
+
+- `ghostshelf/` a Remotion slide and reel renderer plus a batch scheduler for Instagram, TikTok, and YouTube Shorts. Themed from one file, `remotion/src/theme.ts`.
+- `cta-machine/` a Remotion CTA renderer plus the scrape, stitch, upload, and schedule chain for a short-video engine.
+- `search-console-connector/` a Search Console reader and an opportunity scorer.
+- `beehiiv-connector/` and `youtube-connector/` thin read wrappers over their APIs.
+
+Anything in those folders that publishes under a project's name is gated: the owner approves the exact artifact first. See `turma:pauta`, contract 4.
+
 ## The agnostic contract: brand.md
 
 Every specialist reads one file the host project provides: `brand.md`. That file is the only place a brand's specifics live. Same skills, different `brand.md`, different project. See `templates/brand.template.md` for the fields and `examples/brand.example.md` for a filled one.
@@ -75,4 +84,4 @@ The boundary: **raw project data never leaves the project.** Only the distilled,
 
 ## Status
 
-v0.6.0. Twenty skills, the chico agent, four commands, three template contracts. The runtime (Chico as an autonomous agent wielding turma) is Layer 2, designed later.
+v0.7.0. Twenty skills, the chico agent, four commands, three template contracts. The runtime (Chico as an autonomous agent wielding turma) is Layer 2, designed later.
