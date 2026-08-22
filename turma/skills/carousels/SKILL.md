@@ -12,11 +12,14 @@ Generate scroll-stopping social carousels that are actually useful. A good carou
 ## The depth standard (do not violate)
 
 A carousel goes deep or it does not ship.
-- 8 to 12 slides (up to 15 for a real guide). Not 3-4 one-liner slides.
+- **8 to 10 slides. Hard cap 10 on Instagram**, whose carousel API rejects a post with more than 10 images: an 11-slide carousel does not get truncated, it errors. TikTok allows 35 and LinkedIn takes a longer PDF, so a guide can run longer on those, but write to 10 if the piece is cross-posted. Not 3-4 one-liner slides.
 - Each slide earns its swipe: real substance, a specific tactic, a named tool, an actual example or prompt. Not a fortune cookie.
 - The title slide is a standalone hook that works as a thumbnail. It makes the scroller stop and swipe.
+- **Titles stand alone.** A cold viewer who has never seen the project's other work has to get the value. No insider references ("this week's picks", "as I said Monday"). Slide 1 is tension plus payoff promise, never a flat label.
 - Every content slide leaves a small open loop the next slide pays off (see `turma:story-craft`, curiosity gaps).
-- The last slide is the CTA, coupled to the topic and pointing at the primary conversion from brand.md.
+- The last slide is the CTA, coupled to the topic and pointing at the primary conversion from brand.md. Ask for the save and a comment; comments are a reach signal and the questions feed the next piece.
+
+**The self-complete test (run it on every carousel before it ships).** If someone read only these slides, with no caption, no link, and no prior knowledge of the project, would they know exactly what to do, with no missing step, tool, or prompt? If they would still have a question, it is not done. Add the missing slide. This is the single test that separates a carousel that gets saved from one that gets a like.
 
 Thin, generic carousels get reach and zero saves. Depth is what gets saved and shared.
 
