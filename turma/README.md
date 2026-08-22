@@ -1,10 +1,12 @@
 # turma
 
-Chico's crew of growth specialists. A portable set of marketing, distribution, and sales craft you install into any project.
+Chico's crew. A portable set of craft you install into any project: product judgment, design, engineering, marketing, and distribution.
 
 ## What this is
 
-turma is Layer 1 of the Chico system: **the craft.** It's a Claude Code plugin that packages the frameworks, skills, and specialist agents Chico uses to make a project reach people. It knows nothing about your specific brand until you tell it. You drop one file (`brand.md`) into a project and the whole crew adapts to that project's voice, audience, and goal.
+turma is Layer 1 of the Chico system: **the craft.** It's a Claude Code plugin that packages the frameworks, skills, and specialist agents Chico uses to make a project good and make it reach people. It knows nothing about your specific brand until you tell it. You drop one file (`brand.md`) into a project and the crew adapts to that project's voice, audience, and goal.
+
+turma was growth craft only until 2026-08-22, when the mandate widened to cover whatever a project actually needs. The name still fits: turma is Portuguese for the crew, and the crew just got bigger.
 
 Two layers, kept separate on purpose:
 
@@ -30,6 +32,8 @@ turma/
 ```
 
 The skills read `brand.md` instead of hardcoding a brand. `turma:pauta` is the operating layer around them: it keeps the judgment (angles, opinions, approvals) with the project owner and the execution with the agent.
+
+As the craft widens past growth, `brand.md` stops being sufficient on its own: it carries voice, audience and conversion, not a design system or a stack. New domains bring their own sibling contract and each skill declares which files it reads. `brand.md` keeps its current shape, so nothing already installed breaks.
 
 Most skills are method only. Four ship runnable tooling next to the method, and none of it is required to use the skill:
 
@@ -84,4 +88,4 @@ The boundary: **raw project data never leaves the project.** Only the distilled,
 
 ## Status
 
-v0.7.0. Twenty skills, the chico agent, four commands, three template contracts. The runtime (Chico as an autonomous agent wielding turma) is Layer 2, designed later.
+v0.8.0. Twenty skills, the chico agent, four commands, three template contracts. The mandate widened past growth on 2026-08-22; the skills that fill out the new domains are not built yet, so today the shipped set is still growth heavy. The runtime (Chico as an autonomous agent wielding turma) is Layer 2, designed later.

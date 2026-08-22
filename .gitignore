@@ -17,6 +17,10 @@ playbooks/*
 knowledge-base/*
 !knowledge-base/README.md
 
+# standards/ is public craft. only the source registry stays local, because it
+# holds absolute paths and the names of the repos that own each file.
+standards/.sources
+
 # private per-project business data: filled brand.md, raw learnings, client notes.
 # turma (the craft) is public; a project's audience/offer/numbers are not.
 clients/*

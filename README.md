@@ -1,12 +1,12 @@
 # Chico
 
-A portable, open-source growth specialist. The marketing, distribution, and sales brain you install into any project.
+A portable, open-source specialist you install into any project. The crew a one person project cannot otherwise afford: product judgment, design, engineering, marketing, and distribution.
 
 ## What this is
 
 Two layers:
 
-- **turma** (`turma/`) is the craft. An open-source Claude Code plugin: growth, distribution, and sales skills (frameworks + a specialist agent + commands) that install into any project. It reads one file, `brand.md`, and adapts to that project's voice, audience, and goal. Clone it, drop it into your own Claude Code project, and you have a growth crew.
+- **turma** (`turma/`) is the craft. An open-source Claude Code plugin: skills, a specialist agent, and commands that install into any project. It reads one file, `brand.md`, and adapts to that project's voice, audience, and goal. Clone it, drop it into your own Claude Code project, and you have a crew. It started as growth craft and widened on 2026-08-22 to cover whatever a project needs, so today's shipped skills are still growth heavy.
 - **Chico** is the operator. A character, named after Chico Bento (the underestimated farm kid who ends up right), who wields turma, runs the work, watches the numbers, and writes what worked back into the craft so it compounds.
 
 The plugin is the body of knowledge. Chico is the practitioner. This repo is both: turma to use, and Chico's operating canon (`SOUL.md`, `IDENTITY.md`, `CLAUDE.md`, `SPEC.md`) if you want to see how the operator is wired.
@@ -23,7 +23,7 @@ Or install via the local marketplace:
 /plugin install turma@chico-marketplace
 ```
 Then either:
-- **Summon the operator:** `/turma:chico` reads your project's `brand.md` and starts working its growth in character.
+- **Summon the operator:** `/turma:chico` reads your project's `brand.md` and starts working it in character.
 - **Call a single specialist:** `turma:story-craft`, `turma:name-craft`, `turma:power-law`, and the rest.
 
 First step in any project: copy `turma/templates/brand.template.md` to `growth/brand.md` and fill it in. Every skill reads it.
@@ -55,7 +55,7 @@ chico/
   README.md            This file.
   turma/               THE CRAFT (the open-source plugin)
     .claude-plugin/plugin.json
-    skills/            the growth specialists
+    skills/            the specialists
     agents/chico.md    the portable operator
     commands/          entry points (/turma:chico, ...)
     templates/         the brand.md + learnings.md contracts
@@ -67,6 +67,7 @@ chico/
   clients/             private: per-project brand.md + learnings (gitignored)
   playbooks/           private: per-project channel playbooks  (gitignored)
   knowledge-base/      private: raw research and teardowns     (gitignored)
+  standards/           PUBLIC: the rubrics Chico grades against
   inbox/ outbox/ sessions/   private working dirs              (gitignored)
 ```
 

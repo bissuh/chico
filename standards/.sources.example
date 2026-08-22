@@ -1,0 +1,5 @@
+# standards source registry: <local filename> <TAB> <absolute source path>
+# Copy to .sources and fill in. Read by sync.sh, gitignored because it holds
+# absolute paths and the names of the repos that own each file.
+#
+# design-principles.md	/absolute/path/to/your-project/docs/design-principles.md
