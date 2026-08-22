@@ -1,4 +1,4 @@
-# Chico — Project Spec
+# Chico: Project Spec
 
 Living document. Source of truth for what Chico is, what's decided, where the work stands, and what's next.
 
@@ -20,9 +20,9 @@ See SOUL.md (the reason) and IDENTITY.md (who).
 
 ## 2. The two-layer architecture
 
-**Layer 1 — turma (the craft).** `turma/`. A plugin bundling skills (frameworks + methods), specialist subagents, commands, and read connectors. Knows nothing about a brand until the host project provides `brand.md`. Installs into any Claude Code project via the local marketplace. Open source, so other builders can clone and use it. Gets sharper over time via the learning loop.
+**Layer 1, turma (the craft).** `turma/`. A plugin bundling skills (frameworks + methods), specialist subagents, commands, and read connectors. Knows nothing about a brand until the host project provides `brand.md`. Installs into any Claude Code project via the local marketplace. Open source, so other builders can clone and use it. Gets sharper over time via the learning loop.
 
-**Layer 2 — Chico (the operator).** The character plus the runtime that wields turma. Today: local Claude Code on the Max plan. Later: an autonomous agent (Claude Agent SDK) on a capped API budget. The operator is what turns a static toolkit into a specialist who learns.
+**Layer 2, Chico (the operator).** The character plus the runtime that wields turma. Today: local Claude Code on the Max plan. Later: an autonomous agent (Claude Agent SDK) on a capped API budget. The operator is what turns a static toolkit into a specialist who learns.
 
 ## 3. The agnostic contract: brand.md
 
@@ -53,25 +53,25 @@ Agnostic by design. The specific projects Chico works are recorded privately in 
 
 ## 8. Roadmap
 
-**Phase 0 — Foundation (in progress).**
+**Phase 0. Foundation (done 2026-08-22).**
 - [x] Name the craft layer (turma)
 - [x] Plugin skeleton + local marketplace
 - [x] brand.md contract + learnings.md contract
 - [x] Privacy boundary (public craft, gitignored business data)
 - [x] Re-mission SOUL / IDENTITY / SPEC to canon
-- [ ] Rewrite CLAUDE.md + memory for the new mission
-- [ ] Archive TBP-specific legacy
+- [x] Rewrite CLAUDE.md + memory for the new mission
+- [x] Archive TBP-specific legacy (2026-08-22: deleted, with the craft mined out first)
 
-**Phase 1 — Port the craft.**
-- [ ] Move all skills into turma/skills, decoupled to read brand.md
-- [ ] Wire the currently-unlinked skills so the whole set is invocable
-- [ ] Build the specialist agents + commands
+**Phase 1. Port the craft (done 2026-08-22).**
+- [x] Move all skills into turma/skills, decoupled to read brand.md
+- [x] Wire the currently-unlinked skills so the whole set is invocable
+- [x] Build the operator agent + the four commands. More specialists (distribution, copy, analytics) stay queued as backlog C-002, to build when a live engagement needs the split.
 
-**Phase 2 — Prove it on the first project.**
+**Phase 2. Prove it on the first project (next, and the current bottleneck).**
 - [ ] Fill the first project's brand.md (private)
 - [ ] Run a real growth cycle, log learnings, promote the first technique
 
-**Phase 3 — Layer 2 runtime.**
+**Phase 3. Layer 2 runtime.**
 - [ ] Agent SDK loop on a capped API key
 - [ ] Autonomous run + write-back, spot-checked
 - Design constraints (adopted 2026-08-16, from the Precht/Nitski mining into `turma:pauta`): approvals bind to the exact artifact (text + asset + destination + publish time) and any change voids them; a global kill switch; ambiguous errors go to a review queue, never blind retries; every post-approval step is idempotent and holds no editorial authority. Nothing autonomous decides what publishes.
@@ -80,10 +80,11 @@ Agnostic by design. The specific projects Chico works are recorded privately in 
 
 1. **First project's brand.md:** needs Bissuh's inputs (audience, voice, goal, channels), kept private.
 2. **Layer 2 budget:** what monthly API cap is Chico allowed? (Red.)
-3. **Repo location:** the folder still lives under `TBP/`. Move it to a neutral path once the pivot lands? (Touches paths + configs.)
-4. **Legacy cleanup:** the TBP-era skills, playbooks, remotion, and outbox still reference the old mission. Decide what to keep, generalize, or archive.
+3. **Repo location:** the folder still lives under `TBP/`, a project that no longer exists. Move it to a neutral path? (Touches paths + configs.) Still open.
+4. ~~**Legacy cleanup.**~~ Resolved 2026-08-22. Everything TBP-era was deleted after the reusable craft was mined into turma. See the changelog below.
 
 ## 10. Changelog
 
+- **2026-08-22**: Repo cleanup and the end of the TBP legacy. Phases 0 and 1 closed. The repo went from 4.0 GB to under 1 MB: the TBP video estate, the root Remotion renderer, the ops scripts and their launchd jobs (both had been failing every 30 minutes since 2026-05-10 on a macOS TCC block, unnoticed), the TBP-era root docs, and the private drafts and research inbox are gone. The craft that had never been ported was pulled into turma first: the gallery renderer and batch scheduler into `ghostshelf` (now theme-driven and brand-agnostic, typechecked and render-verified), the Instagram 10-image carousel cap and the self-complete test into `carousels` (the skill had been advising slide counts that error on Instagram), the free trend-research layer and the named-slot lineup into `ghostshelf`, and two operating lessons into `cta-machine`. Plugin at 0.7.0.
 - **2026-08-16**: Ops layer added to turma (`turma:pauta`, plugin 0.6.0): delegate execution, keep judgment. Five contracts (reference bank, grounding packet, owner interview, approval binding, engagement boundary); production skills now ground and gate opinion-led work. Layer 2 approval-layer constraints adopted (Phase 3 above). Source: Bernardo Precht's content-agent architecture; principle from Osvald Nitski (Mercor) on 20VC.
-- **2026-07-11** — Pivot. TBP retired as a project. Chico re-missioned to portable, project-agnostic growth specialist. turma plugin (open source) + local marketplace + brand.md / learnings.md contracts built. Privacy boundary set: public craft, gitignored business data. SOUL / IDENTITY / SPEC promoted to canon. Runtime decided: Max now, Agent SDK on capped API for Layer 2. Bissuh chose to keep the repo open source so others can use and learn from turma.
+- **2026-07-11.** Pivot. TBP retired as a project. Chico re-missioned to portable, project-agnostic growth specialist. turma plugin (open source) + local marketplace + brand.md / learnings.md contracts built. Privacy boundary set: public craft, gitignored business data. SOUL / IDENTITY / SPEC promoted to canon. Runtime decided: Max now, Agent SDK on capped API for Layer 2. Bissuh chose to keep the repo open source so others can use and learn from turma.

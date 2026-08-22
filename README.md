@@ -61,10 +61,12 @@ chico/
     templates/         the brand.md + learnings.md contracts
     examples/          a filled (fictional) brand.md
   .claude-plugin/marketplace.json   makes turma installable
-  skills/              Chico's own operator skills (consolidate-memory)
-  scripts/             Chico's ops scripts (heartbeat, consolidate)
+  RUNTIME.md           Layer 2 (autonomous runtime) design, not activated
+  backlog.md           what is queued
   memory/              private: mission, permissions, roster   (gitignored)
   clients/             private: per-project brand.md + learnings (gitignored)
+  playbooks/           private: per-project channel playbooks  (gitignored)
+  knowledge-base/      private: raw research and teardowns     (gitignored)
   inbox/ outbox/ sessions/   private working dirs              (gitignored)
 ```
 
