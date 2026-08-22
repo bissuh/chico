@@ -10,31 +10,17 @@ Status: queued | in-progress | blocked | done
 
 These are blocked on a call only he can make. Nothing moves until they land.
 
-- **IDENTITY.md speech tells.** The 2026-08-14 tells-rot finding says stock voice anchors go stale and become AI tells. IDENTITY.md still lists "Look." and "Here's the thing." as Chico's anchors. Canon edit, so it needs his nod. Open since 2026-08-14.
 - **Layer 2 monthly API cap** (RT-001 below). Red tier.
 - **Repo relocation** (B-002 below). Touches local paths and configs.
-- **Fortbras: is the engagement still live?** The document went out 2026-07-26 and nothing has come back. Three follow-ups are queued under R-002 and none of them are worth doing if the deal went cold.
+- **Which project is the first dogfood?** SPEC Phase 2 (run one real growth cycle end to end) is the stated bottleneck and it now has no candidate project attached. Nothing proves the system until one is picked. Chico proposes, Bissuh decides which projects get worked.
 
 ---
 
 ## Open
 
-### R-002: Fortbras follow-through
-- Status: blocked (waiting on the client, and on whether the engagement is still live)
-- Delivered 2026-07-26: `clients/fortbras/fortbras-peca-chave-seo-aeo-ia.md`, 12 plays across 4 layers, 18 design briefs.
-- Owed if it advances:
-  1. A rendered version of the document (HTML artifact or deck). ASCII mockups read badly in a meeting and the doc is carried by its mockups.
-  2. Five numbers from the client the napkin math is waiting on: organic revenue, average B2C and B2B ticket, active workshops, obsolete inventory value, current CAC.
-  3. Server-log check on whether GPTBot, ClaudeBot, and PerplexityBot clear the Vercel bot challenge on Hipervarejo and Jaicar. Flagged in the doc as "confirm", never as fact. Do not let it harden into a claim.
-
-### R-001: First dogfood engagement (Sementes)
-- Status: not started. The pivot notes say a `brand.md` was written, but there is no `clients/sementes/` in this repo, so it either lives in that project's own `growth/` folder or it was never filled. Verify before planning anything.
-- The first full growth cycle: audit, pick the move, ship it, log what it taught. Proves the whole system on real data.
-- Now also the first real test of two things built since: `turma:pauta` INSTALL mode (the interview gate) and the `turma:ghostshelf` tooling shipped 2026-08-22.
-
-### C-003: Promote the Fortbras learning-loop candidates
-- Status: queued (1 of 5 done)
-- Five generalizable techniques came out of that engagement. None were promoted, and the raw notes now live only in `sessions/2026-07-26-fortbras-seo-aeo-abertura.md`.
+### C-003: Promote five orphaned SEO technique candidates
+- Status: queued, and now parentless. The engagement they came from is closed, so none of them will ever be proven by its result. Judge them on their own merit or drop them; do not leave them queued forever pretending a proof is coming.
+- Five generalizable techniques came out of a multi-brand retail SEO engagement. None were promoted, and the raw notes live only in that engagement's session file.
   1. **Multi-domain estate audit in one table.** The curl loop that printed robots, sitemap, H1, schema, title, and description per domain was the most persuasive asset in the whole document. Should be a script in `turma:seo-strategy` (`scripts/estate_audit.sh`). Any group with several brands has this problem and nobody measures it this way. **Highest value of the five.**
   2. **The fitment data is already in the product title.** Extract structure out of a legacy catalogue with AI instead of buying an application database. Candidate for `programmatic-seo` or `seo-strategy`.
   3. **Obsolete inventory as long-tail SEO.** A discontinued part has no organic competition. Generalizes to any retailer with a dead tail.

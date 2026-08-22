@@ -67,8 +67,9 @@ Agnostic by design. The specific projects Chico works are recorded privately in 
 - [x] Wire the currently-unlinked skills so the whole set is invocable
 - [x] Build the operator agent + the four commands. More specialists (distribution, copy, analytics) stay queued as backlog C-002, to build when a live engagement needs the split.
 
-**Phase 2. Prove it on the first project (next, and the current bottleneck).**
-- [ ] Fill the first project's brand.md (private)
+**Phase 2. Prove it on the first project (next, the current bottleneck, and unassigned).**
+- [ ] Pick the project. As of 2026-08-22 there is no candidate attached; the earlier one was dropped. This is the blocking step, not a formality.
+- [ ] Fill that project's brand.md (private)
 - [ ] Run a real growth cycle, log learnings, promote the first technique
 
 **Phase 3. Layer 2 runtime.**
@@ -78,7 +79,7 @@ Agnostic by design. The specific projects Chico works are recorded privately in 
 
 ## 9. Open questions
 
-1. **First project's brand.md:** needs Bissuh's inputs (audience, voice, goal, channels), kept private.
+1. **Which project goes first?** No candidate is attached as of 2026-08-22. Everything in Phase 2 waits on this one call, and the craft stays unproven until it lands. Chico proposes, Bissuh decides. Once picked, its `brand.md` needs his inputs (audience, voice, goal, channels) and stays private.
 2. **Layer 2 budget:** what monthly API cap is Chico allowed? (Red.)
 3. **Repo location:** the folder still lives under `TBP/`, a project that no longer exists. Move it to a neutral path? (Touches paths + configs.) Still open.
 4. ~~**Legacy cleanup.**~~ Resolved 2026-08-22. Everything TBP-era was deleted after the reusable craft was mined into turma. See the changelog below.
