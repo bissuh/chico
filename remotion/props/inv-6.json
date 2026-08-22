@@ -1,1 +1,0 @@
-{"layout": "detail", "kicker": "3 · Send", "title": "Stripe or Lemon Squeezy sends it", "body": "Pass the clean items to Stripe Invoicing or Lemon Squeezy. It creates the invoice, brands it, and emails it with a payment link. Both have full APIs, so n8n and Make connect out of the box.", "theme": "green", "slideNo": 6, "slideTotal": 9, "handle": "@thebillionperson"}

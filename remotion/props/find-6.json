@@ -1,1 +1,0 @@
-{"layout": "prompt", "kicker": "4 · Riskiest assumption", "title": "Find what could kill it", "promptLabel": "Paste into Claude", "prompt": "For [idea], name the riskiest assumption that has to be true for this to work, and the cheapest test I can run this week to find out, before I build anything.", "theme": "green", "slideNo": 6, "slideTotal": 9, "handle": "@thebillionperson"}
