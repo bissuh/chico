@@ -133,6 +133,7 @@ Leave the build to the owner. This skill produces the design and the reasoning, 
 
 - Runs **after** `turma:conversion-craft`. That skill makes attention into a customer; this one decides whether the customer stays. Both ask the cadence question and the answers must match.
 - Runs **after** `turma:positioning`, at a distance. If retention work keeps finding that users cannot say what the product is for, that is a positioning failure surfacing late.
+- For a mobile app, feeds `turma:aso-strategy` directly and runs alongside it rather than before it. Both stores now weigh post-install signals (product page conversion, retention, review recency) in search ranking, so a cohort curve that flattens is not only a revenue fact, it is a distribution asset. The reverse holds harder: no amount of metadata work outranks churn.
 - Feeds the **distribution** skills (`turma:power-law`, `turma:seo-strategy`, `turma:ghostshelf`, `turma:cta-machine`) a reason to be worth running. Traffic into a bucket with no bottom is the most expensive mistake in the stack.
 - Shares an axis with `turma:power-law` and should not be confused with it. See "The axis the law does not cross" there: more independent bets wins, more mechanics inside one product reverses.
 - Hands the interface layer to `standards/design-principles.md`, section XX for progress and completion in particular. This skill says whether a loop should exist; that standard says how it should look on screen.
@@ -163,6 +164,7 @@ The diagnosis layer is ours, and it came from a real engagement rather than a bo
 - `turma:conversion-craft`: the upstream sibling. It ends at the yes; this one starts there. The two share the cadence question.
 - `turma:positioning`: further upstream. Chronic retention failure is often positioning surfacing late.
 - `turma:power-law`: the portfolio axis, and the boundary that keeps "more is better" out of a single product.
+- `turma:aso-strategy`: the loop partner for a mobile app. Retention feeds store ranking, so this skill's verdict gates that one's plan.
 - `standards/social-app-design-principles.md`: sections 7 and 8 are the bar this skill grades against.
 - `standards/design-principles.md`: section XX, how a progress loop should look once this skill has decided it should exist.
 - The project's `brand.md`: audience, offer, conversion goal, scoreboard.

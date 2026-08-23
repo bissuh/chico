@@ -20,6 +20,7 @@ The plugin is the body of knowledge. Chico is the practitioner.
 ```
 turma/
   .claude-plugin/plugin.json   the plugin manifest
+  TOOLS.md                     the tool registry (what each skill uses, what it costs)
   skills/                      the specialists (frameworks + methods)
   agents/                      the chico agent (the operator, summonable into any project)
   commands/                    entry points (/turma:produce-week, /turma:growth-audit, etc.)
@@ -88,4 +89,4 @@ The boundary: **raw project data never leaves the project.** Only the distilled,
 
 ## Status
 
-v0.9.0. Twenty one skills, the chico agent, four commands, three template contracts. The mandate widened past growth on 2026-08-22. `retention-craft` is the first skill on the other side of that line: it works on the product rather than the content, and it is the first to grade against a file in `standards/` instead of carrying its own bar. The rest of the shipped set is still growth heavy. The runtime (Chico as an autonomous agent wielding turma) is Layer 2, designed later.
+v0.10.0. Twenty two skills, the chico agent, four commands, three template contracts. The mandate widened past growth on 2026-08-22. `retention-craft` is the first skill on the other side of that line: it works on the product rather than the content, and it is the first to grade against a file in `standards/` instead of carrying its own bar. `aso-strategy` followed it, and pulled the two together: store ranking now weighs post-install signals, so retention and distribution stopped being separate problems for anything that ships to an app store. The rest of the shipped set is still growth heavy. The runtime (Chico as an autonomous agent wielding turma) is Layer 2, designed later.

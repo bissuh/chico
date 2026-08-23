@@ -36,6 +36,7 @@ First step in any project: copy `turma/templates/brand.template.md` to `growth/b
 - `micromagnet-craft`: 2-minute opt-in tools
 - `anti-ai-linguo`: the final voice pass, strips AI tells and dashes
 - `power-law`: treat content and growth as a power law, run the barbell
+- `seo-strategy` / `aso-strategy`: get found, on Google and in the app stores
 - `ghostshelf`: build and run a faceless page that sells a digital product
 - `cta-machine`: an AI-assisted YouTube Shorts growth machine
 - `beehiiv-connector`, `youtube-connector`: read-only data pulls
@@ -56,6 +57,7 @@ chico/
   turma/               THE CRAFT (the open-source plugin)
     .claude-plugin/plugin.json
     skills/            the specialists
+    TOOLS.md           the tool registry (what each skill uses, what it costs)
     agents/chico.md    the portable operator
     commands/          entry points (/turma:chico, ...)
     templates/         the brand.md + learnings.md contracts

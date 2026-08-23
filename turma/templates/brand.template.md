@@ -64,5 +64,16 @@ Copy this file into your project as `growth/brand.md` and replace every `[...]`.
 - **Top 3 competitors:** [name, site, GBP URL each]
 - **Analytics wired:** [Search Console via turma:search-console-connector? GA4? none yet]
 
+## 11. ASO context (optional, fill if this project ships a mobile app)
+`turma:aso-strategy` reads this. Same "load the context once" layer as section 10, for stores instead of Google.
+- **Platforms:** [iOS / Android / both]
+- **Store URLs:** [App Store URL, Play URL]
+- **Primary category + secondary:** [...]
+- **Primary keyword (the term the store title leads with):** [...]
+- **Top 3 competing apps:** [name + store URL each]
+- **Current rank for the primary keyword, per storefront:** [... or "not ranking yet"]
+- **Current ratings:** [count + average per store, and how many arrived in the last 30 days]
+- **Console access wired:** [App Store Connect? Play Console? neither yet]
+
 ---
 Once this is filled, invoke any specialist (`turma:story-craft`, `turma:micromagnet-craft`, ...) and it works to this brief.

@@ -137,6 +137,18 @@ Every finalist must pass all three. Score 1-3 per filter (1 = fails, 2 = present
 
 If a candidate scores 3-3-1 (fails on unexpected), it's a Ready Mop. Send it back.
 
+### 7. When the name is also a search index
+
+Some surfaces make the name the thing people *search*, not just the thing they say, and that pulls against everything above. The method pushes toward the unexpected. An index rewards the expected term.
+
+The resolution is that these are almost always two fields, not one compromise.
+
+- An **app store listing** gives you a 30-character title, separate from the brand. An unknown app puts the category term first and the brand second, and flips that order only once the brand outsearches the category. `turma:aso-strategy` owns that field.
+- A **YouTube channel, a podcast, or a directory listing** works the same way: the display name carries the search term, the brand carries the identity.
+- A **domain** does not. Websites rank with pages, not with a keyword in the domain, so an exact-match keyword domain buys far less than it costs in distinctiveness.
+
+So never soften a name to make it searchable. Pick the sharp one, then let the indexed field carry the category term alongside it. A name that does both honestly is rare and worth taking when it shows up: HabitKit is a real brand that happens to contain the head term of its category, which is why its store title reads naturally rather than like keyword stuffing.
+
 ## Domain validation (dotchk integration)
 
 `dotchk` is a fast NS-record-based domain checker. Install it with `cargo install dotchk` so it's on your PATH. Always WHOIS-verify before purchase (purchase is Red tier, see hard rules).
@@ -364,4 +376,5 @@ A finished EVALUATE that earns its keep:
 - The project's `brand.md`: voice, audience, positioning, category. The source of truth for specifics.
 - `turma:story-craft`: when a name needs a launch story, story-craft writes it.
 - `turma:anti-ai-linguo`: the final voice pass, so names never feel AI-generated.
+- `turma:aso-strategy`: owns the store title, which is a search field rather than a name. Hand it the brand this skill picks.
 - `https://github.com/dotchk/dotchk`: domain checker docs and patterns.

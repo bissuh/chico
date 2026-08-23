@@ -25,6 +25,7 @@ This is the skill that runs *after* positioning and *before* the distribution sk
 - For line-level copy voice. That's `turma:story-craft`, `turma:optimize-post`, `turma:anti-ai-linguo`. conversion-craft calls them for the copy layer; it doesn't replace them.
 - For the acquisition channels themselves. Where the traffic comes from is `turma:power-law`, `turma:seo-strategy`, `turma:social-posts`, `turma:cta-machine`, `turma:ghostshelf`.
 - For what happens after the yes. Whether the customer stays is `turma:retention-craft`. This skill stops at the conversion; that one starts there.
+- For a mobile app's store listing specifically. The product page is a landing page and every rule here applies, but the fields, the A/B mechanics, and the ranking consequences are `turma:aso-strategy`.
 - For a standalone lead magnet. That's `turma:micromagnet-craft`. The two share the "give quick value free, then sell" logic, but micromagnet builds the top-of-funnel handraiser while conversion-craft makes the core offer and page convert.
 
 ## The rule that governs everything: conversion before traffic
@@ -70,6 +71,8 @@ The landing page is roughly eighty percent of the marketing. If the page can't c
 6. A CTA that feels like the obvious next step, not a leap off a cliff.
 
 **Write like a human.** Not an emotionless engineer, not an overcaffeinated sales rep. A normal person saying it out loud. Short sentences. Bullet lists over endless paragraphs, and product visuals over bullet lists. Specific and down-to-earth beats grand and Nike-shaped, because a small brand earns trust by sounding like a person, not a billboard. The test is blunt: read the page to a friend and watch their face. Iterate until they get it without you explaining. `turma:anti-ai-linguo` is the final gate here, because AI-flavored copy is the fastest way to sound like every other page the reader has already ignored.
+
+**Test the visuals, do not trust your taste.** Your confidence about a page you designed is worth nothing, and it is expensive when it is wrong. Sebastian Röhl paid a designer to rebuild HabitKit's App Store screenshots, was certain the polished set would win, ran the A/B test, and the original self-made screenshots converted better. One result does not prove that amateur beats professional. It proves that the taste of the person closest to the product is not evidence. Test the hero visual and the headline wherever the platform gives you a native test (Apple's Product Page Optimization, Google Play's store listing experiments, or a split test on your own site), and read nothing into an underpowered one: a page with a few dozen daily visitors cannot reach significance, so decide there with judgment and revisit when the traffic exists.
 
 ## Layer 3: the funnel across awareness
 
@@ -125,6 +128,7 @@ Distilled from Dan Kulkov's "20 marketing changes to get unstuck" (FounderPal, M
 - `turma:positioning`: the upstream skill. Establishes the painkiller and the segment this skill assumes. Run it first.
 - `turma:power-law`, `turma:seo-strategy`, `turma:social-posts`, `turma:cta-machine`, `turma:ghostshelf`: the distribution skills downstream. They bring the traffic this skill makes worth bringing.
 - `turma:retention-craft`: the downstream sibling. This skill wins the customer; that one keeps them. Both ask how often a real user gets value, and the two answers must match.
+- `turma:aso-strategy`: this skill's rules applied to an app store product page, where conversion rate also feeds search ranking.
 - `turma:micromagnet-craft`: the sibling top-of-funnel handraiser for the not-yet-ready.
 - `turma:story-craft`, `turma:optimize-post`, `turma:anti-ai-linguo`: the copy layer this skill calls for the page.
 - The project's `brand.md`: the offer, the conversion goal, the price, the scoreboard. Source of truth for specifics.

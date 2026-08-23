@@ -115,4 +115,5 @@ The tactics are distilled from Sarvesh Shrivastava's "Top 20 Claude Prompts for 
 - `turma:optimize-post`: on-page copy and title/meta/H1 fixes.
 - `turma:emotion-craft`: turn mined review language into website and GBP copy.
 - `turma:viral-teardown` and `turma:power-law`: competitor teardown and quick-win prioritization.
+- `turma:aso-strategy`: the mobile sibling. Store search is a separate index with different fields and different ranking inputs, so app listings go there. This skill keeps the app's own website, the review directories, and the AI-answer surfaces a store listing cannot reach.
 - `turma:micromagnet-craft`: shapes the ungated ranking tool and its organic upsell (the pull motion) that the free-tool ranking-page lever ranks.
