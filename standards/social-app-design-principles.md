@@ -119,6 +119,33 @@ Incumbent advantage is frequently overstated. Well-crafted products that harness
 
 ---
 
+### Store Search Is the Channel, and It Has a Bar
+
+For a mobile product, store search is usually the single largest source of installs, and it costs nothing. A listing nobody optimized is not a weak channel, it is an unshipped one. Grade it before grading anything downstream of it.
+
+The two stores index different fields, so one listing written for both is wrong on one of them:
+
+| | Apple App Store | Google Play |
+| --- | --- | --- |
+| Indexed for search | App name (30), subtitle (30), keyword field (100 bytes, hidden) | Title (30), short description (80), long description (4,000) |
+| Not indexed | The description, entirely | (no dedicated keyword field exists) |
+
+**The pre-submit bar.** A listing fails this the same way a feature fails the approval checklist:
+
+- [ ] The store title leads with the term a stranger types, not with the brand. The brand goes first only once the brand outsearches the category.
+- [ ] The keyword field is full, comma-separated with no spaces, singular only, repeating nothing already in the name or subtitle, and containing no trademark the project does not own.
+- [ ] The first screenshot shows real interface and the most visually distinct thing the product does. Most visitors decide without ever swiping.
+- [ ] The review prompt fires at a moment of completed value, never during onboarding and never after an error. Apple allows three prompts per user per year, so they are scarce inventory.
+- [ ] Ratings are still arriving. A large historical count with nothing recent is a decaying asset, not an advantage.
+
+**The part that changed.** Between roughly 2024 and 2026 both stores rebalanced away from pre-install signals (keyword match, raw download counts) toward post-install ones: product page conversion rate, retention, engagement depth, and review recency. No algorithm is published, so this is industry consensus rather than law, but the consequence is structural and it reaches back into this whole document.
+
+**Retention is now an acquisition lever.** A product that leaks ranks worse, which sends fewer installs, which makes the leak more expensive. Sections 6 through 8 stopped being purely a retention argument the moment that became true. An app cannot outrun churn with metadata, and optimizing a listing on top of a collapsing cohort curve buys a rank you then lose.
+
+Judge all of it on a multi-month curve. Store rankings move slowly and a week of movement read as a result is confident nonsense.
+
+---
+
 ## 5. Product Design
 
 ### People > Polish
@@ -319,6 +346,7 @@ In each case a better-funded competitor with strong design and engagement (Adobe
 | Long-term users outperform new ones | Investment layer is compounding — the moat is tightening |
 | Users compete in small local pools | Winnability is engineered, not left to chance (Section 7) |
 | A mechanic was removed and users complained | It had stopped being a scoreboard and become part of their identity |
+| Store rank rose with no metadata change | Post-install signals are paying. Retention is now buying distribution (Section 4) |
 
 ### Warning Signs
 
@@ -332,6 +360,8 @@ In each case a better-funded competitor with strong design and engagement (Adobe
 | A streak is the primary retention mechanic    | Obligation risk plus regulatory exposure. Add agency or add a second engine |
 | Five or more game mechanics stacked           | Past the S-curve peak. Cut before adding |
 | Every mechanic measures attendance, none measures skill | Recognition without mastery. Build a competence signal |
+| The store title leads with a brand nobody searches | The heaviest ranking field is spent on a term with no volume (Section 4) |
+| Large rating count, almost none of it recent | A decaying asset read as a moat. Fix the ask, not the average |
 
 ---
 

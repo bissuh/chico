@@ -13,7 +13,7 @@ is how he does the work. `standards/` is the yardstick.
 | File | Grades |
 | ---- | ------ |
 | `design-principles.md` | interfaces. Tokens, hierarchy, spacing, icons, states, dark mode, charts, media overlays, progress and completion, and a pre ship checklist. |
-| `social-app-design-principles.md` | consumer and social products. Test discipline, idea filters, beachhead audiences, engagement loops, the retention mechanics that decide whether a game layer is real or theater, and the investment layer that separates retention from a treadmill. |
+| `social-app-design-principles.md` | consumer and social products. Test discipline, idea filters, beachhead audiences, engagement loops, the store-search bar for anything that ships to an app store, the retention mechanics that decide whether a game layer is real or theater, and the investment layer that separates retention from a treadmill. |
 | `ai-development-guide.md` | AI features. Where a model belongs in a workflow and where it does not. |
 
 `INDEX.md` carries the working notes for each one: when to reach for it, its
@@ -65,7 +65,7 @@ confused:
 
 | File | Ours |
 | ---- | ---- |
-| `social-app-design-principles.md` | Section 7, Retention Mechanics. The gamification rows in Section 9 and the mechanic-test gate on the final checklist. |
+| `social-app-design-principles.md` | Section 7, Retention Mechanics. The store-search subsection at the end of Section 4, with its pre submit bar. The gamification and store rows in Section 9, and the mechanic-test gate on the final checklist. |
 | `design-principles.md` | Section XX, Progress and Completion, and its pre ship line. |
 | `ai-development-guide.md` | The competence rule in the don'ts, and the pride-versus-resentment fit signal. |
 

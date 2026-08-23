@@ -46,9 +46,9 @@ new domain, and it needs no `.sources` line when it has no upstream owner.
 
 ### `social-app-design-principles.md`
 **Covers:** viral growth, network effects, distribution, retention moats.
-Testing discipline, idea filtering, beachhead audiences, engagement loops, the
-gamification mechanics that decide whether engagement is real, and the investment
-layer.
+Testing discipline, idea filtering, beachhead audiences, engagement loops, store
+search as the channel a mobile product actually has, the gamification mechanics
+that decide whether engagement is real, and the investment layer.
 
 **Invoke when:** evaluating a consumer or social product feature, a launch plan,
 a growth loop, or a retention story. Also when a product "has engagement" but
@@ -57,16 +57,19 @@ churns.
 **Strongest material:** the retention stack, Sections 6 through 8, read as one
 argument. Engagement (6) keeps users running. Mechanics (7) decide whether that
 running is real or theater. Investment (8) is what stops them jumping to a newer
-treadmill. The sharpest single pieces: the two investment test questions (does
+treadmill. Section 4's store-search subsection closes that loop for anything
+shipping to an app store: ranking now runs on post-install signals, so a
+retention failure is also a distribution failure. The sharpest single pieces: the two investment test questions (does
 session 1,000 beat session 10, and what would a leaving user have to rebuild),
 and Section 7's five-question mechanic test, which is pass-all rather than
 scored. Also strong: the three needs filter (love, money, play), the inflection
 point table, and the 1 session to 7 opens loop heuristic.
 
-**Ours in this file:** Section 7 (Retention Mechanics), the gamification rows in
-Section 9, and the mechanic-test gate on the final checklist. Section 8's
-investment layer arrived through the upstream repo and its authorship is not
-recorded, so it is not claimed here.
+**Ours in this file:** Section 7 (Retention Mechanics), the store-search
+subsection closing Section 4 (with its pre submit bar), the gamification and
+store rows in Section 9, and the mechanic-test gate on the final checklist.
+Section 8's investment layer arrived through the upstream repo and its authorship
+is not recorded, so it is not claimed here.
 
 **Watch out:** it is absolutist by design ("NEVER build an app to meet up with
 friends", older audiences counted "on one finger"). Section 10 admits this and
@@ -149,6 +152,12 @@ across two layers, which repeals that reason entirely. Re-derived:
   and cite a standard for the bar, instead of duplicating the bar into itself and
   letting the two drift. Any future skill built on a standard should copy that
   shape.
+- **`social-app-design-principles.md`, Section 4's store-search subsection.
+  GRADUATED 2026-08-22** as `turma:aso-strategy`, alongside the standard section
+  itself. Same shape as `retention-craft`: the standard carries the pre submit
+  bar, the skill carries the method (which fields each store indexes, the byte
+  budget, the A/B mechanics, the review-prompt economics, the 2026 store
+  changes). Neither repeats the other.
 - **`design-principles.md`.** In scope, and it lands in turma like anything
   else. The strongest material is the part that gives a reason rather than a
   number: the halving rule behind the 8px grid, contrast as the actual source of
