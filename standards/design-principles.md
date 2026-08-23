@@ -268,6 +268,7 @@ Before shipping any interface, validate:
 - [ ] **Hierarchy** — Size, position, and color rank the content; the most important element wins the eye in under a second.
 - [ ] **Dark Mode** — If shipped, depth comes from surface lightness (not shadows), borders are softened, and contrast is re-verified.
 - [ ] **Overlays** — Text over media uses a gradient scrim (not a flat wash) and stays legible on the busiest image in the set.
+- [ ] **Progress:** Every progress indicator shows the remaining gap, is closable within one sitting, and actually ends when complete.
 
 ## XV. CSS & Styling Architecture
 
@@ -316,3 +317,33 @@ Text placed over photography or video is a common failure point — get it wrong
 - [ ] **Prefer a Gradient Scrim:** Use a linear gradient that stays transparent over the focal part of the image and ramps to an opaque, text-safe color exactly where the text sits. The image stays vivid; the text stays legible.
 - [ ] **Progressive Blur (Optional Polish):** Layering a progressive blur over the gradient — sharp at one edge, softly blurred behind the text — gives a more modern, premium finish.
 - [ ] **Verify on Real Content:** Test the overlay against the lightest and busiest images in your set, not just a convenient dark one.
+
+## XX. Progress & Completion
+
+An unfinished thing pulls at the person looking at it. That is the Gestalt principle of
+closure, the same family as the Zeigarnik effect: the brain reads an incomplete pattern as
+demanding completion. A progress ring at 90% is an open loop, and the user wants to close
+it. This is the most reliable motivational pattern available to an interface, and the
+easiest one to waste.
+
+- [ ] **Show the Gap, Not Only the Fill:** The unfinished remainder is what creates the
+      pull. A bar that renders only the completed portion, or a percentage with no visual
+      remainder, throws away the mechanism.
+- [ ] **Make the Loop Closable Today:** A goal the user cannot reach before they stop for
+      the day is not an open loop, it is a debt. Scope progress indicators to a horizon the
+      user can actually finish (a session, a day, a setup flow).
+- [ ] **Prefer Few, Complete-able Loops:** Three closable rings beat eleven partial meters.
+      Every additional open loop on one screen dilutes all of them and starts reading as a
+      chore list.
+- [ ] **Give Completion a Real End:** Closure has to actually land. Show the finished state,
+      mark it done, and stop nagging. A meter that resets to 99% or immediately opens the
+      next loop teaches the user that finishing is not a thing that happens here.
+- [ ] **Never Fake the Remainder:** Padding a checklist with steps the user did not ask for,
+      or holding a bar at 90% to force an action, converts a motivational pattern into a
+      dark pattern. Users detect it faster than designers expect.
+- [ ] **Onboarding Checklists Earn Their Place Once:** A setup checklist works because it
+      genuinely ends. Keep it dismissible, and remove it permanently once complete.
+
+> The test: if the user closes the loop, did anything real happen outside the interface? If
+> closing it only proves they used the product, the pattern is decoration with good
+> psychology behind it.

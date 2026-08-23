@@ -23,7 +23,7 @@ The power law did not change. The price of a ticket did. That is the whole refra
 
 ## Source material
 
-Distilled from the viral X essay "The Algorithm Behind Every Viral Post, Hit Song, and Billion-Dollar Startup" by darkzodchi (1.8M views, Mar 2026), cross-checked against the real canon: Michael Mauboussin's Babe Ruth Effect paper, Chris Dixon / a16z on power laws in venture, US Federal Reserve wealth data, and Music Business Worldwide on streaming. The essay's frameworks are sound. Its small numbers are loose (it admits as much). The verified figures and the soft ones are split below, under The law. Never repeat the soft numbers as fact. The frameworks are theirs. The price-of-a-ticket reframe is ours. The dead-channels list ("Where not to buy tickets"), the channel-patience rule, and the think-in-systems operating model come from Dan Kulkov's FounderPal / MakerBox field notes ("How to do Marketing" and "20 marketing changes to get unstuck"); directional caution and practice, not measured law.
+Distilled from the viral X essay "The Algorithm Behind Every Viral Post, Hit Song, and Billion-Dollar Startup" by darkzodchi (1.8M views, Mar 2026), cross-checked against the real canon: Michael Mauboussin's Babe Ruth Effect paper, Chris Dixon / a16z on power laws in venture, US Federal Reserve wealth data, and Music Business Worldwide on streaming. The essay's frameworks are sound. Its small numbers are loose (it admits as much). The verified figures and the soft ones are split below, under The law. Never repeat the soft numbers as fact. The frameworks are theirs. The price-of-a-ticket reframe is ours. The S-curve boundary ("The axis the law does not cross") came in later, from Tim Gabe's gamification breakdown and the two papers it points at; it is here because the barbell reads as "more is always better" until someone applies it inside a single product. The dead-channels list ("Where not to buy tickets"), the channel-patience rule, and the think-in-systems operating model come from Dan Kulkov's FounderPal / MakerBox field notes ("How to do Marketing" and "20 marketing changes to get unstuck"); directional caution and practice, not measured law.
 
 ## When to invoke
 
@@ -37,6 +37,7 @@ Distilled from the viral X essay "The Algorithm Behind Every Viral Post, Hit Son
 
 - Inside a single piece's narrative structure. That is `turma:story-craft`.
 - Extracting an opt-in from a piece. That is `turma:micromagnet-craft`.
+- Deciding how many mechanics, sections, or features belong inside one thing. That is the S-curve, not the power law. See "The axis the law does not cross" below.
 - The project's owner-reserved flagship as a volume question. Whatever `brand.md` marks owner-only is a craft bet by definition and stays the owner's. The power law applies to the portfolio around it, not to that piece itself.
 
 ## The law (use the verified numbers, flag the soft ones)
@@ -69,6 +70,25 @@ Do not spread effort evenly. Split it to the extremes. Read the channels in `bra
 - Daily posts on X and LinkedIn.
 
 The exact split is whatever `brand.md` lists as primary channels. The mistake is judging a ticket by a craft-bet standard, or pouring craft-bet effort into a ticket. A short that took four minutes is a ticket. Treat it like one. Nine of ten doing nothing is the distribution working, not the engine failing.
+
+## The axis the law does not cross
+
+The power law says buy more tickets. That is a claim about a **portfolio of separate bets**, and it holds because each ticket is an independent draw. Post five hundred, one breaks out.
+
+It does not transfer inside a single artifact. Stack more mechanics into one product, more sections into one page, more hooks into one video, and you are not buying more tickets. You are loading one ticket until it stops working.
+
+The measured version of this is the S-curve. Gamification feature richness raises engagement up to a point and lowers it past that point (Frontiers in Psychology, 2025, on stated exercise adherence intention). Habitica is the worked example: in the field study every participant reported counterproductive effects, most commonly the game layer eating the work it was built to support (Diefenbach and Müssig, _International Journal of Human-Computer Studies_, 2019, 45 users). `standards/social-app-design-principles.md` Section 7 carries the full rule set and the five-question mechanic test.
+
+Naming the axis removes the apparent contradiction:
+
+| | More is better | More reverses |
+| ---- | ---- | ---- |
+| The unit | Separate, independent bets | One artifact, page, or product |
+| Looks like | 500 shorts, 50 posts, 9 products | Streaks plus points plus badges plus challenges in one app |
+| Why | Each ticket is a fresh draw | Each addition competes with the last for the same attention |
+| Failure mode | Quitting before the outlier arrives | Overload that reads as engagement until it reads as churn |
+
+The question before adding anything: is this another draw, or another layer on a draw already made? If it is a layer, the power law has nothing to say about it and the S-curve does.
 
 ## Where not to buy tickets (dead channels)
 

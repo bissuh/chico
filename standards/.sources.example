@@ -1,5 +1,15 @@
-# standards source registry: <local filename> <TAB> <absolute source path>
+# standards source registry: <local filename> <TAB> <absolute source path> <TAB> [fork]
 # Copy to .sources and fill in. Read by sync.sh, gitignored because it holds
 # absolute paths and the names of the repos that own each file.
 #
+# Two kinds of entry:
+#   copy  (default)  the local file tracks its source exactly; any difference is
+#                    drift and --pull is the fix.
+#   fork             the local file carries sections we wrote on top of the
+#                    source. sync.sh reports it and REFUSES to --pull over it.
+#                    Use --diff to see what moved upstream and merge by hand.
+#
 # design-principles.md	/absolute/path/to/your-project/docs/design-principles.md
+# social-app-principles.md	/absolute/path/to/your-project/docs/social-app.md	fork
+#
+# A standard with no upstream owner needs no line here at all.

@@ -20,6 +20,7 @@
 - Don't justify premium pricing if **manual steps still happen behind the scenes**
 - Don't rebuild everything at once — **fix the one thing users hate most** first
 - Don't automate decisions users actually **want to make themselves**
+- Don't collapse the step users take **pride in**. Competence is the psychological need most tied to long-term motivation, so aim AI at the step they resent, not the one that makes them feel good at their job
 
 ### 🎯 Best AI Fit Signals (when planning a feature)
 
@@ -28,3 +29,4 @@
 - There are long instructions explaining how to interpret results
 - The core value is "processing" or "analysis" but relies on manual steps
 - Users trust the output but hate the effort required to get there
+- The workflow contains one step that earns pride and one that earns resentment, and the two are cleanly separable

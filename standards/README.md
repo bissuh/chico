@@ -12,8 +12,8 @@ is how he does the work. `standards/` is the yardstick.
 
 | File | Grades |
 | ---- | ------ |
-| `design-principles.md` | interfaces. Tokens, hierarchy, spacing, icons, states, dark mode, charts, media overlays, and a pre ship checklist. |
-| `social-app-design-principles.md` | consumer and social products. Test discipline, idea filters, beachhead audiences, engagement loops, and the investment layer that separates retention from a treadmill. |
+| `design-principles.md` | interfaces. Tokens, hierarchy, spacing, icons, states, dark mode, charts, media overlays, progress and completion, and a pre ship checklist. |
+| `social-app-design-principles.md` | consumer and social products. Test discipline, idea filters, beachhead audiences, engagement loops, the retention mechanics that decide whether a game layer is real or theater, and the investment layer that separates retention from a treadmill. |
 | `ai-development-guide.md` | AI features. Where a model belongs in a workflow and where it does not. |
 
 `INDEX.md` carries the working notes for each one: when to reach for it, its
@@ -22,20 +22,29 @@ evaluation, not just the rubric itself.
 
 ## Keeping them honest
 
-These are **copies**. The source of truth for each lives in the project repo
-that owns it, so a standard here goes stale the moment its source picks up a new
-lesson, silently, which is the failure this folder exists to avoid.
+Most of these started as **copies**. The source of truth for each lives in the
+project repo that owns it, so a standard here goes stale the moment its source
+picks up a new lesson, silently, which is the failure this folder exists to
+avoid.
 
 ```
-./standards/sync.sh              check every standard for drift, writes nothing
+./standards/sync.sh              check every standard, writes nothing
 ./standards/sync.sh --diff NAME  see exactly what changed upstream
 ./standards/sync.sh --pull NAME  overwrite the local copy from its source
-./standards/sync.sh --pull-all   overwrite every local copy
+./standards/sync.sh --pull-all   overwrite every unforked copy
 ```
 
-Paths live in `.sources`, which is gitignored because it holds absolute paths.
-Copy `.sources.example` and fill in your own. Sync runs one direction on
-purpose: a two way sync with no conflict resolution eventually eats an edit.
+A standard is either a **copy** or a **fork**. A copy tracks its source exactly,
+and any difference is drift to pull. A fork carries sections we wrote on top of
+the inherited material, so a difference is permanent and expected. Sync reports a
+fork as `FORKED` and **refuses to pull over it**, because that would silently
+delete our work. On a fork, `--diff` is the tool: read what moved upstream and
+merge it in by hand.
+
+Paths live in `.sources`, which is gitignored because it holds absolute paths. A
+third tab-separated column reading `fork` marks a fork. Copy `.sources.example`
+and fill in your own. Sync runs one direction on purpose: a two way sync with no
+conflict resolution eventually eats an edit.
 
 Run the check before any evaluation. A stale rubric is worse than no rubric,
 because it still feels authoritative.
@@ -49,10 +58,22 @@ opens by grounding itself in a decade of building consumer social apps. Neither
 records its original author, so this repo does not claim one and does not guess.
 If you recognise a source, say so and it gets credited.
 
-They are kept **verbatim**, which is why they break house style. This repo bans
-em dashes in anything public, and these files are full of them. Editing them to
-match our voice would falsify a source document and break the diff that keeps
-them in sync, so they stay as written.
+**Some of it is ours, and it is marked.** Where we learn something a standard
+should have covered, it gets written into the standard rather than filed
+somewhere new. Those sections are ours and are listed here so the two are never
+confused:
+
+| File | Ours |
+| ---- | ---- |
+| `social-app-design-principles.md` | Section 7, Retention Mechanics. The gamification rows in Section 9 and the mechanic-test gate on the final checklist. |
+| `design-principles.md` | Section XX, Progress and Completion, and its pre ship line. |
+| `ai-development-guide.md` | The competence rule in the don'ts, and the pride-versus-resentment fit signal. |
+
+The **inherited** material is kept verbatim, which is why the files break house
+style. This repo bans em dashes in anything public, and the inherited prose is
+full of them. Editing it to match our voice would falsify a source document and
+wreck the diff against upstream, so it stays as written. What we add is written
+to house style, which is also the fastest way to tell the two apart on the page.
 
 The rule that follows: **never paste from a standard into published output.**
 Anything that graduates from here gets rewritten in our own words and run
@@ -62,6 +83,10 @@ something to quote.
 ## Adding one
 
 1. Drop the file in `standards/`.
-2. Add its `name<TAB>source path` line to `.sources`.
+2. Add its `name<TAB>source path` line to `.sources`. Append a third `fork`
+   column the moment you write your own section into it.
 3. Add a section to `INDEX.md`: covers, invoke when, strongest material, watch out.
 4. Run `./standards/sync.sh` to confirm it registers.
+
+A standard with no upstream owner simply gets no `.sources` line. Sync ignores
+it, which is correct: there is nothing to drift from.

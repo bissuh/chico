@@ -14,43 +14,62 @@ Where this sits in the repo:
 
 ## The sync contract
 
-These are **copies**. The source of truth lives upstream, in the project repo
-that owns each file. When Bissuh attaches new learnings upstream, the copy here
-goes stale silently, which is the failure mode this folder has to avoid.
+Most of these started as **copies** of a file whose source of truth lives
+upstream, in the project repo that owns it. When Bissuh attaches new learnings
+upstream, the copy here goes stale silently, which is the failure mode this
+folder has to avoid.
 
 ```
-./standards/sync.sh              check every standard for drift, writes nothing
+./standards/sync.sh              check every standard, writes nothing
 ./standards/sync.sh --diff NAME  see exactly what changed upstream
 ./standards/sync.sh --pull NAME  overwrite the local copy from its source
-./standards/sync.sh --pull-all   overwrite every local copy
+./standards/sync.sh --pull-all   overwrite every unforked copy
 ```
 
-Paths live in `standards/.sources`. **Run the check before any evaluation that
-uses a standard.** Sync is one direction on purpose: a two way sync with no
-conflict resolution is how an edit gets silently lost. If a standard should
-live here instead of upstream, retire the source and drop its line from
-`.sources`.
+**All three current standards are now forks, not copies.** Each carries sections
+we wrote on top of the inherited material, so `sync.sh` reports them as `FORKED`
+and refuses to `--pull` over them. That refusal is the point: a pull would delete
+our work without asking. On a fork, `--diff` is the tool. Read what moved
+upstream, merge it by hand, keep our sections.
+
+Paths live in `standards/.sources`, with a third `fork` column marking a fork.
+**Run the check before any evaluation that uses a standard.** Sync is one
+direction on purpose: a two way sync with no conflict resolution is how an edit
+gets silently lost.
+
+**When new craft belongs in a standard, write it into the standard.** Do not
+open a new file for it if an existing one already owns the topic. Splitting a
+rubric across files is how it stops getting read. A new file is for a genuinely
+new domain, and it needs no `.sources` line when it has no upstream owner.
 
 ## The standards
 
 ### `social-app-design-principles.md`
 **Covers:** viral growth, network effects, distribution, retention moats.
-Testing discipline, idea filtering, beachhead audiences, engagement loops, and
-the investment layer.
+Testing discipline, idea filtering, beachhead audiences, engagement loops, the
+gamification mechanics that decide whether engagement is real, and the investment
+layer.
 
 **Invoke when:** evaluating a consumer or social product feature, a launch plan,
 a growth loop, or a retention story. Also when a product "has engagement" but
 churns.
 
-**Strongest material:** Section 7, the investment layer. Engagement keeps users
-running, investment is what stops them jumping to a newer treadmill. The two
-test questions are the sharpest thing in the file: does session 1,000 beat
-session 10, and what would a leaving user have to rebuild from scratch. Also
-strong: the three needs filter (love, money, play), the inflection point table,
-and the 1 session to 7 opens loop heuristic.
+**Strongest material:** the retention stack, Sections 6 through 8, read as one
+argument. Engagement (6) keeps users running. Mechanics (7) decide whether that
+running is real or theater. Investment (8) is what stops them jumping to a newer
+treadmill. The sharpest single pieces: the two investment test questions (does
+session 1,000 beat session 10, and what would a leaving user have to rebuild),
+and Section 7's five-question mechanic test, which is pass-all rather than
+scored. Also strong: the three needs filter (love, money, play), the inflection
+point table, and the 1 session to 7 opens loop heuristic.
+
+**Ours in this file:** Section 7 (Retention Mechanics), the gamification rows in
+Section 9, and the mechanic-test gate on the final checklist. Section 8's
+investment layer arrived through the upstream repo and its authorship is not
+recorded, so it is not claimed here.
 
 **Watch out:** it is absolutist by design ("NEVER build an app to meet up with
-friends", older audiences counted "on one finger"). Section 9 admits this and
+friends", older audiences counted "on one finger"). Section 10 admits this and
 tells you to discount the whole document. Treat the rules as priors with a
 stated reason, not laws. The 9 point approval checklist at the end is the part
 to actually run.
@@ -58,7 +77,7 @@ to actually run.
 ### `design-principles.md`
 **Covers:** UI and UX craft for interfaces. Design tokens, hierarchy, spacing,
 icons, interactive states, dark mode, charts, media overlays, redundancy
-removal, and a pre ship checklist.
+removal, progress and completion, and a pre ship checklist.
 
 **Invoke when:** auditing a screen, a dashboard, a landing page, or a component
 before it ships. Section XIV is the fast pass; the numbered sections are the
@@ -74,6 +93,11 @@ sizes, max 2 weights, 100ms and 300ms feedback thresholds). Most of them do
 carry a stated reason, which is what separates them from numerology. Where a
 number has no reason attached, treat it as a default and not a rule.
 
+**Ours in this file:** Section XX (Progress and Completion) and its pre ship
+line. It is the one motivational pattern in the document, and it is one line
+away from a dark pattern, which is why it ships with the fake-remainder rule
+attached.
+
 ### `ai-development-guide.md`
 **Covers:** where an AI feature actually belongs in a product, and where it does
 not. A do and do not list plus fit signals.
@@ -88,13 +112,20 @@ users already have, never teach a new behavior. And the fit signals, especially
 **Watch out:** it is 30 lines. A filter, not a method. It tells you what to
 build and nothing about how. Pair it with a real product spec.
 
+**Ours in this file:** the competence rule in the don'ts and the
+pride-versus-resentment fit signal. Both come from the same finding: automation
+that leaves the user no better at the task erodes the need most tied to their
+long-term motivation.
+
 ## Operating notes
 
-**These files are not ours and they contain em dashes.** Never paste from a
-standard into published output. Anything that graduates from here gets rewritten
-in our own words and run through `turma:anti-ai-linguo`. They stay verbatim
-because editing a source document falsifies it and breaks the sync diff. See the
-provenance section in `README.md`.
+**Most of this is not ours, and the inherited parts contain em dashes.** Never
+paste from a standard into published output, ours or theirs. Anything that
+graduates from here gets rewritten for its destination and run through
+`turma:anti-ai-linguo`. The inherited prose stays verbatim because editing a
+source document falsifies it and wrecks the diff against upstream. Our own
+sections are written to house style, which is also the quickest way to tell them
+apart on the page. `README.md` lists exactly which sections are ours.
 
 **Public as of 2026-08-22.** Bissuh's call. Everything here is tracked except
 `.sources`, which holds absolute paths and the names of the repos that own each
@@ -109,11 +140,15 @@ on the grounds that it is "interface craft, not growth craft." Bissuh widened th
 mandate that same day and chose to let turma hold all craft rather than split it
 across two layers, which repeals that reason entirely. Re-derived:
 
-- **`social-app-design-principles.md`, section 7, the investment layer.** Still
-  the strongest single piece of material in the folder. Engagement keeps users
-  running; investment is what stops them switching. turma has nothing on
-  retention moats, and `power-law`, `positioning` and `conversion-craft` all
-  stop short of it. Strong candidate under either mandate.
+- **`social-app-design-principles.md`, sections 7 and 8, as one skill.** This is
+  now the clear front runner, and it got stronger on 2026-08-22 when the
+  retention mechanics section landed next to the investment layer. The two are
+  halves of one argument: mechanics decide whether a user wants to come back,
+  investment decides whether leaving costs them anything. turma still has nothing
+  on either. `power-law`, `positioning` and `conversion-craft` all stop at the
+  sale and none of them reaches inside the product. Every shipped turma skill is
+  content or distribution craft, so this would also be the first one about the
+  product itself.
 - **`design-principles.md`.** In scope, and it lands in turma like anything
   else. The strongest material is the part that gives a reason rather than a
   number: the halving rule behind the 8px grid, contrast as the actual source of

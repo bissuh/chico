@@ -159,11 +159,114 @@ Examples of explosive loops:
 
 If the product is retentive, investors will line up to bankroll your growth. Focus on retention first.
 
-> Retention has two layers: **engagement** (this section) keeps users running; **investment** (Section 7) is what stops them jumping to a newer treadmill. You need both.
+> Retention has three layers: **engagement** (this section) keeps users running; **mechanics** (Section 7) decide whether that running is real or theater; **investment** (Section 8) is what stops them jumping to a newer treadmill.
 
 ---
 
-## 7. The Investment Layer (Intelligence Lock-In)
+## 7. Retention Mechanics (Gamification That Isn't Theater)
+
+Section 6 builds the loop. This section decides which mechanics go inside it. Most gamification fails in a predictable way, and the failures are better documented than the wins.
+
+### The PBL Fallacy
+
+Points, badges, and leaderboards are the three mechanics every product reaches for first. They are also the three with the longest failure record.
+
+Yu-kai Chou's framing is the one to keep: **PBL is the scoreboard of the game, not the game.** Nobody walks into a stadium, looks at the scoreboard, and feels like playing. Most products build the scoreboard and never build the game.
+
+The receipts:
+
+| Product    | What happened                                                                                                                                              | The lesson                                                                                            |
+| ---------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
+| LinkedIn   | Retired the gold Community Top Voice badge in October 2024. It was awarded automatically on contribution volume, so it rewarded quantity and LinkedIn could not hold a quality bar. | A badge awarded on volume gets optimized on volume.                                                     |
+| Foursquare | Split into Swarm and Foursquare in 2014 and stripped mayorships and badges. Users revolted, and mayorships returned to Swarm in June 2015.                    | Cutting the mechanic is not the fix either, once users have built identity on it. Build the game underneath. |
+
+> Read the Foursquare case both ways. The mechanic was hollow **and** removing it hurt, because by then it was the only thing users had. That is the trap: a hollow mechanic still accumulates attachment, and you end up able to neither keep it nor kill it.
+
+### Engineer the Size of the Competition
+
+One global leaderboard is close to useless. It motivates the top few percent and tells everyone else they cannot catch up.
+
+Strava's segments are the counter-design. Any user-defined stretch of road becomes its own leaderboard, sorted into age and gender cohorts. That turns one unwinnable ranking into thousands of small winnable ones. The hill on your morning route is a competition you might actually place in.
+
+**Winnability is the variable, not competition itself.** When a leaderboard is failing, the first question is not "should we remove it" but "how big is the pool, and can a median user place in it?"
+
+One caution on the social side. A study of five Strava clubs (Franken et al., _Social Networks_, 2023) found that receiving kudos did raise running frequency and volume. It also found peer influence mattered more than kudos, and that users converged toward their **less** active friends more than their more active ones. Simulated without any influence effects, those users would have run more. Social comparison in a network pulls toward the middle, not upward. Do not assume a social feed only ratchets behavior up.
+
+### The S-Curve: More Mechanics Reverses
+
+Gamification feature richness follows an S-curve. Adding mechanics raises engagement up to a point, and past that point it lowers it (Frontiers in Psychology, 2025, on exercise adherence intention). That study measures stated intention rather than logged behavior, so treat the shape as the finding and the magnitude as unproven.
+
+Habitica is the worked example. Tasks become quests, habits become character stats, missing a task costs HP. In the field study (Diefenbach and Müssig, _International Journal of Human-Computer Studies_, 2019, 45 users over two weeks) every participant reported counterproductive effects to some degree. The most common was being punished by the system during their most productive stretches. Users ended up managing the game layer instead of doing the work.
+
+> ⛔ If you are stacking streaks **plus** points **plus** badges **plus** challenges **plus** leaderboards, assume you are past the peak, not climbing it. Cognitive overload reads as engagement right up until it reads as churn.
+
+### The Streak Trap
+
+Streaks shift from motivational to obligational the longer they run. The user moves from "I want to do this" to "I cannot miss today." That is loss aversion doing the work, and loss aversion burns the user out on the way to retaining them.
+
+It is also the mechanic under regulatory attention. The Snapchat streak literature is the most cited (a survey of 2,483 Dutch-speaking Belgian early adolescents, mean age 13.5, in _Telematics and Informatics Reports_, 2023, linking streak engagement to FOMO and problematic smartphone use, though the reported correlations are weak). The European Commission is expected to propose a Digital Fairness Act in Q4 2026, explicitly targeting addictive design with minors as a stated focus.
+
+Streaks are not banned. They are conditional. Duolingo ships one and retains on it, but wrapped in agency: the user picks the goal level, can buy a streak freeze, can pause. **The design under scrutiny is a streak the user cannot pause, influence, or escape.** If a streak is the primary retention mechanic rather than one of several, that is the warning sign.
+
+### Anticipation Beats Loss Aversion
+
+There are two engines, and from the outside they look similar.
+
+|                  | Streak                                | Variable reward                          |
+| ---------------- | ------------------------------------- | ---------------------------------------- |
+| Emotional driver | Fear of losing what you built         | Pull toward what might be next           |
+| Over time        | Accumulates obligation, then burns out | Recharges itself                         |
+| Fails when       | The user misses once                  | The reward distribution becomes predictable |
+
+The mechanic that carries anticipation is **variable magnitude plus staged reveal**. The user knows a reward is coming and does not know how big. Then the reveal is broken into stages so one event becomes several: a pack of cards flipped one at a time resets the anticipation cycle per card, instead of dumping the same information at once.
+
+Two design notes. The unknown has to be genuine, or the reveal becomes a cutscene the user learns to skip. And this is the loot-box structure, so it carries real addiction adjacency. Put it on something the user wants more of, never on something they are trying to ration.
+
+### Completion Drive
+
+The strongest alternative to both engines. The brain treats an incomplete pattern as demanding completion (the Gestalt principle of closure, the same family as the Zeigarnik effect). A ring at 90% is an open loop, and the user wants to close it.
+
+Apple's activity rings are the reference implementation. Three rings, close all three, the day is done. Analysis of the Apple Heart and Movement Study (over 140,000 participants) found people who regularly closed their rings were 48% less likely to report poor sleep quality. The important part is not the number. It is what the number is about: the mechanic drove a real-world outcome, not app opens.
+
+**Completion drive is the cleanest engine because closure satisfies instead of coercing.** The loop ends. A streak never ends, which is exactly why it turns into obligation.
+
+The rules that come with it:
+
+- The loop has to be closable today. A goal that cannot be met by bedtime is not an open loop, it is a debt.
+- Show the gap, not just the progress. The remaining 10% is what does the work.
+- Closing has to mean something outside the app. If closing the ring only proves the user opened the app, that is theater with better psychology.
+
+### Competence Over Recognition
+
+The most useful finding for anyone choosing between mechanics. A meta-analysis of 35 gamified-learning interventions (Li, Hew and Du, _Educational Technology Research and Development_, 2024) found gamification reliably improves perceived autonomy (g = 0.638) and relatedness (g = 1.776), and barely moves competence (g = 0.277). Competence is the need most tied to long-term intrinsic motivation.
+
+Read plainly: most products engineer recognition and forget to engineer mastery. The meta-analysis covers classroom learning rather than consumer apps, so treat it as a strong prior about the mechanism, not a measured result for products.
+
+The distinction is whether a mechanic is evidence of skill or evidence of attendance:
+
+| Evidence of skill                                                     | Evidence of attendance                     |
+| --------------------------------------------------------------------- | ------------------------------------------ |
+| A rating that moves when you actually get better (Chess.com Elo)      | A badge for logging in 30 days running     |
+| Output measured live, personal records logged automatically (Peloton) | A points total that only counts sessions   |
+| A readiness or baseline score derived from your own history (Garmin, Oura) | A leaderboard rank driven mostly by time spent |
+
+A "100 rides" badge is not theater, because it represents 100 actual rides. A "100 logins" badge is.
+
+### The Mechanic Test
+
+Before shipping any game mechanic, answer all five:
+
+- [ ] **Game or scoreboard?** Does this mechanic create the activity or only measure it? Measuring is fine, as long as something else is creating the activity.
+- [ ] **Winnable?** Can a median user place, or does this only speak to the top few percent?
+- [ ] **Where on the S-curve?** Count the mechanics already shipped. Is this one climbing or overloading?
+- [ ] **Which engine?** Loss aversion (obligation, burns out), anticipation (recharges), or completion (closes cleanly). Name it. If it is loss aversion, what is the agency wrapper?
+- [ ] **Skill or attendance?** Does this signal the user got better at the real thing, or that they opened the app a lot?
+
+> ⚠️ The bar for all of it: does the mechanic produce a real-world outcome the user would defend, or only a number that makes the dashboard look alive?
+
+---
+
+## 8. The Investment Layer (Intelligence Lock-In)
 
 Engagement is **layer one**. It's necessary — but on its own it's a treadmill: it keeps users running, it doesn't stop them jumping onto a newer, shinier one. The products people genuinely _can't_ quit add a **second layer** — every session deposits something irreplaceable that compounds and that the user cannot take with them.
 
@@ -204,7 +307,7 @@ In each case a better-funded competitor with strong design and engagement (Adobe
 
 ---
 
-## 8. Product Signals
+## 9. Product Signals
 
 ### Positive Signals
 
@@ -214,6 +317,8 @@ In each case a better-funded competitor with strong design and engagement (Adobe
 | High retention in small niche    | Ready to expand                                  |
 | Organic growth without marketing | Product-market fit emerging                      |
 | Long-term users outperform new ones | Investment layer is compounding — the moat is tightening |
+| Users compete in small local pools | Winnability is engineered, not left to chance (Section 7) |
+| A mechanic was removed and users complained | It had stopped being a scoreboard and become part of their identity |
 
 ### Warning Signs
 
@@ -224,10 +329,13 @@ In each case a better-funded competitor with strong design and engagement (Adobe
 | Depends on a partnership                      | Abandon or rethink                      |
 | Repeated inconclusive tests                   | Stop everything and fix methodology     |
 | Session 1,000 feels the same as session 10    | No investment layer — a shiny competitor away from churn |
+| A streak is the primary retention mechanic    | Obligation risk plus regulatory exposure. Add agency or add a second engine |
+| Five or more game mechanics stacked           | Past the S-curve peak. Cut before adding |
+| Every mechanic measures attendance, none measures skill | Recognition without mastery. Build a competence signal |
 
 ---
 
-## 9. Epistemic Humility
+## 10. Epistemic Humility
 
 ### About This Document
 
@@ -262,6 +370,11 @@ Before starting any development, the feature must pass this filter:
 - [ ] Does it deepen a per-user intelligence the user can't export (investment layer)?
 
 **If it doesn't pass at least 7 out of 9, reconsider before proceeding.**
+
+**Extra gate, only if the feature adds a game mechanic:** it must also clear all five
+questions of the Mechanic Test in Section 7 (game or scoreboard, winnable, where on the
+S-curve, which engine, skill or attendance). This one is pass-all, not 7-out-of-9. A
+mechanic that fails any of the five is theater, and theater costs the same to build.
 
 ---
 
