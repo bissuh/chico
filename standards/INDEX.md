@@ -140,15 +140,15 @@ on the grounds that it is "interface craft, not growth craft." Bissuh widened th
 mandate that same day and chose to let turma hold all craft rather than split it
 across two layers, which repeals that reason entirely. Re-derived:
 
-- **`social-app-design-principles.md`, sections 7 and 8, as one skill.** This is
-  now the clear front runner, and it got stronger on 2026-08-22 when the
-  retention mechanics section landed next to the investment layer. The two are
-  halves of one argument: mechanics decide whether a user wants to come back,
-  investment decides whether leaving costs them anything. turma still has nothing
-  on either. `power-law`, `positioning` and `conversion-craft` all stop at the
-  sale and none of them reaches inside the product. Every shipped turma skill is
-  content or distribution craft, so this would also be the first one about the
-  product itself.
+- **`social-app-design-principles.md`, sections 7 and 8. GRADUATED 2026-08-22**
+  as `turma:retention-craft`, turma's first product-side skill. It did not copy
+  the sections; it **loads** them and adds what a rubric cannot carry: the order
+  of operations. Diagnose first (is this even a retention problem, what is the
+  natural cadence, does the cohort curve flatten), and only design mechanics once
+  the curve flattens. That is the precedent worth noting: a skill can own a method
+  and cite a standard for the bar, instead of duplicating the bar into itself and
+  letting the two drift. Any future skill built on a standard should copy that
+  shape.
 - **`design-principles.md`.** In scope, and it lands in turma like anything
   else. The strongest material is the part that gives a reason rather than a
   number: the halving rule behind the 8px grid, contrast as the actual source of
@@ -161,7 +161,10 @@ across two layers, which repeals that reason entirely. Re-derived:
 The mechanism question is separate from the placement question. One
 `/audit <target> <standard>` entry point that loads a standard and runs its
 checklist scales better than one skill per rubric: one mechanism, N standards,
-and a new standard is just a file drop.
+and a new standard is just a file drop. `retention-craft` is evidence for the
+split rather than against it: the standard held the bar, the skill held the
+method, and neither had to repeat the other. `/audit` would cover the cases
+where there is a bar but no method worth naming.
 
 ## Adding a new standard
 

@@ -5,6 +5,7 @@ The specialists. Each is a `SKILL.md` (frameworks + methods) invoked as `turma:<
 **Craft (the frameworks the jobs use):**
 - `positioning`: sharpen what a project sells and to whom (painkiller-vs-vitamin + the 7 strategy questions); runs before any distribution work, feeds brand.md
 - `conversion-craft`: make the offer and landing page convert before spending on traffic (pricing-follows-retention, the no-brainer offer, the 6-part page, warming the cold); runs after positioning, before the distribution skills
+- `retention-craft`: decide whether users come back and whether leaving costs them anything (diagnose the curve first, then the mechanics layer and the investment layer); starts where conversion-craft stops, and grades against `standards/social-app-design-principles.md`
 - `story-craft`: persuasion via the 5-line framework
 - `name-craft`: naming via Placek's Lexicon method, with domain checks
 - `micromagnet-craft`: 2-minute opt-in tools

@@ -88,4 +88,4 @@ The boundary: **raw project data never leaves the project.** Only the distilled,
 
 ## Status
 
-v0.8.0. Twenty skills, the chico agent, four commands, three template contracts. The mandate widened past growth on 2026-08-22; the skills that fill out the new domains are not built yet, so today the shipped set is still growth heavy. The runtime (Chico as an autonomous agent wielding turma) is Layer 2, designed later.
+v0.9.0. Twenty one skills, the chico agent, four commands, three template contracts. The mandate widened past growth on 2026-08-22. `retention-craft` is the first skill on the other side of that line: it works on the product rather than the content, and it is the first to grade against a file in `standards/` instead of carrying its own bar. The rest of the shipped set is still growth heavy. The runtime (Chico as an autonomous agent wielding turma) is Layer 2, designed later.
