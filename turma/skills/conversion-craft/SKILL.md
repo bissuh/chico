@@ -25,6 +25,7 @@ This is the skill that runs *after* positioning and *before* the distribution sk
 - For line-level copy voice. That's `turma:story-craft`, `turma:optimize-post`, `turma:anti-ai-linguo`. conversion-craft calls them for the copy layer; it doesn't replace them.
 - For the acquisition channels themselves. Where the traffic comes from is `turma:power-law`, `turma:seo-strategy`, `turma:social-posts`, `turma:cta-machine`, `turma:ghostshelf`.
 - For what happens after the yes. Whether the customer stays is `turma:retention-craft`. This skill stops at the conversion; that one starts there.
+- For a mobile app's first session after the install: the questionnaire flow, the demo, permission priming, the in-app paywall sequence. That is `turma:first-session`. Every rule in Layer 2 still governs the copy there, but the sequence and the payoff are that skill's.
 - For a mobile app's store listing specifically. The product page is a landing page and every rule here applies, but the fields, the A/B mechanics, and the ranking consequences are `turma:aso-strategy`.
 - For a standalone lead magnet. That's `turma:micromagnet-craft`. The two share the "give quick value free, then sell" logic, but micromagnet builds the top-of-funnel handraiser while conversion-craft makes the core offer and page convert.
 
@@ -105,6 +106,7 @@ Given sharp positioning, build the conversion engine from scratch. Output: the p
 
 - Runs **after** `turma:positioning`. That skill establishes the painkiller and the segment; this one assumes both are sharp. If they aren't, conversion-craft stops and hands back.
 - Runs **before** the distribution skills (`turma:power-law`, `turma:seo-strategy`, `turma:social-posts`, `turma:cta-machine`, `turma:ghostshelf`). They bring traffic. This skill is what makes traffic worth bringing, and the gate each of them clears before earning a budget.
+- Hands off to `turma:first-session` on mobile, where the same persuasion is sold across a flow instead of a page and the paywall sits at the end of it.
 - Hands off to `turma:retention-craft` at the yes. The monetization-follows-retention question in Layer 1 is the same cadence question that skill opens with, so a disagreement between the two means one of them is wrong about the product.
 - Calls the copy skills for Layer 2: `turma:story-craft` for the narrative, `turma:optimize-post` to score and tighten, `turma:anti-ai-linguo` as the final voice pass.
 - Shares the "quick free value, then sell" logic with `turma:micromagnet-craft`. micromagnet builds the top-of-funnel handraiser for the not-yet-ready; conversion-craft makes the core offer and page convert the ready.
@@ -127,6 +129,7 @@ Distilled from Dan Kulkov's "20 marketing changes to get unstuck" (FounderPal, M
 
 - `turma:positioning`: the upstream skill. Establishes the painkiller and the segment this skill assumes. Run it first.
 - `turma:power-law`, `turma:seo-strategy`, `turma:social-posts`, `turma:cta-machine`, `turma:ghostshelf`: the distribution skills downstream. They bring the traffic this skill makes worth bringing.
+- `turma:first-session`: the mobile downstream sibling. Same persuasion, rebuilt as a flow between the install and the first real payoff.
 - `turma:retention-craft`: the downstream sibling. This skill wins the customer; that one keeps them. Both ask how often a real user gets value, and the two answers must match.
 - `turma:aso-strategy`: this skill's rules applied to an app store product page, where conversion rate also feeds search ranking.
 - `turma:micromagnet-craft`: the sibling top-of-funnel handraiser for the not-yet-ready.

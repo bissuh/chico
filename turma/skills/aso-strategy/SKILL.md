@@ -25,6 +25,7 @@ That is the shape of this skill. Three layers, in that order, because they gate 
 - For a web product. That is `turma:seo-strategy`. The two share the intent-matching logic and share almost nothing else: different index, different fields, different ranking inputs, different tooling.
 - For the offer and the price. `turma:conversion-craft` owns whether the thing is worth buying. This skill assumes it is and works on whether people find it and tap install.
 - For whether users stay. `turma:retention-craft`. Which matters here more than it used to: see Layer 3.
+- For the four minutes after the install. `turma:first-session` owns the onboarding flow, the demo, the permission priming and the in-app paywall. Layer 3's post-install signals are manufactured there, not here.
 - For the brand name itself. `turma:name-craft` picks the name. This skill picks the **store title**, which is a different field with a different job.
 - For paid user acquisition. Apple Ads and Play campaigns are a spend decision (Red), and they are for accelerating a listing that already converts, never for finding out whether it does.
 
@@ -114,6 +115,8 @@ Between roughly 2024 and 2026 both stores rebalanced away from pre-install signa
 
 **The structural consequence: retention is now an acquisition lever.** A leaky product ranks worse, which sends fewer installs, which makes the leak more expensive. An app cannot outrun churn with metadata. When the diagnosis is a retention problem, this skill hands to `turma:retention-craft` and waits, because ASO work on a leaking product buys a temporary rank you then lose.
 
+The leak usually starts earlier than anyone measures. Most of the signal in this layer is set in the first few minutes after the install, which is `turma:first-session`. A flow that converts hard and then refunds is charged twice here, once in the refund and once in the rank, so read install-to-paid and first-month cancel together before crediting any listing change.
+
 ### Ratings and reviews
 
 Volume and recency both count, and they count separately. A 4.6 average from twelve thousand ratings carries more algorithmic weight than a 4.8 from two hundred, because volume is evidence of sustained quality rather than a snapshot. Google has said outright that newer ratings weigh more than older ones. So a large historical count with nothing recent is a decaying asset, and steady velocity beats a one-time push. Same principle `turma:seo-strategy` applies to Google Business Profile reviews.
@@ -168,6 +171,7 @@ Judge ASO on a multi-month curve. Reading a week of ranking movement produces co
 ## How it composes with other skills
 
 - Runs **after** `turma:positioning` and `turma:conversion-craft`. Positioning decides the category you are competing in, which decides the primary keyword. conversion-craft owns the offer; this skill owns the listing that sells it.
+- Hands to `turma:first-session` the moment the diagnosis is a post-install signal rather than an index or an impression problem. That skill makes the signals this one depends on.
 - Runs **with** `turma:retention-craft`, not after it. Post-install signals feed ranking, so for an app the two skills are one loop and a retention verdict outranks any metadata plan.
 - Hands the store title back to `turma:name-craft`, which owns the brand name. Two fields, two jobs.
 - Sibling of `turma:seo-strategy`, which owns everything on the web including the app's own site and the AI-answer layer that store listings cannot reach.
@@ -197,6 +201,7 @@ Everything the interview did not cover was added from research and marked for co
 
 - The project's `brand.md`: the ASO context block (platforms, store URLs, category, primary keyword, competitors, current rank).
 - `turma:seo-strategy`: the web sibling. Owns the app's own site, the review directories, and the AI-answer layer a store listing cannot reach.
+- `turma:first-session`: owns the install-to-first-payoff strip where Layer 3's signals are actually made.
 - `turma:retention-craft`: the loop partner. Post-install signals feed ranking, so its verdict gates this skill's plan.
 - `turma:conversion-craft`: the product page is a landing page. Its Layer 2 rules apply here in full.
 - `turma:name-craft`: owns the brand name. This skill owns the store title, which is a different field.

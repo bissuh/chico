@@ -1,6 +1,6 @@
 ---
 name: retention-craft
-description: Decide whether users come back, and whether leaving costs them anything. Invoke when a product "has users but they don't stick," before adding any game mechanic (streak, points, badge, leaderboard, challenge), when churn is the number that hurts, when onboarding is being designed, or when someone proposes gamifying something. Runs a diagnosis first (is this even a retention problem, what is the natural cadence, does the curve flatten) and only then designs the two layers: the mechanics that pull a user back, and the investment that makes leaving expensive. Loads `standards/social-app-design-principles.md` sections 7 and 8 as the bar. Starts where `turma:conversion-craft` stops. Reads the project's brand.md.
+description: Decide whether users come back, and whether leaving costs them anything. Invoke when a product "has users but they don't stick," before adding any game mechanic (streak, points, badge, leaderboard, challenge), when churn is the number that hurts, or when someone proposes gamifying something. Runs a diagnosis first (is this even a retention problem, what is the natural cadence, does the curve flatten) and only then designs the two layers: the mechanics that pull a user back, and the investment that makes leaving expensive. Loads `standards/social-app-design-principles.md` sections 7 and 8 as the bar. Starts where `turma:conversion-craft` stops. Reads the project's brand.md.
 ---
 
 # retention-craft
@@ -26,7 +26,6 @@ If `brand.md` has no offer or the audience is "everyone," stop and run `turma:po
 - A product has users, or signups, or installs, and they do not come back.
 - **Before** anyone ships a streak, points, badges, a leaderboard, a challenge, or a progress meter. This is the main one. The mechanic is cheap to build and expensive to remove.
 - Churn is the number that hurts, or the number nobody will look at.
-- Onboarding or a first-run experience is being designed. Onboarding is a retention artifact, not an acquisition one.
 - Someone says "we should gamify this."
 - Judging whether a product actually has a moat, as opposed to a head start.
 
@@ -36,6 +35,7 @@ If `brand.md` has no offer or the audience is "everyone," stop and run `turma:po
 - When the audience or the painkiller is vague. That is `turma:positioning`.
 - For where the users come from. The distribution skills own that (`turma:power-law`, `turma:seo-strategy`, `turma:ghostshelf`, `turma:cta-machine`).
 - For the interface itself. Progress indicators, states, and feedback timing are `standards/design-principles.md`, section XX in particular. This skill decides *whether* a progress loop should exist; that standard decides how it should look.
+- For the first session itself: the install-to-first-payoff strip, the questionnaire flow, the demo, permission priming. That is `turma:first-session`, and it runs immediately before this one. Onboarding is still a retention artifact, it just has an owner of its own now.
 - For content that people subscribe to rather than use. An email list or a channel has its own retention shape and the metrics lie differently there. Some of this transfers; the mechanic layer mostly does not.
 
 ## The rule that governs everything: diagnose before you design
@@ -85,7 +85,7 @@ The short version of what that section will tell you, so you know what you are w
 Three questions this skill adds on top of the standard, because they are about sequence rather than quality:
 
 - **What is the loop without any mechanic?** Describe the reason a user returns if you ship nothing. If there is no answer, the mechanic is load-bearing and it will collapse. Fix the loop first.
-- **What does the first session promise, and when is it kept?** Onboarding is a retention artifact. The gap between the promise and the first real payoff is where most churn lives, and closing that gap beats any mechanic you could add around it.
+- **What does the first session promise, and when is it kept?** Onboarding is a retention artifact. The gap between the promise and the first real payoff is where most churn lives, and closing that gap beats any mechanic you could add around it. `turma:first-session` owns that gap. If it has not run, run it before designing anything here.
 - **What happens on the day they fail?** Every mechanic has a failure state. Design the miss, the broken streak, the empty week, before you design the win. Products lose users on the bad day, not the good one.
 
 ## Layer 2: the cost of leaving (does going elsewhere hurt)
@@ -131,6 +131,7 @@ Leave the build to the owner. This skill produces the design and the reasoning, 
 
 ## How it composes with other skills
 
+- Runs **after** `turma:first-session`, which is the nearer upstream sibling. That skill owns the install-to-first-payoff strip and hands this one a live user with something already deposited. If the first session never delivers a payoff, no mechanic here will hold.
 - Runs **after** `turma:conversion-craft`. That skill makes attention into a customer; this one decides whether the customer stays. Both ask the cadence question and the answers must match.
 - Runs **after** `turma:positioning`, at a distance. If retention work keeps finding that users cannot say what the product is for, that is a positioning failure surfacing late.
 - For a mobile app, feeds `turma:aso-strategy` directly and runs alongside it rather than before it. Both stores now weigh post-install signals (product page conversion, retention, review recency) in search ranking, so a cohort curve that flattens is not only a revenue fact, it is a distribution asset. The reverse holds harder: no amount of metadata work outranks churn.
@@ -161,7 +162,8 @@ The diagnosis layer is ours, and it came from a real engagement rather than a bo
 
 ## Related
 
-- `turma:conversion-craft`: the upstream sibling. It ends at the yes; this one starts there. The two share the cadence question.
+- `turma:first-session`: the immediate upstream sibling. Owns everything between the install and the first real payoff, including onboarding, the demo, and permission priming.
+- `turma:conversion-craft`: the upstream sibling one step further out. It ends at the yes; this one starts there. The two share the cadence question.
 - `turma:positioning`: further upstream. Chronic retention failure is often positioning surfacing late.
 - `turma:power-law`: the portfolio axis, and the boundary that keeps "more is better" out of a single product.
 - `turma:aso-strategy`: the loop partner for a mobile app. Retention feeds store ranking, so this skill's verdict gates that one's plan.
