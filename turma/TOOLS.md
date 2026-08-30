@@ -34,6 +34,10 @@ Never add a tool because it looks useful. This registry tracks what the craft ac
 | [TikTok Creative Center](https://ads.tiktok.com/business/creativecenter) | Official trend discovery: hashtags, songs, creators, top ads, keyword insights. The best free read on what is spiking | `ghostshelf` |
 | [F5Bot](https://f5bot.com/) | Free keyword alerts on Reddit and Hacker News. Finds the threads worth commenting in | `seo-strategy` |
 | [dotchk](https://github.com/dotchk/dotchk) | Fast NS-record domain availability checker, installed via `cargo install dotchk`. Always WHOIS-verify before purchase | `name-craft` |
+| [Google Postmaster Tools](https://postmaster.google.com/) | The only first-party read on how Gmail sees a sending domain: spam complaint rate, domain and IP reputation, authentication pass rates. The number that decides whether outreach arrives | `outreach-craft` |
+| [MXToolbox](https://mxtoolbox.com/) | SPF, DKIM, DMARC and blocklist lookups. The lookups this skill needs are on the free tier | `outreach-craft` |
+| [dmarcian DMARC inspector](https://dmarcian.com/dmarc-inspector/) | Reads and explains a domain's DMARC record. Free tool, separate from their paid platform | `outreach-craft` |
+| [Wappalyzer](https://www.wappalyzer.com/) browser extension | Reads a site's stack in one click. Free extension; the API and lookups are paid | `outreach-craft` |
 
 ## Paid, verified
 
@@ -55,6 +59,9 @@ Named by a skill, real, but nobody has confirmed the current price. Check the ve
 | [Metricool](https://metricool.com/), [Later](https://later.com/) | Social scheduling and analytics | `ghostshelf` |
 | [beehiiv](https://www.beehiiv.com/) | Newsletter platform. turma ships a read-only connector for it | `beehiiv-connector` |
 | [Remotion](https://www.remotion.dev/) | React video rendering, the engine behind the ghostshelf renderer. Open source, but the license charges companies above a size threshold. Verify before any commercial use | `ghostshelf` |
+| [Apollo.io](https://www.apollo.io/) | Contact data, enrichment and sequences, with an MCP server. Its own FAQ names a Starter plan that is free forever and a trial with 50 credits. The paid tiers are credit-metered on top of a per-seat fee, and credits do not roll over | `outreach-craft` |
+| Sending and warmup platforms ([Instantly](https://instantly.ai/), [Smartlead](https://www.smartlead.ai/), [lemlist](https://www.lemlist.com/)) | Multi-inbox sending, automated warmup, sequence rotation. Only worth pricing once a campaign has proven a reply rate by hand | `outreach-craft` |
+| Email verification ([NeverBounce](https://neverbounce.com/), [MillionVerifier](https://millionverifier.com/), [ZeroBounce](https://www.zerobounce.net/)) | List validation before a send. Usually priced per verification. The 2% bounce ceiling is what these buy you | `outreach-craft` |
 
 ## Rejected and retired
 
@@ -66,5 +73,7 @@ Kept so nobody re-adds them.
 | Enterprise ASO suites (Sensor Tower, AppTweak, MobileAction tier) | Real tools, wrong buyer. An indie listing does not need a seat priced for a UA team. Astro or the free first-party consoles cover the work `aso-strategy` describes |
 
 ## Claims we checked and refused
+
+Comparison blogs quote Apollo.io at $49, $79 and $119 per user per month on annual billing. Apollo's own pricing page did not render those figures when checked on 2026-08-30, only its FAQ text about a free Starter plan. The numbers may well be right and they are not verified, so they stay out of the table and nobody quotes them to an owner. Check the live page before any spend conversation.
 
 A third-party blog said Astro ships an MCP server for AI-assisted keyword research. Astro's own site does not mention one as of 2026-08-22. It may exist and be undocumented, but a competitor's comparison page is not a source. Do not repeat it until the vendor says it.

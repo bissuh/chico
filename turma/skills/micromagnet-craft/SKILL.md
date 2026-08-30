@@ -135,6 +135,8 @@ Each one is a page that ranks itself. One tool, one long-tail keyword. `turma:se
 
 If none of those fit, the splinter is probably wrong. Reshape the splinter, not the vehicle.
 
+**The magnet as a cold ask.** Outreach dies at the ask more than anywhere else, because "would love to connect" asks the reader to spend something before they have received anything. A micromagnet inverts it: the ask becomes "mind if I send you the two minute teardown of your signup flow?" Now the yes is a yes to receiving, not to giving. Two conditions or it backfires. The artifact has to be built for that one recipient (a teardown of their page, not a generic checklist), and it has to actually exist before you offer it. `turma:outreach-craft` owns the email around it; this skill owns what sits inside the ask.
+
 ## Title formulas (the Headline Workshop)
 
 Six formulas that make a magnet sound like a tool instead of homework. Pick one, fill the brackets, run it past the AI-tells filter, ship.
@@ -318,3 +320,4 @@ A micromagnet that earns its keep:
 - `turma:emotion-craft`. The 6 emotional triggers the handraiser and lead-magnet posts run on.
 - `turma:power-law`. Which magnets to reuse (the converters) and which to retire.
 - `turma:seo-strategy`. Sources the long-tail keyword and ranks the page for the pull motion (ungated ranking tools).
+- `turma:outreach-craft`: the cold ask. The strongest first-touch ask is a magnet built for one person, not a meeting request.

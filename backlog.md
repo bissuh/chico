@@ -35,6 +35,13 @@ These are blocked on a call only he can make. Nothing moves until they land.
 - Two guardrails that are not negotiable. **Steal the format, reject the manipulation**: the viral examples of this format farm insecurity and relationship cruelty. Use the real tension instead. Loyal to the reader over the algorithm. **Disclosed and original**: Chico is an openly AI character, which is more honest than a fake-human persona, and the design must be original work inspired by the archetype, never a copy of Mauricio de Sousa's Chico Bento, which is someone else's IP.
 - First step when it starts: three character-sheet directions for Bissuh to pick from (Yellow, it is brand identity), then one cartoon story built from a real builder's story, drafted not published.
 
+### C-005: Prove outreach-craft on one real campaign
+- Status: queued, needs a project pick
+- `turma:outreach-craft` shipped 2026-08-30 with plugin 0.12.0 and has never run against a real list. Every number in it is either a provider policy (verified) or vendor-consensus direction (labeled as such). Nothing in it is proven by our own result.
+- The first move is not a campaign, it is **ten doors**: the ten people or companies whose yes would change the year for whichever project gets picked. That list is worth more than the next two thousand prospects, and it takes an hour.
+- Why it should jump the queue: outreach is the only channel that works with an audience of zero, which makes it the cheapest possible SPEC Phase 2 dogfood. The Phase 2 blocker has been "which project," and outreach lowers the bar for what a candidate project needs to have.
+- What the campaign has to return before anything gets promoted: bounce rate, reply rate, positive reply rate, and which layer the failures came from. Layer 0 problems and Layer 2 problems look identical from the outside, and telling them apart is the whole point of the skill.
+
 ### B-001: Connector analytics depth
 - Status: queued
 - `youtube-connector` reads public data only (OAuth would unlock retention and traffic sources). `beehiiv-connector` is read-only. Add per-project analytics connectors when a live engagement actually needs them.
@@ -59,6 +66,8 @@ These are blocked on a call only he can make. Nothing moves until they land.
 ---
 
 ## Completed
+
+- **Cold outreach craft (2026-08-30).** Plugin 0.12.0. New `turma:outreach-craft` covering the machine (sending domains, warmup, authentication, the ePrivacy country split), the list, the sequence, the loop and the door-knock play. New Mode 4 (Outreach) in `anti-ai-linguo`. Outreach added to the `power-law` barbell with the one amendment to the core reframe: this ticket is not free. The cold ask added to `micromagnet-craft`. Seven tool rows and one refused price claim in TOOLS.md. New `/outreach-campaign` command. Mined from Adrianna Lakatos's "Cold Outreach Bible"; deliberately does not duplicate the separately installed `cold-email` skill, which owns the B2B message layer.
 
 - **Repo cleanup and legacy triage (2026-08-22).** Closes B-003. Repo went from 4.0 GB to under 1 MB. Deleted the TBP video estate, the root Remotion renderer, the ops scripts, the launchd jobs (both had been failing every 30 minutes since 2026-05-10 on a macOS TCC block), the TBP-era root docs, and the private TBP drafts and research inbox. Before deleting, the craft that had never been ported was pulled into turma: the gallery renderer and scheduler into `ghostshelf`, the Instagram 10-slide API cap and the self-complete test into `carousels`, two operating lessons into `cta-machine`.
 - **Pauta ops layer (2026-08-16).** `turma:pauta`, plugin 0.6.0. Delegate execution, keep judgment. Five contracts. Layer 2 approval constraints adopted into SPEC Phase 3.

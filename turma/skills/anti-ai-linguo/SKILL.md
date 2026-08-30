@@ -1,11 +1,11 @@
 ---
 name: anti-ai-linguo
-description: Final-pass voice check that strips AI tells (banned phrases, structural patterns, dashes, pseudo-contrarian hooks, hedged opinions, formatting tics) from any project's public draft. Auto-runs as the LAST review pass before any newsletter, X post, LinkedIn post, IG caption, or video script is marked review-ready, after turma:story-craft and turma:micromagnet-craft. Three modes: long-form (articles), short-form (social), video (scripts). Reads the project's brand.md for brand-specific banned phrases and house style, enforced on top of the universal rules. Skip only for internal notes and any surface brand.md marks owner-only.
+description: Final-pass voice check that strips AI tells (banned phrases, structural patterns, dashes, pseudo-contrarian hooks, hedged opinions, formatting tics) from any project's public draft. Auto-runs as the LAST review pass before any newsletter, X post, LinkedIn post, IG caption, video script, cold email or DM is marked review-ready, after turma:story-craft and turma:micromagnet-craft. Four modes: long-form (articles), short-form (social), video (scripts), outreach (cold email and first-contact DMs). Reads the project's brand.md for brand-specific banned phrases and house style, enforced on top of the universal rules. Skip only for internal notes and any surface brand.md marks owner-only.
 ---
 
 # anti-ai-linguo
 
-The final voice-check pass on any project's public draft. Three modes share the same banned lists but apply different structural rules.
+The final voice-check pass on any project's public draft. Four modes share the same banned lists but apply different structural rules.
 
 **Before you start:** read the project's `brand.md` for its banned phrases and house style on top of the universal rules. The universal AI-tell lists and the dash rule below are turma defaults that hold for every project. On top of them, `brand.md` section 6 ("AI tells to strip", "Never say", "Dashes") and section 5 ("two lines that sound WRONG for this brand") add the brand-specific banned phrases and house style. Enforce both layers: the universal set, plus whatever `brand.md` adds. Section 7 ("Channels") tells you which surfaces this project actually ships.
 
@@ -20,12 +20,13 @@ Pick by format, not by length. `brand.md` section 7 says which of these channels
 - **Long-form.** Articles, newsletter editions, deep dives, lead-magnet pages. Anything meant to be read silently in a feed reader or browser.
 - **Short-form.** X threads, X posts, LinkedIn posts, IG captions, Threads posts. Anything that lives inside a social feed.
 - **Video.** YouTube long-form scripts, Shorts, Reels, TikTok scripts. Anything that will be read out loud on camera.
+- **Outreach.** Cold emails, follow-ups, X and LinkedIn and Instagram DMs, connection notes. Anything sent to one person who never asked to hear from you. Run it after `turma:outreach-craft`.
 
 If the draft spans formats (e.g. a thread plus a blog post version), run the relevant mode for each separately.
 
 ---
 
-## Universal rules (turma defaults, apply to all three modes)
+## Universal rules (turma defaults, apply to all four modes)
 
 These are the floor. They hold for every project, even one whose `brand.md` says nothing about voice. `brand.md` then stacks its own banned phrases and "never say" list on top. You enforce both.
 
@@ -342,6 +343,88 @@ Use sparingly (1-2 per minute):
 
 ---
 
+## Mode 4: Outreach (cold email, follow-ups, DMs)
+
+### The one-to-one difference
+
+Every other mode is a broadcast. This one is read by a single person at their desk, deciding in about two seconds whether it was written for them or generated at them. Every tell in this document is louder here, because the reader is actively hunting for evidence that they are one row in somebody's spreadsheet. One phrase from the list below hands them that evidence.
+
+### The outreach tell list (stacks on the universal list)
+
+Grep for these. Zero matches before the send.
+
+**Openers:**
+- Hope you're doing well / Hope this email finds you well / Hope you're having a great week
+- I came across your profile / I stumbled upon your website / I was doing some research on your company
+- I've been following your work for a while (unless the same sentence proves it)
+- My name is X and I'm the Y at Z (they can see the signature)
+- I wanted to reach out / I'm reaching out because
+
+**Asks:**
+- Would love to connect / Let's connect
+- Hop on a quick call / Jump on a quick call
+- Pick your brain
+- Do you have 30 minutes / Are you free for a 30 minute chat
+- Let me know if you'd be interested / Let me know if this resonates
+- Looking forward to hearing from you
+- "Thoughts?" as the entire CTA
+
+**Follow-ups:**
+- Just checking in / Just following up / Just wanted to bump this
+- Circling back / Touching base / Reaching out again
+- Per my last email / As mentioned below
+- I never heard back / I didn't hear back from you
+- Did you get a chance to look at my last email
+
+**Vendor register:**
+- Leading provider, best-in-class, end-to-end solution, one-stop shop
+- We help companies like yours, we specialize in, we're on a mission to
+- Synergy, alignment, partnership opportunity
+- "Quick question" as a subject line
+
+**Fake warmth** (the worst family, because it is a lie the reader can check):
+- "Loved your post!" with nothing specific after it
+- "Congrats on the funding!" with no consequence attached to it
+- Any compliment that would survive being pasted to a different recipient
+- An invented mutual connection, an invented referral, a fake `Re:` or `Fwd:`
+
+### The paste test
+
+Take the first line on its own. Would it be true of at least ten other people on the list? Then it is not personalization, it is a merge field with extra words around it. Rewrite it with something only this person did, or cut the name from the list. Those are the only two moves.
+
+### The pronoun ratio
+
+Count "you" and "your" against "I," "we," "our," and the project's name. The reader's pronouns have to win. An email whose first three sentences all start with I is a pitch, and it reads like one from the preview pane.
+
+### Structural tells specific to outreach
+
+- **Bullets.** If the email has a bulleted feature list, it is a brochure, not a message. Cut to one sentence.
+- **The p.s. that repeats the ask.** One ask means one.
+- **Any sentence over 25 words** inside a five-line email.
+- **The signature block** with a title, a phone number, a logo and three links. First name, alone.
+- **The em dash in a DM** is the single loudest tell in this mode. Almost nobody types one on a phone. Same rule as everywhere else, and it matters more here.
+- **Perfect capitalization and punctuation in an X or Instagram DM.** The channel is lowercase and clipped. Matching the room is not sloppiness.
+
+### Length and shape
+
+Five lines. Under about 75 words on the first touch. If it does not fit on a phone screen without scrolling, it is too long, and length is the one variable the reader judges before reading a word.
+
+### Pre-send check (outreach)
+
+1. Grep the outreach tell list, the universal list, and brand.md's list. Zero.
+2. Grep `[—–]`. Zero. Weigh this double in a DM.
+3. Paste test on line 1. It passes or the name gets cut.
+4. Pronoun ratio favors the reader.
+5. Five lines or fewer, under 75 words on the first touch.
+6. One ask, and saying yes costs one word or one click.
+7. Signature is a first name and nothing else.
+8. Read it as the recipient, on a Tuesday morning, with 40 unread. Reply or archive?
+9. Run the audit pass (below).
+
+This mode is the voice gate inside `turma:outreach-craft`'s pre-send checklist. Passing it is necessary and not sufficient: that skill still owns the machine, the list, and whether the send is legal where the reader sits.
+
+---
+
 ## The audit pass (all modes)
 
 After the rewrite, before marking review-ready, read the draft fresh and answer two questions in one or two honest sentences each:
@@ -386,3 +469,4 @@ The tell catalogs in this skill draw on, and were audited against:
 - `turma:story-craft`. Runs BEFORE this skill, on persuasive narrative content. anti-ai-linguo is the voice pass after the structural work is done.
 - `turma:micromagnet-craft`. Runs alongside this skill on public content. Different question (is there a magnet hiding inside?), same final-pass discipline.
 - `turma:name-craft`. Separate use case (naming things). No overlap.
+- `turma:outreach-craft`. Runs BEFORE this skill on any cold email, sequence or DM. It owns the machine, the list and the five lines; Mode 4 here is the voice gate that draft has to clear before it sends.

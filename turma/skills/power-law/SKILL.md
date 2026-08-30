@@ -71,6 +71,13 @@ Do not spread effort evenly. Split it to the extremes. Read the channels in `bra
 
 The exact split is whatever `brand.md` lists as primary channels. The mistake is judging a ticket by a craft-bet standard, or pouring craft-bet effort into a ticket. A short that took four minutes is a ticket. Treat it like one. Nine of ten doing nothing is the distribution working, not the engine failing.
 
+**Cold outreach sits on both ends, and it is the only channel that does.** A batch of 30 qualified emails is a stack of cheap tickets. The one hand-built email to the person who could change the year is a concentrated bet, written with the same five lines and hours of research behind the first one. `turma:outreach-craft` runs both. Three things make it the best-value ticket a project with no audience can buy, and one thing makes it the most dangerous:
+
+- It works on day zero. SEO compounds over months, social needs a following, ads need money. Outreach needs a name and a reason, which is why it is usually the first channel an underdog should print tickets on.
+- Its top prize is bigger than a viral post's. A post that hits buys attention. A reply from the right person buys a distributor, a first customer, a mentor, or a flight to the city where the work is happening.
+- The hit rate is knowable fast. Thirty sends tells you more about your positioning than three months of posting, because the non-replies are a verdict on the offer and not on an algorithm.
+- **The ticket is not free.** This is the exception to the core reframe. Everywhere else, AI dropped the price of a ticket toward zero. Not here. Every outreach ticket spends a real person's attention and a slice of a sending domain's reputation, both of which are finite and slow to rebuild. Volume without qualification does not buy more shots, it destroys the machine that fires them. Print tickets by writing more reasons, never by widening a filter.
+
 ## The axis the law does not cross
 
 The power law says buy more tickets. That is a claim about a **portfolio of separate bets**, and it holds because each ticket is an independent draw. Post five hundred, one breaks out.
@@ -186,3 +193,4 @@ A piece just popped. Inputs: the hit, the signal (what specifically resonated), 
 - `turma:cta-machine` and `turma:ghostshelf`: the volume engines this doctrine fuels.
 - `turma:conversion-craft`: the gate a channel clears before paid traffic accelerates it.
 - `turma:anti-ai-linguo`: the final voice pass.
+- `turma:outreach-craft`: runs the barbell on the outreach channel, where a ticket has a name on it and the ticket is not free.
